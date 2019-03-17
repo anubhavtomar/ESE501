@@ -33,8 +33,8 @@ Language: SystemC
 3rd Rising : ALU execution
 4th Rising : MAR | MDR (address output | data output) [DM access] (if needed)
 5th Rising : Write back to RF (if needed)
-Program used for Testing the Pipeline:
 ```
+#### Program used for Testing the Pipeline:
 ```
       OPCODE       // INSTRUCTION
 0b1101000000000000 // MVI 0 , A
