@@ -16,18 +16,18 @@ Language: SystemC
 
 * [RF.h](https://github.com/anubhavtomar/ESE501/blob/master/Project1/RF.h) - Register File (Register Bank)
 
-* [ALU.h](https://github.com/anubhavtomar/ESE501/blob/master/Project1/ALU.h) - Execution module that handles executing all arithmatics and logical instructions
+* [ALU.h](https://github.com/anubhavtomar/ESE501/blob/master/Project1/ALU.h) - Execution module that handles executing all arithmetic and logical instructions
 
-* [controller.cpp](https://github.com/anubhavtomar/ESE501/blob/master/Project1/controller.cpp) - FSM is used to determine what stage shoudl be executed. Instruction queue is used to store and handle multiple instructions in different stages. Generate control signals for all the modules. Synchorization done using ```wait``` in main FSM thread.
+* [controller.cpp](https://github.com/anubhavtomar/ESE501/blob/master/Project1/controller.cpp) - FSM is used to determine what stage should be executed. Instruction queue is used to store and handle multiple instructions in different stages. Generate control signals for all the modules. Synchronization is done using ```wait``` in the main FSM thread.
 
-* [testbench.cpp](https://github.com/anubhavtomar/ESE501/blob/master/Project1/testbench.cpp) - Initilizes all modules, interconnect port of different modules using signals. Generate clock signals. Load the program memory and start simulation.
+* [testbench.cpp](https://github.com/anubhavtomar/ESE501/blob/master/Project1/testbench.cpp) - Initializes all modules, interconnect port of different modules using signals. Generate clock signals. Load the program memory and start the simulation.
 
-* [log.txt](https://github.com/anubhavtomar/ESE501/blob/master/Project1/log.txt) - Log File logged at different stages in the pipelne while execution.
+* [log.txt](https://github.com/anubhavtomar/ESE501/blob/master/Project1/log.txt) - Log File logged at different stages in the pipeline while execution.
 
 
 ```
 5-Stages 
-1st Rising edge : Read Instrution from PM using PC and store the instruction in IR(Instruction Register)
+1st Rising edge : Read Instruction from PM using PC and store the instruction in IR(Instruction Register)
 1st Falling : Decode IR and generate required control signals
 2nd Rising : Read registers from RF
 3rd Rising : ALU execution
@@ -48,7 +48,7 @@ Program used for Testing the Pipeline:
 0b0000000000000000 // NOP
 ```
 
-```NOP``` is used as HALT instructin to stop fetching further instructions. PC is not incremented and instruction queuing is stopped in controller.
+```NOP``` is used as HALT instruction to stop fetching further instructions. PC is not incremented and instruction queuing is stopped in the controller.
 
 The program is compiled and executed using ```sh compile.sh```.
 The results are logged in ```log.txt```
