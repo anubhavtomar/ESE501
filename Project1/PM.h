@@ -9,7 +9,7 @@
 
 #include<systemc.h>
 
-template <class _addrSize , unsigned _pmCount>
+template <class _addrSize>
 class _programMemory : public sc_module {
 	public:
 		// Inputs
@@ -23,25 +23,35 @@ class _programMemory : public sc_module {
 
 		_programMemory(sc_module_name name) : sc_module(name) { 
 			SC_METHOD(_read);
-			dont_initialize();
 			sensitive<<_pmRead.pos();
 		};
 
 		void write(std::vector<sc_uint<16> >  _program) {
+			cout<<"@ "<<sc_time_stamp()<<"------Start _programLoad--------"<<endl<<endl<<endl;
 			sc_uint<5> _len = _program.size();
 			for(sc_uint<5> i ; i < _len ; i++) {
 				_programStore.push_back(_program[i]);
+				cout<<"/**===================================PROGRAM MEMORY LOG===================================**/"<<endl;
+				cout<<"       Address Input : "<<i<<endl;
+				cout<<"       Instruction Output : "<<_program[i]<<endl;
+				cout<<"/**===================================PROGRAM MEMORY LOG===================================**/"<<endl<<endl<<endl;
 			}
+			cout<<"@ "<<sc_time_stamp()<<"------End _programLoad--------"<<endl<<endl<<endl;
 		}
-
-		void _read () { 
-			cout<<"@ "<<sc_time_stamp()<<"------Start _read--------"<<endl;
-			_instructionOut.write(_programStore[_addrPC]);
-			cout<<"@ "<<sc_time_stamp()<<"------End _read--------"<<endl;
-		};
 
 	private:
 		std::vector<_addrSize> _programStore;
+
+		void _read () { 
+			cout<<"@ "<<sc_time_stamp()<<"------Start _read--------"<<endl<<endl<<endl;
+			_instructionOut.write(_programStore[_addrPC.read()]);
+
+			cout<<"/**===================================PROGRAM MEMORY LOG===================================**/"<<endl;
+			cout<<"       Address Input : "<<_addrPC.read()<<endl;
+			cout<<"       Instruction Output : "<<_programStore[_addrPC.read()]<<endl;
+			cout<<"/**===================================PROGRAM MEMORY LOG===================================**/"<<endl<<endl<<endl;
+			cout<<"@ "<<sc_time_stamp()<<"------End _read--------"<<endl<<endl<<endl;
+		};
 };
 
 #endif

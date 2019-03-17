@@ -11,18 +11,19 @@
 #include<ALU.h> //ALU
 #include<controller.cpp> //Controller
 
-template <class _rfAddrSize , class _pmAddrSize , class _dmAddrSize , class _dataSize , unsigned _regCount , unsigned _dmCount , unsigned _pmCount>
+template <class _rfAddrSize , class _pmAddrSize , class _dmAddrSize , class _dataSize , unsigned _regCount , unsigned _dmCount>
 class _riscProcessor : public sc_module {
 	public:
-		sc_signal<bool> _clock , _aluEnable , _pmRead , _rfRead , _rfWrite;
-		sc_signal<sc_uint<1> > _isImmData;
+		sc_signal<bool> _clock , _aluEnable , _pmRead , _rfRead , _rfWrite , _dmRead , _dmWrite;
+		sc_signal<sc_uint<1> > _isImmData , _isImmDataALU;
 		sc_signal<sc_uint<4> >_aluControlSig , _condControlSig;
 		sc_signal<_rfAddrSize > _rfAddr1Out , _rfAddr2Out;
-		sc_signal<_dataSize > _instruction , _rfData1Out , _rfData2Out , _dmDataOut , _aluResultOut , _PCOut , _rfDataOut , _operand1Out , _operand2Out;
+		sc_signal<_dmAddrSize > _dmAddrOut;
+		sc_signal<_dataSize > _instruction , _rfData1Out , _rfData2Out , _dmDataIn , _aluResultOut , _PCOut , _rfDataOut , _operand1Out , _operand2Out , _dmDataOut;
 
 		_registerFile<_rfAddrSize , _dataSize , _regCount>* _rf;
 		_dataMemory<_dmAddrSize , _dataSize , _dmCount>* _dm;
-		_programMemory<_pmAddrSize , _pmCount>* _pm;
+		_programMemory<_pmAddrSize>* _pm;
 		_aluBlock<_dataSize>* _alu;
 		_controllerBlock<_rfAddrSize , _dataSize>* _controller;
 
@@ -32,12 +33,24 @@ class _riscProcessor : public sc_module {
 
 			_rf = new _registerFile<_rfAddrSize , _dataSize , _regCount> ("Register File");
 			_dm = new _dataMemory<_dmAddrSize , _dataSize , _dmCount> ("Date Memory");
-			_pm = new _programMemory<_pmAddrSize , _pmCount> ("Program Memory");
+			_pm = new _programMemory<_pmAddrSize> ("Program Memory");
 			_alu = new _aluBlock<_dataSize> ("ALU Block");
 			_controller = new _controllerBlock<_rfAddrSize , _dataSize> ("Controller");
 
 
 			_controller->_clock(_clock);
+
+			_dm->_dmRead(_dmRead);
+			_controller->_dmRead(_dmRead);
+
+			_dm->_addr(_dmAddrOut);
+			_controller->_dmAddrOut(_dmAddrOut);
+
+			_dm->_dmWrite(_dmWrite);
+			_controller->_dmWrite(_dmWrite);
+
+			_dm->_dataIn(_dmDataOut);
+			_controller->_dmDataOut(_dmDataOut);
 
 			_pm->_instructionOut(_instruction);
 			_controller->_instructionIn(_instruction);
@@ -45,24 +58,21 @@ class _riscProcessor : public sc_module {
 			_rf->_dataOut1(_rfData1Out);
 			_controller->_operand1In(_rfData1Out);
 
-			_rf->_dataOut2(_rfData1Out);
-			_controller->_operand2In(_rfData1Out);
+			_rf->_dataOut2(_rfData2Out);
+			_controller->_operand2In(_rfData2Out);
 
-			_dm->_dataOut(_dmDataOut);
-			_controller->_dmDataIn(_dmDataOut);
+			_dm->_dataOut(_dmDataIn);
+			_controller->_dmDataIn(_dmDataIn);
 
-			_controller->_aluResultIn(_aluResultOut);
 			_alu->_resultOut(_aluResultOut);
+			_controller->_aluResultIn(_aluResultOut);
 
-			// Program Memory connections
 			_controller->_PCOut(_PCOut);
 			_pm->_addrPC(_PCOut);
 
 			_controller->_pmRead(_pmRead);
 			_pm->_pmRead(_pmRead);
 			
-
-			// Register File connections
 			_controller->_rfRead(_rfRead);
 			_rf->_rfRead(_rfRead);
 
@@ -81,9 +91,11 @@ class _riscProcessor : public sc_module {
 			_controller->_rfDataOut(_rfDataOut);
 			_rf->_data(_rfDataOut);
 
-			// ALU connections
 			_controller->_aluEnable(_aluEnable);
 			_alu->_aluEnable(_aluEnable);
+
+			_controller->_isImmControlSig(_isImmDataALU);
+			_alu->_isImmControlSig(_isImmDataALU);
 
 			_controller->_aluControlSig(_aluControlSig);
 			_alu->_aluControlSig(_aluControlSig);
@@ -98,7 +110,6 @@ class _riscProcessor : public sc_module {
 			_alu->_operand2(_operand2Out);
 
 			SC_THREAD(clockSignal);
-			dont_initialize();
 		};
 
 		void clockSignal() {
@@ -113,8 +124,8 @@ class _riscProcessor : public sc_module {
 };
 
 int sc_main(int argc , char* argv[]) {
-	cout<<"@ "<<sc_time_stamp()<<"----------Start---------"<<endl;
-	_riscProcessor<sc_uint<4> , sc_uint<16> , sc_uint<4> , sc_uint<16> , 256 , 256 , 256> _processor("RISC Processor");
+	cout<<"@ "<<sc_time_stamp()<<"----------Start---------"<<endl<<endl<<endl;
+	_riscProcessor<sc_uint<4> , sc_uint<16> , sc_uint<4> , sc_uint<16> , 256 , 256> _processor("RISC Processor");
 	std::vector<sc_uint<16> >  _program;
 	_program.push_back(0b1101000000000000); // MVI 0 , A
 	_program.push_back(0b1101000100000001); // MVI 1 , B
@@ -124,9 +135,11 @@ int sc_main(int argc , char* argv[]) {
 	_program.push_back(0b1001001000000001); // SUBI 1 , C
 	_program.push_back(0b1011001000000000); // CMPI 0 , C
 	_program.push_back(0b0100000111000011); // JNZ 3
-	sc_start();
-	cout<<"@ "<<sc_time_stamp()<<"----------Start Simulation---------"<<endl;
-	sc_start(4000, SC_NS);
-	cout<<"@ "<<sc_time_stamp()<<"----------End Simulation---------"<<endl;
+
+	_processor._pm->write(_program);
+	// sc_start();
+	cout<<"@ "<<sc_time_stamp()<<"----------Start Simulation---------"<<endl<<endl<<endl;
+	sc_start(200, SC_NS);
+	cout<<"@ "<<sc_time_stamp()<<"----------End Simulation---------"<<endl<<endl<<endl;
 	return 0;
 }
