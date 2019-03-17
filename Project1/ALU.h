@@ -344,10 +344,12 @@ class _aluBlock : public sc_module {
 					if(_op1 >= _dataMAX || _op2 >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
-					_out = _op1 + _op2;
 					if(_checkCondition("       Instruction : Bcond")) {
-						_resultOut.write(_out);
+						_out = _op1 + _op2;	
+					} else {
+						_out = _op2;
 					}
+					_resultOut.write(_out);
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
