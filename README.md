@@ -5,7 +5,7 @@ Digital System Specification and Modeling Using SystemC
 ### Date: 3/13/19
 Author: Anubhav Tomar
 
-Description: MINI RISC Processorr Archetichure with 5-Stage Pipeline Execution
+Description: MINI RISC Processor Architecture with 5-Stage Pipeline Execution
 
 Language: SystemC
 
@@ -27,12 +27,12 @@ Language: SystemC
 
 ```
 5-Stages 
-1st Rising edge : Read Instruction from PM using PC and store the instruction in IR(Instruction Register)
-1st Falling : Decode IR and generate required control signals
-2nd Rising : Read registers from RF
-3rd Rising : ALU execution
-4th Rising : MAR | MDR (address output | data output) [DM access] (if needed)
-5th Rising : Write back to RF (if needed)
+1st Rising Edge : Read Instruction from PM using PC and store the instruction in IR(Instruction Register)
+1st Falling Edge : Decode IR and generate required control signals
+2nd Rising Edge : Read registers from RF
+3rd Rising Edge : ALU execution
+4th Rising Edge : MAR | MDR (address output | data output) [DM access] (if needed)
+5th Rising Edge : Write back to RF (if needed)
 ```
 #### Program used for Testing the Pipeline:
 ```
