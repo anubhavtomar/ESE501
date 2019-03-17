@@ -150,7 +150,7 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 0 s------End _executions--------
 
 
-@ 2 ns------Start _runControlRising--------
+@ 2 ns------Start _runFSMRising--------
 
 
 @ 2 ns------Start _runFetch from PM--------
@@ -178,10 +178,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 2020 ps------End _runFetch from PM--------
 
 
-@ 2020 ps------End _runControlRising--------
+@ 2020 ps------End _runFSMRising--------
 
 
-@ 3 ns------Start _runControlFalling--------
+@ 3 ns------Start _runFSMFalling--------
 
 
 @ 3 ns------Start _runDecode--------
@@ -205,10 +205,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 3 ns------End _runDecode--------
 
 
-@ 3 ns------End _runControlFalling--------
+@ 3 ns------End _runFSMFalling--------
 
 
-@ 4 ns------Start _runControlRising--------
+@ 4 ns------Start _runFSMRising--------
 
 
 @ 4 ns------Start _runRFRead--------
@@ -266,16 +266,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 4040 ps------End _runFetch from PM--------
 
 
-@ 4040 ps------End _runControlRising--------
+@ 4040 ps------End _runFSMRising--------
 
 
-@ 5 ns------Start _runControlFalling--------
+@ 5 ns------Start _runFSMFalling--------
 
 
-@ 5 ns------End _runControlFalling--------
+@ 5 ns------End _runFSMFalling--------
 
 
-@ 6 ns------Start _runControlRising--------
+@ 6 ns------Start _runFSMRising--------
 
 
 @ 6 ns------Start _runExecution--------
@@ -328,16 +328,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 6020 ps------End _runDecode--------
 
 
-@ 6020 ps------End _runControlRising--------
+@ 6020 ps------End _runFSMRising--------
 
 
-@ 7 ns------Start _runControlFalling--------
+@ 7 ns------Start _runFSMFalling--------
 
 
-@ 7 ns------End _runControlFalling--------
+@ 7 ns------End _runFSMFalling--------
 
 
-@ 8 ns------Start _runControlRising--------
+@ 8 ns------Start _runFSMRising--------
 
 
 @ 8 ns------Start _runMemAccess--------
@@ -352,10 +352,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 8 ns------End _runMemAccess--------
 
 
-@ 8 ns------End _runControlRising--------
+@ 8 ns------End _runFSMRising--------
 
 
-@ 9 ns------Start _runControlFalling--------
+@ 9 ns------Start _runFSMFalling--------
 
 
 @ 9 ns------Start _runRFWrite--------
@@ -382,10 +382,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 9020 ps------End _runRFWrite--------
 
 
-@ 9020 ps------End _runControlFalling--------
+@ 9020 ps------End _runFSMFalling--------
 
 
-@ 10 ns------Start _runControlRising--------
+@ 10 ns------Start _runFSMRising--------
 
 
 @ 10 ns------Start _runFetch from PM--------
@@ -413,10 +413,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 10020 ps------End _runFetch from PM--------
 
 
-@ 10020 ps------End _runControlRising--------
+@ 10020 ps------End _runFSMRising--------
 
 
-@ 11 ns------Start _runControlFalling--------
+@ 11 ns------Start _runFSMFalling--------
 
 
 @ 11 ns------Start _runDecode--------
@@ -440,10 +440,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 11 ns------End _runDecode--------
 
 
-@ 11 ns------End _runControlFalling--------
+@ 11 ns------End _runFSMFalling--------
 
 
-@ 12 ns------Start _runControlRising--------
+@ 12 ns------Start _runFSMRising--------
 
 
 @ 12 ns------Start _runRFRead--------
@@ -501,16 +501,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 12040 ps------End _runFetch from PM--------
 
 
-@ 12040 ps------End _runControlRising--------
+@ 12040 ps------End _runFSMRising--------
 
 
-@ 13 ns------Start _runControlFalling--------
+@ 13 ns------Start _runFSMFalling--------
 
 
-@ 13 ns------End _runControlFalling--------
+@ 13 ns------End _runFSMFalling--------
 
 
-@ 14 ns------Start _runControlRising--------
+@ 14 ns------Start _runFSMRising--------
 
 
 @ 14 ns------Start _runExecution--------
@@ -563,16 +563,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 14020 ps------End _runDecode--------
 
 
-@ 14020 ps------End _runControlRising--------
+@ 14020 ps------End _runFSMRising--------
 
 
-@ 15 ns------Start _runControlFalling--------
+@ 15 ns------Start _runFSMFalling--------
 
 
-@ 15 ns------End _runControlFalling--------
+@ 15 ns------End _runFSMFalling--------
 
 
-@ 16 ns------Start _runControlRising--------
+@ 16 ns------Start _runFSMRising--------
 
 
 @ 16 ns------Start _runMemAccess--------
@@ -587,10 +587,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 16 ns------End _runMemAccess--------
 
 
-@ 16 ns------End _runControlRising--------
+@ 16 ns------End _runFSMRising--------
 
 
-@ 17 ns------Start _runControlFalling--------
+@ 17 ns------Start _runFSMFalling--------
 
 
 @ 17 ns------Start _runRFWrite--------
@@ -617,10 +617,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 17020 ps------End _runRFWrite--------
 
 
-@ 17020 ps------End _runControlFalling--------
+@ 17020 ps------End _runFSMFalling--------
 
 
-@ 18 ns------Start _runControlRising--------
+@ 18 ns------Start _runFSMRising--------
 
 
 @ 18 ns------Start _runFetch from PM--------
@@ -648,10 +648,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 18020 ps------End _runFetch from PM--------
 
 
-@ 18020 ps------End _runControlRising--------
+@ 18020 ps------End _runFSMRising--------
 
 
-@ 19 ns------Start _runControlFalling--------
+@ 19 ns------Start _runFSMFalling--------
 
 
 @ 19 ns------Start _runDecode--------
@@ -675,10 +675,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 19 ns------End _runDecode--------
 
 
-@ 19 ns------End _runControlFalling--------
+@ 19 ns------End _runFSMFalling--------
 
 
-@ 20 ns------Start _runControlRising--------
+@ 20 ns------Start _runFSMRising--------
 
 
 @ 20 ns------Start _runRFRead--------
@@ -736,16 +736,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 20040 ps------End _runFetch from PM--------
 
 
-@ 20040 ps------End _runControlRising--------
+@ 20040 ps------End _runFSMRising--------
 
 
-@ 21 ns------Start _runControlFalling--------
+@ 21 ns------Start _runFSMFalling--------
 
 
-@ 21 ns------End _runControlFalling--------
+@ 21 ns------End _runFSMFalling--------
 
 
-@ 22 ns------Start _runControlRising--------
+@ 22 ns------Start _runFSMRising--------
 
 
 @ 22 ns------Start _runExecution--------
@@ -798,16 +798,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 22020 ps------End _runDecode--------
 
 
-@ 22020 ps------End _runControlRising--------
+@ 22020 ps------End _runFSMRising--------
 
 
-@ 23 ns------Start _runControlFalling--------
+@ 23 ns------Start _runFSMFalling--------
 
 
-@ 23 ns------End _runControlFalling--------
+@ 23 ns------End _runFSMFalling--------
 
 
-@ 24 ns------Start _runControlRising--------
+@ 24 ns------Start _runFSMRising--------
 
 
 @ 24 ns------Start _runMemAccess--------
@@ -822,10 +822,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 24 ns------End _runMemAccess--------
 
 
-@ 24 ns------End _runControlRising--------
+@ 24 ns------End _runFSMRising--------
 
 
-@ 25 ns------Start _runControlFalling--------
+@ 25 ns------Start _runFSMFalling--------
 
 
 @ 25 ns------Start _runRFWrite--------
@@ -852,10 +852,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 25020 ps------End _runRFWrite--------
 
 
-@ 25020 ps------End _runControlFalling--------
+@ 25020 ps------End _runFSMFalling--------
 
 
-@ 26 ns------Start _runControlRising--------
+@ 26 ns------Start _runFSMRising--------
 
 
 @ 26 ns------Start _runFetch from PM--------
@@ -883,10 +883,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 26020 ps------End _runFetch from PM--------
 
 
-@ 26020 ps------End _runControlRising--------
+@ 26020 ps------End _runFSMRising--------
 
 
-@ 27 ns------Start _runControlFalling--------
+@ 27 ns------Start _runFSMFalling--------
 
 
 @ 27 ns------Start _runDecode--------
@@ -910,10 +910,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 27 ns------End _runDecode--------
 
 
-@ 27 ns------End _runControlFalling--------
+@ 27 ns------End _runFSMFalling--------
 
 
-@ 28 ns------Start _runControlRising--------
+@ 28 ns------Start _runFSMRising--------
 
 
 @ 28 ns------Start _runRFRead--------
@@ -970,16 +970,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 28040 ps------End _runFetch from PM--------
 
 
-@ 28040 ps------End _runControlRising--------
+@ 28040 ps------End _runFSMRising--------
 
 
-@ 29 ns------Start _runControlFalling--------
+@ 29 ns------Start _runFSMFalling--------
 
 
-@ 29 ns------End _runControlFalling--------
+@ 29 ns------End _runFSMFalling--------
 
 
-@ 30 ns------Start _runControlRising--------
+@ 30 ns------Start _runFSMRising--------
 
 
 @ 30 ns------Start _runExecution--------
@@ -1032,16 +1032,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 30020 ps------End _runDecode--------
 
 
-@ 30020 ps------End _runControlRising--------
+@ 30020 ps------End _runFSMRising--------
 
 
-@ 31 ns------Start _runControlFalling--------
+@ 31 ns------Start _runFSMFalling--------
 
 
-@ 31 ns------End _runControlFalling--------
+@ 31 ns------End _runFSMFalling--------
 
 
-@ 32 ns------Start _runControlRising--------
+@ 32 ns------Start _runFSMRising--------
 
 
 @ 32 ns------Start _runMemAccess--------
@@ -1056,10 +1056,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 32 ns------End _runMemAccess--------
 
 
-@ 32 ns------End _runControlRising--------
+@ 32 ns------End _runFSMRising--------
 
 
-@ 33 ns------Start _runControlFalling--------
+@ 33 ns------Start _runFSMFalling--------
 
 
 @ 33 ns------Start _runRFWrite--------
@@ -1086,10 +1086,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 33020 ps------End _runRFWrite--------
 
 
-@ 33020 ps------End _runControlFalling--------
+@ 33020 ps------End _runFSMFalling--------
 
 
-@ 34 ns------Start _runControlRising--------
+@ 34 ns------Start _runFSMRising--------
 
 
 @ 34 ns------Start _runFetch from PM--------
@@ -1107,10 +1107,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 34 ns------End _read--------
 
 
-@ 34020 ps------End _runControlRising--------
+@ 34020 ps------End _runFSMRising--------
 
 
-@ 35 ns------Start _runControlFalling--------
+@ 35 ns------Start _runFSMFalling--------
 
 
 @ 35 ns------Start _runDecode--------
@@ -1122,10 +1122,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 35 ns------End _runControlFalling--------
+@ 35 ns------End _runFSMFalling--------
 
 
-@ 36 ns------Start _runControlRising--------
+@ 36 ns------Start _runFSMRising--------
 
 
 @ 36 ns------Start _runRFRead--------
@@ -1161,16 +1161,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 36020 ps------Start _runFetch from PM--------
 
 
-@ 36020 ps------End _runControlRising--------
+@ 36020 ps------End _runFSMRising--------
 
 
-@ 37 ns------Start _runControlFalling--------
+@ 37 ns------Start _runFSMFalling--------
 
 
-@ 37 ns------End _runControlFalling--------
+@ 37 ns------End _runFSMFalling--------
 
 
-@ 38 ns------Start _runControlRising--------
+@ 38 ns------Start _runFSMRising--------
 
 
 @ 38 ns------Start _runExecution--------
@@ -1211,16 +1211,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 38020 ps------End _runControlRising--------
+@ 38020 ps------End _runFSMRising--------
 
 
-@ 39 ns------Start _runControlFalling--------
+@ 39 ns------Start _runFSMFalling--------
 
 
-@ 39 ns------End _runControlFalling--------
+@ 39 ns------End _runFSMFalling--------
 
 
-@ 40 ns------Start _runControlRising--------
+@ 40 ns------Start _runFSMRising--------
 
 
 @ 40 ns------Start _runMemAccess--------
@@ -1235,10 +1235,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 40 ns------End _runMemAccess--------
 
 
-@ 40 ns------End _runControlRising--------
+@ 40 ns------End _runFSMRising--------
 
 
-@ 41 ns------Start _runControlFalling--------
+@ 41 ns------Start _runFSMFalling--------
 
 
 @ 41 ns------Start _runRFWrite--------
@@ -1265,10 +1265,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 41020 ps------End _runRFWrite--------
 
 
-@ 41020 ps------End _runControlFalling--------
+@ 41020 ps------End _runFSMFalling--------
 
 
-@ 42 ns------Start _runControlRising--------
+@ 42 ns------Start _runFSMRising--------
 
 
 @ 42 ns------Start _runFetch from PM--------
@@ -1286,10 +1286,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 42 ns------End _read--------
 
 
-@ 42020 ps------End _runControlRising--------
+@ 42020 ps------End _runFSMRising--------
 
 
-@ 43 ns------Start _runControlFalling--------
+@ 43 ns------Start _runFSMFalling--------
 
 
 @ 43 ns------Start _runDecode--------
@@ -1301,10 +1301,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 43 ns------End _runControlFalling--------
+@ 43 ns------End _runFSMFalling--------
 
 
-@ 44 ns------Start _runControlRising--------
+@ 44 ns------Start _runFSMRising--------
 
 
 @ 44 ns------Start _runRFRead--------
@@ -1340,16 +1340,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 44020 ps------Start _runFetch from PM--------
 
 
-@ 44020 ps------End _runControlRising--------
+@ 44020 ps------End _runFSMRising--------
 
 
-@ 45 ns------Start _runControlFalling--------
+@ 45 ns------Start _runFSMFalling--------
 
 
-@ 45 ns------End _runControlFalling--------
+@ 45 ns------End _runFSMFalling--------
 
 
-@ 46 ns------Start _runControlRising--------
+@ 46 ns------Start _runFSMRising--------
 
 
 @ 46 ns------Start _runExecution--------
@@ -1390,16 +1390,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 46020 ps------End _runControlRising--------
+@ 46020 ps------End _runFSMRising--------
 
 
-@ 47 ns------Start _runControlFalling--------
+@ 47 ns------Start _runFSMFalling--------
 
 
-@ 47 ns------End _runControlFalling--------
+@ 47 ns------End _runFSMFalling--------
 
 
-@ 48 ns------Start _runControlRising--------
+@ 48 ns------Start _runFSMRising--------
 
 
 @ 48 ns------Start _runMemAccess--------
@@ -1414,10 +1414,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 48 ns------End _runMemAccess--------
 
 
-@ 48 ns------End _runControlRising--------
+@ 48 ns------End _runFSMRising--------
 
 
-@ 49 ns------Start _runControlFalling--------
+@ 49 ns------Start _runFSMFalling--------
 
 
 @ 49 ns------Start _runRFWrite--------
@@ -1444,10 +1444,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 49020 ps------End _runRFWrite--------
 
 
-@ 49020 ps------End _runControlFalling--------
+@ 49020 ps------End _runFSMFalling--------
 
 
-@ 50 ns------Start _runControlRising--------
+@ 50 ns------Start _runFSMRising--------
 
 
 @ 50 ns------Start _runFetch from PM--------
@@ -1465,10 +1465,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 50 ns------End _read--------
 
 
-@ 50020 ps------End _runControlRising--------
+@ 50020 ps------End _runFSMRising--------
 
 
-@ 51 ns------Start _runControlFalling--------
+@ 51 ns------Start _runFSMFalling--------
 
 
 @ 51 ns------Start _runDecode--------
@@ -1480,10 +1480,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 51 ns------End _runControlFalling--------
+@ 51 ns------End _runFSMFalling--------
 
 
-@ 52 ns------Start _runControlRising--------
+@ 52 ns------Start _runFSMRising--------
 
 
 @ 52 ns------Start _runRFRead--------
@@ -1519,16 +1519,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 52020 ps------Start _runFetch from PM--------
 
 
-@ 52020 ps------End _runControlRising--------
+@ 52020 ps------End _runFSMRising--------
 
 
-@ 53 ns------Start _runControlFalling--------
+@ 53 ns------Start _runFSMFalling--------
 
 
-@ 53 ns------End _runControlFalling--------
+@ 53 ns------End _runFSMFalling--------
 
 
-@ 54 ns------Start _runControlRising--------
+@ 54 ns------Start _runFSMRising--------
 
 
 @ 54 ns------Start _runExecution--------
@@ -1569,16 +1569,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 54020 ps------End _runControlRising--------
+@ 54020 ps------End _runFSMRising--------
 
 
-@ 55 ns------Start _runControlFalling--------
+@ 55 ns------Start _runFSMFalling--------
 
 
-@ 55 ns------End _runControlFalling--------
+@ 55 ns------End _runFSMFalling--------
 
 
-@ 56 ns------Start _runControlRising--------
+@ 56 ns------Start _runFSMRising--------
 
 
 @ 56 ns------Start _runMemAccess--------
@@ -1593,10 +1593,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 56 ns------End _runMemAccess--------
 
 
-@ 56 ns------End _runControlRising--------
+@ 56 ns------End _runFSMRising--------
 
 
-@ 57 ns------Start _runControlFalling--------
+@ 57 ns------Start _runFSMFalling--------
 
 
 @ 57 ns------Start _runRFWrite--------
@@ -1611,10 +1611,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 57 ns------End _runRFWrite--------
 
 
-@ 57 ns------End _runControlFalling--------
+@ 57 ns------End _runFSMFalling--------
 
 
-@ 58 ns------Start _runControlRising--------
+@ 58 ns------Start _runFSMRising--------
 
 
 @ 58 ns------Start _runFetch from PM--------
@@ -1632,10 +1632,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 58 ns------End _read--------
 
 
-@ 58020 ps------End _runControlRising--------
+@ 58020 ps------End _runFSMRising--------
 
 
-@ 59 ns------Start _runControlFalling--------
+@ 59 ns------Start _runFSMFalling--------
 
 
 @ 59 ns------Start _runDecode--------
@@ -1647,10 +1647,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 59 ns------End _runControlFalling--------
+@ 59 ns------End _runFSMFalling--------
 
 
-@ 60 ns------Start _runControlRising--------
+@ 60 ns------Start _runFSMRising--------
 
 
 @ 60 ns------Start _runRFRead--------
@@ -1685,16 +1685,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 60020 ps------Start _runFetch from PM--------
 
 
-@ 60020 ps------End _runControlRising--------
+@ 60020 ps------End _runFSMRising--------
 
 
-@ 61 ns------Start _runControlFalling--------
+@ 61 ns------Start _runFSMFalling--------
 
 
-@ 61 ns------End _runControlFalling--------
+@ 61 ns------End _runFSMFalling--------
 
 
-@ 62 ns------Start _runControlRising--------
+@ 62 ns------Start _runFSMRising--------
 
 
 @ 62 ns------Start _runExecution--------
@@ -1742,16 +1742,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 62020 ps------End _runControlRising--------
+@ 62020 ps------End _runFSMRising--------
 
 
-@ 63 ns------Start _runControlFalling--------
+@ 63 ns------Start _runFSMFalling--------
 
 
-@ 63 ns------End _runControlFalling--------
+@ 63 ns------End _runFSMFalling--------
 
 
-@ 64 ns------Start _runControlRising--------
+@ 64 ns------Start _runFSMRising--------
 
 
 @ 64 ns------Start _runMemAccess--------
@@ -1766,10 +1766,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 64 ns------End _runMemAccess--------
 
 
-@ 64 ns------End _runControlRising--------
+@ 64 ns------End _runFSMRising--------
 
 
-@ 65 ns------Start _runControlFalling--------
+@ 65 ns------Start _runFSMFalling--------
 
 
 @ 65 ns------Start _runRFWrite--------
@@ -1784,10 +1784,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 65 ns------End _runRFWrite--------
 
 
-@ 65 ns------End _runControlFalling--------
+@ 65 ns------End _runFSMFalling--------
 
 
-@ 66 ns------Start _runControlRising--------
+@ 66 ns------Start _runFSMRising--------
 
 
 @ 66 ns------Start _runFetch from PM--------
@@ -1815,10 +1815,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 66020 ps------End _runFetch from PM--------
 
 
-@ 66020 ps------End _runControlRising--------
+@ 66020 ps------End _runFSMRising--------
 
 
-@ 67 ns------Start _runControlFalling--------
+@ 67 ns------Start _runFSMFalling--------
 
 
 @ 67 ns------Start _runDecode--------
@@ -1842,10 +1842,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 67 ns------End _runDecode--------
 
 
-@ 67 ns------End _runControlFalling--------
+@ 67 ns------End _runFSMFalling--------
 
 
-@ 68 ns------Start _runControlRising--------
+@ 68 ns------Start _runFSMRising--------
 
 
 @ 68 ns------Start _runRFRead--------
@@ -1902,16 +1902,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 68040 ps------End _runFetch from PM--------
 
 
-@ 68040 ps------End _runControlRising--------
+@ 68040 ps------End _runFSMRising--------
 
 
-@ 69 ns------Start _runControlFalling--------
+@ 69 ns------Start _runFSMFalling--------
 
 
-@ 69 ns------End _runControlFalling--------
+@ 69 ns------End _runFSMFalling--------
 
 
-@ 70 ns------Start _runControlRising--------
+@ 70 ns------Start _runFSMRising--------
 
 
 @ 70 ns------Start _runExecution--------
@@ -1964,16 +1964,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 70020 ps------End _runDecode--------
 
 
-@ 70020 ps------End _runControlRising--------
+@ 70020 ps------End _runFSMRising--------
 
 
-@ 71 ns------Start _runControlFalling--------
+@ 71 ns------Start _runFSMFalling--------
 
 
-@ 71 ns------End _runControlFalling--------
+@ 71 ns------End _runFSMFalling--------
 
 
-@ 72 ns------Start _runControlRising--------
+@ 72 ns------Start _runFSMRising--------
 
 
 @ 72 ns------Start _runMemAccess--------
@@ -1988,10 +1988,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 72 ns------End _runMemAccess--------
 
 
-@ 72 ns------End _runControlRising--------
+@ 72 ns------End _runFSMRising--------
 
 
-@ 73 ns------Start _runControlFalling--------
+@ 73 ns------Start _runFSMFalling--------
 
 
 @ 73 ns------Start _runRFWrite--------
@@ -2018,10 +2018,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 73020 ps------End _runRFWrite--------
 
 
-@ 73020 ps------End _runControlFalling--------
+@ 73020 ps------End _runFSMFalling--------
 
 
-@ 74 ns------Start _runControlRising--------
+@ 74 ns------Start _runFSMRising--------
 
 
 @ 74 ns------Start _runFetch from PM--------
@@ -2049,10 +2049,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 74020 ps------End _runFetch from PM--------
 
 
-@ 74020 ps------End _runControlRising--------
+@ 74020 ps------End _runFSMRising--------
 
 
-@ 75 ns------Start _runControlFalling--------
+@ 75 ns------Start _runFSMFalling--------
 
 
 @ 75 ns------Start _runDecode--------
@@ -2076,10 +2076,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 75 ns------End _runDecode--------
 
 
-@ 75 ns------End _runControlFalling--------
+@ 75 ns------End _runFSMFalling--------
 
 
-@ 76 ns------Start _runControlRising--------
+@ 76 ns------Start _runFSMRising--------
 
 
 @ 76 ns------Start _runRFRead--------
@@ -2137,16 +2137,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 76040 ps------End _runFetch from PM--------
 
 
-@ 76040 ps------End _runControlRising--------
+@ 76040 ps------End _runFSMRising--------
 
 
-@ 77 ns------Start _runControlFalling--------
+@ 77 ns------Start _runFSMFalling--------
 
 
-@ 77 ns------End _runControlFalling--------
+@ 77 ns------End _runFSMFalling--------
 
 
-@ 78 ns------Start _runControlRising--------
+@ 78 ns------Start _runFSMRising--------
 
 
 @ 78 ns------Start _runExecution--------
@@ -2199,16 +2199,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 78020 ps------End _runDecode--------
 
 
-@ 78020 ps------End _runControlRising--------
+@ 78020 ps------End _runFSMRising--------
 
 
-@ 79 ns------Start _runControlFalling--------
+@ 79 ns------Start _runFSMFalling--------
 
 
-@ 79 ns------End _runControlFalling--------
+@ 79 ns------End _runFSMFalling--------
 
 
-@ 80 ns------Start _runControlRising--------
+@ 80 ns------Start _runFSMRising--------
 
 
 @ 80 ns------Start _runMemAccess--------
@@ -2223,10 +2223,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 80 ns------End _runMemAccess--------
 
 
-@ 80 ns------End _runControlRising--------
+@ 80 ns------End _runFSMRising--------
 
 
-@ 81 ns------Start _runControlFalling--------
+@ 81 ns------Start _runFSMFalling--------
 
 
 @ 81 ns------Start _runRFWrite--------
@@ -2253,10 +2253,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 81020 ps------End _runRFWrite--------
 
 
-@ 81020 ps------End _runControlFalling--------
+@ 81020 ps------End _runFSMFalling--------
 
 
-@ 82 ns------Start _runControlRising--------
+@ 82 ns------Start _runFSMRising--------
 
 
 @ 82 ns------Start _runFetch from PM--------
@@ -2284,10 +2284,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 82020 ps------End _runFetch from PM--------
 
 
-@ 82020 ps------End _runControlRising--------
+@ 82020 ps------End _runFSMRising--------
 
 
-@ 83 ns------Start _runControlFalling--------
+@ 83 ns------Start _runFSMFalling--------
 
 
 @ 83 ns------Start _runDecode--------
@@ -2311,10 +2311,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 83 ns------End _runDecode--------
 
 
-@ 83 ns------End _runControlFalling--------
+@ 83 ns------End _runFSMFalling--------
 
 
-@ 84 ns------Start _runControlRising--------
+@ 84 ns------Start _runFSMRising--------
 
 
 @ 84 ns------Start _runRFRead--------
@@ -2362,16 +2362,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 84020 ps------End _read--------
 
 
-@ 84040 ps------End _runControlRising--------
+@ 84040 ps------End _runFSMRising--------
 
 
-@ 85 ns------Start _runControlFalling--------
+@ 85 ns------Start _runFSMFalling--------
 
 
-@ 85 ns------End _runControlFalling--------
+@ 85 ns------End _runFSMFalling--------
 
 
-@ 86 ns------Start _runControlRising--------
+@ 86 ns------Start _runFSMRising--------
 
 
 @ 86 ns------Start _runExecution--------
@@ -2412,16 +2412,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 86020 ps------End _runControlRising--------
+@ 86020 ps------End _runFSMRising--------
 
 
-@ 87 ns------Start _runControlFalling--------
+@ 87 ns------Start _runFSMFalling--------
 
 
-@ 87 ns------End _runControlFalling--------
+@ 87 ns------End _runFSMFalling--------
 
 
-@ 88 ns------Start _runControlRising--------
+@ 88 ns------Start _runFSMRising--------
 
 
 @ 88 ns------Start _runMemAccess--------
@@ -2436,10 +2436,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 88 ns------End _runMemAccess--------
 
 
-@ 88 ns------End _runControlRising--------
+@ 88 ns------End _runFSMRising--------
 
 
-@ 89 ns------Start _runControlFalling--------
+@ 89 ns------Start _runFSMFalling--------
 
 
 @ 89 ns------Start _runRFWrite--------
@@ -2466,10 +2466,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 89020 ps------End _runRFWrite--------
 
 
-@ 89020 ps------End _runControlFalling--------
+@ 89020 ps------End _runFSMFalling--------
 
 
-@ 90 ns------Start _runControlRising--------
+@ 90 ns------Start _runFSMRising--------
 
 
 @ 90 ns------Start _runFetch from PM--------
@@ -2487,10 +2487,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 90 ns------End _read--------
 
 
-@ 90020 ps------End _runControlRising--------
+@ 90020 ps------End _runFSMRising--------
 
 
-@ 91 ns------Start _runControlFalling--------
+@ 91 ns------Start _runFSMFalling--------
 
 
 @ 91 ns------Start _runDecode--------
@@ -2502,10 +2502,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 91 ns------End _runControlFalling--------
+@ 91 ns------End _runFSMFalling--------
 
 
-@ 92 ns------Start _runControlRising--------
+@ 92 ns------Start _runFSMRising--------
 
 
 @ 92 ns------Start _runRFRead--------
@@ -2541,16 +2541,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 92020 ps------Start _runFetch from PM--------
 
 
-@ 92020 ps------End _runControlRising--------
+@ 92020 ps------End _runFSMRising--------
 
 
-@ 93 ns------Start _runControlFalling--------
+@ 93 ns------Start _runFSMFalling--------
 
 
-@ 93 ns------End _runControlFalling--------
+@ 93 ns------End _runFSMFalling--------
 
 
-@ 94 ns------Start _runControlRising--------
+@ 94 ns------Start _runFSMRising--------
 
 
 @ 94 ns------Start _runExecution--------
@@ -2591,16 +2591,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 94020 ps------End _runControlRising--------
+@ 94020 ps------End _runFSMRising--------
 
 
-@ 95 ns------Start _runControlFalling--------
+@ 95 ns------Start _runFSMFalling--------
 
 
-@ 95 ns------End _runControlFalling--------
+@ 95 ns------End _runFSMFalling--------
 
 
-@ 96 ns------Start _runControlRising--------
+@ 96 ns------Start _runFSMRising--------
 
 
 @ 96 ns------Start _runMemAccess--------
@@ -2615,10 +2615,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 96 ns------End _runMemAccess--------
 
 
-@ 96 ns------End _runControlRising--------
+@ 96 ns------End _runFSMRising--------
 
 
-@ 97 ns------Start _runControlFalling--------
+@ 97 ns------Start _runFSMFalling--------
 
 
 @ 97 ns------Start _runRFWrite--------
@@ -2633,10 +2633,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 97 ns------End _runRFWrite--------
 
 
-@ 97 ns------End _runControlFalling--------
+@ 97 ns------End _runFSMFalling--------
 
 
-@ 98 ns------Start _runControlRising--------
+@ 98 ns------Start _runFSMRising--------
 
 
 @ 98 ns------Start _runFetch from PM--------
@@ -2654,10 +2654,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 98 ns------End _read--------
 
 
-@ 98020 ps------End _runControlRising--------
+@ 98020 ps------End _runFSMRising--------
 
 
-@ 99 ns------Start _runControlFalling--------
+@ 99 ns------Start _runFSMFalling--------
 
 
 @ 99 ns------Start _runDecode--------
@@ -2669,10 +2669,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 99 ns------End _runControlFalling--------
+@ 99 ns------End _runFSMFalling--------
 
 
-@ 100 ns------Start _runControlRising--------
+@ 100 ns------Start _runFSMRising--------
 
 
 @ 100 ns------Start _runRFRead--------
@@ -2707,16 +2707,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 100020 ps------Start _runFetch from PM--------
 
 
-@ 100020 ps------End _runControlRising--------
+@ 100020 ps------End _runFSMRising--------
 
 
-@ 101 ns------Start _runControlFalling--------
+@ 101 ns------Start _runFSMFalling--------
 
 
-@ 101 ns------End _runControlFalling--------
+@ 101 ns------End _runFSMFalling--------
 
 
-@ 102 ns------Start _runControlRising--------
+@ 102 ns------Start _runFSMRising--------
 
 
 @ 102 ns------Start _runExecution--------
@@ -2764,16 +2764,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 102020 ps------End _runControlRising--------
+@ 102020 ps------End _runFSMRising--------
 
 
-@ 103 ns------Start _runControlFalling--------
+@ 103 ns------Start _runFSMFalling--------
 
 
-@ 103 ns------End _runControlFalling--------
+@ 103 ns------End _runFSMFalling--------
 
 
-@ 104 ns------Start _runControlRising--------
+@ 104 ns------Start _runFSMRising--------
 
 
 @ 104 ns------Start _runMemAccess--------
@@ -2788,10 +2788,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 104 ns------End _runMemAccess--------
 
 
-@ 104 ns------End _runControlRising--------
+@ 104 ns------End _runFSMRising--------
 
 
-@ 105 ns------Start _runControlFalling--------
+@ 105 ns------Start _runFSMFalling--------
 
 
 @ 105 ns------Start _runRFWrite--------
@@ -2806,10 +2806,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 105 ns------End _runRFWrite--------
 
 
-@ 105 ns------End _runControlFalling--------
+@ 105 ns------End _runFSMFalling--------
 
 
-@ 106 ns------Start _runControlRising--------
+@ 106 ns------Start _runFSMRising--------
 
 
 @ 106 ns------Start _runFetch from PM--------
@@ -2837,10 +2837,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 106020 ps------End _runFetch from PM--------
 
 
-@ 106020 ps------End _runControlRising--------
+@ 106020 ps------End _runFSMRising--------
 
 
-@ 107 ns------Start _runControlFalling--------
+@ 107 ns------Start _runFSMFalling--------
 
 
 @ 107 ns------Start _runDecode--------
@@ -2864,10 +2864,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 107 ns------End _runDecode--------
 
 
-@ 107 ns------End _runControlFalling--------
+@ 107 ns------End _runFSMFalling--------
 
 
-@ 108 ns------Start _runControlRising--------
+@ 108 ns------Start _runFSMRising--------
 
 
 @ 108 ns------Start _runRFRead--------
@@ -2924,16 +2924,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 108040 ps------End _runFetch from PM--------
 
 
-@ 108040 ps------End _runControlRising--------
+@ 108040 ps------End _runFSMRising--------
 
 
-@ 109 ns------Start _runControlFalling--------
+@ 109 ns------Start _runFSMFalling--------
 
 
-@ 109 ns------End _runControlFalling--------
+@ 109 ns------End _runFSMFalling--------
 
 
-@ 110 ns------Start _runControlRising--------
+@ 110 ns------Start _runFSMRising--------
 
 
 @ 110 ns------Start _runExecution--------
@@ -2986,16 +2986,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 110020 ps------End _runDecode--------
 
 
-@ 110020 ps------End _runControlRising--------
+@ 110020 ps------End _runFSMRising--------
 
 
-@ 111 ns------Start _runControlFalling--------
+@ 111 ns------Start _runFSMFalling--------
 
 
-@ 111 ns------End _runControlFalling--------
+@ 111 ns------End _runFSMFalling--------
 
 
-@ 112 ns------Start _runControlRising--------
+@ 112 ns------Start _runFSMRising--------
 
 
 @ 112 ns------Start _runMemAccess--------
@@ -3010,10 +3010,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 112 ns------End _runMemAccess--------
 
 
-@ 112 ns------End _runControlRising--------
+@ 112 ns------End _runFSMRising--------
 
 
-@ 113 ns------Start _runControlFalling--------
+@ 113 ns------Start _runFSMFalling--------
 
 
 @ 113 ns------Start _runRFWrite--------
@@ -3040,10 +3040,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 113020 ps------End _runRFWrite--------
 
 
-@ 113020 ps------End _runControlFalling--------
+@ 113020 ps------End _runFSMFalling--------
 
 
-@ 114 ns------Start _runControlRising--------
+@ 114 ns------Start _runFSMRising--------
 
 
 @ 114 ns------Start _runFetch from PM--------
@@ -3071,10 +3071,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 114020 ps------End _runFetch from PM--------
 
 
-@ 114020 ps------End _runControlRising--------
+@ 114020 ps------End _runFSMRising--------
 
 
-@ 115 ns------Start _runControlFalling--------
+@ 115 ns------Start _runFSMFalling--------
 
 
 @ 115 ns------Start _runDecode--------
@@ -3098,10 +3098,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 115 ns------End _runDecode--------
 
 
-@ 115 ns------End _runControlFalling--------
+@ 115 ns------End _runFSMFalling--------
 
 
-@ 116 ns------Start _runControlRising--------
+@ 116 ns------Start _runFSMRising--------
 
 
 @ 116 ns------Start _runRFRead--------
@@ -3159,16 +3159,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 116040 ps------End _runFetch from PM--------
 
 
-@ 116040 ps------End _runControlRising--------
+@ 116040 ps------End _runFSMRising--------
 
 
-@ 117 ns------Start _runControlFalling--------
+@ 117 ns------Start _runFSMFalling--------
 
 
-@ 117 ns------End _runControlFalling--------
+@ 117 ns------End _runFSMFalling--------
 
 
-@ 118 ns------Start _runControlRising--------
+@ 118 ns------Start _runFSMRising--------
 
 
 @ 118 ns------Start _runExecution--------
@@ -3221,16 +3221,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 118020 ps------End _runDecode--------
 
 
-@ 118020 ps------End _runControlRising--------
+@ 118020 ps------End _runFSMRising--------
 
 
-@ 119 ns------Start _runControlFalling--------
+@ 119 ns------Start _runFSMFalling--------
 
 
-@ 119 ns------End _runControlFalling--------
+@ 119 ns------End _runFSMFalling--------
 
 
-@ 120 ns------Start _runControlRising--------
+@ 120 ns------Start _runFSMRising--------
 
 
 @ 120 ns------Start _runMemAccess--------
@@ -3245,10 +3245,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 120 ns------End _runMemAccess--------
 
 
-@ 120 ns------End _runControlRising--------
+@ 120 ns------End _runFSMRising--------
 
 
-@ 121 ns------Start _runControlFalling--------
+@ 121 ns------Start _runFSMFalling--------
 
 
 @ 121 ns------Start _runRFWrite--------
@@ -3275,10 +3275,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 121020 ps------End _runRFWrite--------
 
 
-@ 121020 ps------End _runControlFalling--------
+@ 121020 ps------End _runFSMFalling--------
 
 
-@ 122 ns------Start _runControlRising--------
+@ 122 ns------Start _runFSMRising--------
 
 
 @ 122 ns------Start _runFetch from PM--------
@@ -3306,10 +3306,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 122020 ps------End _runFetch from PM--------
 
 
-@ 122020 ps------End _runControlRising--------
+@ 122020 ps------End _runFSMRising--------
 
 
-@ 123 ns------Start _runControlFalling--------
+@ 123 ns------Start _runFSMFalling--------
 
 
 @ 123 ns------Start _runDecode--------
@@ -3333,10 +3333,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 123 ns------End _runDecode--------
 
 
-@ 123 ns------End _runControlFalling--------
+@ 123 ns------End _runFSMFalling--------
 
 
-@ 124 ns------Start _runControlRising--------
+@ 124 ns------Start _runFSMRising--------
 
 
 @ 124 ns------Start _runRFRead--------
@@ -3384,16 +3384,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 124020 ps------End _read--------
 
 
-@ 124040 ps------End _runControlRising--------
+@ 124040 ps------End _runFSMRising--------
 
 
-@ 125 ns------Start _runControlFalling--------
+@ 125 ns------Start _runFSMFalling--------
 
 
-@ 125 ns------End _runControlFalling--------
+@ 125 ns------End _runFSMFalling--------
 
 
-@ 126 ns------Start _runControlRising--------
+@ 126 ns------Start _runFSMRising--------
 
 
 @ 126 ns------Start _runExecution--------
@@ -3434,16 +3434,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 126020 ps------End _runControlRising--------
+@ 126020 ps------End _runFSMRising--------
 
 
-@ 127 ns------Start _runControlFalling--------
+@ 127 ns------Start _runFSMFalling--------
 
 
-@ 127 ns------End _runControlFalling--------
+@ 127 ns------End _runFSMFalling--------
 
 
-@ 128 ns------Start _runControlRising--------
+@ 128 ns------Start _runFSMRising--------
 
 
 @ 128 ns------Start _runMemAccess--------
@@ -3458,10 +3458,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 128 ns------End _runMemAccess--------
 
 
-@ 128 ns------End _runControlRising--------
+@ 128 ns------End _runFSMRising--------
 
 
-@ 129 ns------Start _runControlFalling--------
+@ 129 ns------Start _runFSMFalling--------
 
 
 @ 129 ns------Start _runRFWrite--------
@@ -3488,10 +3488,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 129020 ps------End _runRFWrite--------
 
 
-@ 129020 ps------End _runControlFalling--------
+@ 129020 ps------End _runFSMFalling--------
 
 
-@ 130 ns------Start _runControlRising--------
+@ 130 ns------Start _runFSMRising--------
 
 
 @ 130 ns------Start _runFetch from PM--------
@@ -3509,10 +3509,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 130 ns------End _read--------
 
 
-@ 130020 ps------End _runControlRising--------
+@ 130020 ps------End _runFSMRising--------
 
 
-@ 131 ns------Start _runControlFalling--------
+@ 131 ns------Start _runFSMFalling--------
 
 
 @ 131 ns------Start _runDecode--------
@@ -3524,10 +3524,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 131 ns------End _runControlFalling--------
+@ 131 ns------End _runFSMFalling--------
 
 
-@ 132 ns------Start _runControlRising--------
+@ 132 ns------Start _runFSMRising--------
 
 
 @ 132 ns------Start _runRFRead--------
@@ -3563,16 +3563,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 132020 ps------Start _runFetch from PM--------
 
 
-@ 132020 ps------End _runControlRising--------
+@ 132020 ps------End _runFSMRising--------
 
 
-@ 133 ns------Start _runControlFalling--------
+@ 133 ns------Start _runFSMFalling--------
 
 
-@ 133 ns------End _runControlFalling--------
+@ 133 ns------End _runFSMFalling--------
 
 
-@ 134 ns------Start _runControlRising--------
+@ 134 ns------Start _runFSMRising--------
 
 
 @ 134 ns------Start _runExecution--------
@@ -3613,16 +3613,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 134020 ps------End _runControlRising--------
+@ 134020 ps------End _runFSMRising--------
 
 
-@ 135 ns------Start _runControlFalling--------
+@ 135 ns------Start _runFSMFalling--------
 
 
-@ 135 ns------End _runControlFalling--------
+@ 135 ns------End _runFSMFalling--------
 
 
-@ 136 ns------Start _runControlRising--------
+@ 136 ns------Start _runFSMRising--------
 
 
 @ 136 ns------Start _runMemAccess--------
@@ -3637,10 +3637,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 136 ns------End _runMemAccess--------
 
 
-@ 136 ns------End _runControlRising--------
+@ 136 ns------End _runFSMRising--------
 
 
-@ 137 ns------Start _runControlFalling--------
+@ 137 ns------Start _runFSMFalling--------
 
 
 @ 137 ns------Start _runRFWrite--------
@@ -3655,10 +3655,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 137 ns------End _runRFWrite--------
 
 
-@ 137 ns------End _runControlFalling--------
+@ 137 ns------End _runFSMFalling--------
 
 
-@ 138 ns------Start _runControlRising--------
+@ 138 ns------Start _runFSMRising--------
 
 
 @ 138 ns------Start _runFetch from PM--------
@@ -3676,10 +3676,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 138 ns------End _read--------
 
 
-@ 138020 ps------End _runControlRising--------
+@ 138020 ps------End _runFSMRising--------
 
 
-@ 139 ns------Start _runControlFalling--------
+@ 139 ns------Start _runFSMFalling--------
 
 
 @ 139 ns------Start _runDecode--------
@@ -3691,10 +3691,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 139 ns------End _runControlFalling--------
+@ 139 ns------End _runFSMFalling--------
 
 
-@ 140 ns------Start _runControlRising--------
+@ 140 ns------Start _runFSMRising--------
 
 
 @ 140 ns------Start _runRFRead--------
@@ -3729,16 +3729,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 140020 ps------Start _runFetch from PM--------
 
 
-@ 140020 ps------End _runControlRising--------
+@ 140020 ps------End _runFSMRising--------
 
 
-@ 141 ns------Start _runControlFalling--------
+@ 141 ns------Start _runFSMFalling--------
 
 
-@ 141 ns------End _runControlFalling--------
+@ 141 ns------End _runFSMFalling--------
 
 
-@ 142 ns------Start _runControlRising--------
+@ 142 ns------Start _runFSMRising--------
 
 
 @ 142 ns------Start _runExecution--------
@@ -3786,16 +3786,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 142020 ps------End _runControlRising--------
+@ 142020 ps------End _runFSMRising--------
 
 
-@ 143 ns------Start _runControlFalling--------
+@ 143 ns------Start _runFSMFalling--------
 
 
-@ 143 ns------End _runControlFalling--------
+@ 143 ns------End _runFSMFalling--------
 
 
-@ 144 ns------Start _runControlRising--------
+@ 144 ns------Start _runFSMRising--------
 
 
 @ 144 ns------Start _runMemAccess--------
@@ -3810,10 +3810,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 144 ns------End _runMemAccess--------
 
 
-@ 144 ns------End _runControlRising--------
+@ 144 ns------End _runFSMRising--------
 
 
-@ 145 ns------Start _runControlFalling--------
+@ 145 ns------Start _runFSMFalling--------
 
 
 @ 145 ns------Start _runRFWrite--------
@@ -3828,10 +3828,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 145 ns------End _runRFWrite--------
 
 
-@ 145 ns------End _runControlFalling--------
+@ 145 ns------End _runFSMFalling--------
 
 
-@ 146 ns------Start _runControlRising--------
+@ 146 ns------Start _runFSMRising--------
 
 
 @ 146 ns------Start _runFetch from PM--------
@@ -3859,10 +3859,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 146020 ps------End _runFetch from PM--------
 
 
-@ 146020 ps------End _runControlRising--------
+@ 146020 ps------End _runFSMRising--------
 
 
-@ 147 ns------Start _runControlFalling--------
+@ 147 ns------Start _runFSMFalling--------
 
 
 @ 147 ns------Start _runDecode--------
@@ -3886,10 +3886,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 147 ns------End _runDecode--------
 
 
-@ 147 ns------End _runControlFalling--------
+@ 147 ns------End _runFSMFalling--------
 
 
-@ 148 ns------Start _runControlRising--------
+@ 148 ns------Start _runFSMRising--------
 
 
 @ 148 ns------Start _runRFRead--------
@@ -3946,16 +3946,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 148040 ps------End _runFetch from PM--------
 
 
-@ 148040 ps------End _runControlRising--------
+@ 148040 ps------End _runFSMRising--------
 
 
-@ 149 ns------Start _runControlFalling--------
+@ 149 ns------Start _runFSMFalling--------
 
 
-@ 149 ns------End _runControlFalling--------
+@ 149 ns------End _runFSMFalling--------
 
 
-@ 150 ns------Start _runControlRising--------
+@ 150 ns------Start _runFSMRising--------
 
 
 @ 150 ns------Start _runExecution--------
@@ -4008,16 +4008,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 150020 ps------End _runDecode--------
 
 
-@ 150020 ps------End _runControlRising--------
+@ 150020 ps------End _runFSMRising--------
 
 
-@ 151 ns------Start _runControlFalling--------
+@ 151 ns------Start _runFSMFalling--------
 
 
-@ 151 ns------End _runControlFalling--------
+@ 151 ns------End _runFSMFalling--------
 
 
-@ 152 ns------Start _runControlRising--------
+@ 152 ns------Start _runFSMRising--------
 
 
 @ 152 ns------Start _runMemAccess--------
@@ -4032,10 +4032,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 152 ns------End _runMemAccess--------
 
 
-@ 152 ns------End _runControlRising--------
+@ 152 ns------End _runFSMRising--------
 
 
-@ 153 ns------Start _runControlFalling--------
+@ 153 ns------Start _runFSMFalling--------
 
 
 @ 153 ns------Start _runRFWrite--------
@@ -4062,10 +4062,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 153020 ps------End _runRFWrite--------
 
 
-@ 153020 ps------End _runControlFalling--------
+@ 153020 ps------End _runFSMFalling--------
 
 
-@ 154 ns------Start _runControlRising--------
+@ 154 ns------Start _runFSMRising--------
 
 
 @ 154 ns------Start _runFetch from PM--------
@@ -4093,10 +4093,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 154020 ps------End _runFetch from PM--------
 
 
-@ 154020 ps------End _runControlRising--------
+@ 154020 ps------End _runFSMRising--------
 
 
-@ 155 ns------Start _runControlFalling--------
+@ 155 ns------Start _runFSMFalling--------
 
 
 @ 155 ns------Start _runDecode--------
@@ -4120,10 +4120,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 155 ns------End _runDecode--------
 
 
-@ 155 ns------End _runControlFalling--------
+@ 155 ns------End _runFSMFalling--------
 
 
-@ 156 ns------Start _runControlRising--------
+@ 156 ns------Start _runFSMRising--------
 
 
 @ 156 ns------Start _runRFRead--------
@@ -4181,16 +4181,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 156040 ps------End _runFetch from PM--------
 
 
-@ 156040 ps------End _runControlRising--------
+@ 156040 ps------End _runFSMRising--------
 
 
-@ 157 ns------Start _runControlFalling--------
+@ 157 ns------Start _runFSMFalling--------
 
 
-@ 157 ns------End _runControlFalling--------
+@ 157 ns------End _runFSMFalling--------
 
 
-@ 158 ns------Start _runControlRising--------
+@ 158 ns------Start _runFSMRising--------
 
 
 @ 158 ns------Start _runExecution--------
@@ -4243,16 +4243,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 158020 ps------End _runDecode--------
 
 
-@ 158020 ps------End _runControlRising--------
+@ 158020 ps------End _runFSMRising--------
 
 
-@ 159 ns------Start _runControlFalling--------
+@ 159 ns------Start _runFSMFalling--------
 
 
-@ 159 ns------End _runControlFalling--------
+@ 159 ns------End _runFSMFalling--------
 
 
-@ 160 ns------Start _runControlRising--------
+@ 160 ns------Start _runFSMRising--------
 
 
 @ 160 ns------Start _runMemAccess--------
@@ -4267,10 +4267,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 160 ns------End _runMemAccess--------
 
 
-@ 160 ns------End _runControlRising--------
+@ 160 ns------End _runFSMRising--------
 
 
-@ 161 ns------Start _runControlFalling--------
+@ 161 ns------Start _runFSMFalling--------
 
 
 @ 161 ns------Start _runRFWrite--------
@@ -4297,10 +4297,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 161020 ps------End _runRFWrite--------
 
 
-@ 161020 ps------End _runControlFalling--------
+@ 161020 ps------End _runFSMFalling--------
 
 
-@ 162 ns------Start _runControlRising--------
+@ 162 ns------Start _runFSMRising--------
 
 
 @ 162 ns------Start _runFetch from PM--------
@@ -4328,10 +4328,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 162020 ps------End _runFetch from PM--------
 
 
-@ 162020 ps------End _runControlRising--------
+@ 162020 ps------End _runFSMRising--------
 
 
-@ 163 ns------Start _runControlFalling--------
+@ 163 ns------Start _runFSMFalling--------
 
 
 @ 163 ns------Start _runDecode--------
@@ -4355,10 +4355,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 163 ns------End _runDecode--------
 
 
-@ 163 ns------End _runControlFalling--------
+@ 163 ns------End _runFSMFalling--------
 
 
-@ 164 ns------Start _runControlRising--------
+@ 164 ns------Start _runFSMRising--------
 
 
 @ 164 ns------Start _runRFRead--------
@@ -4406,16 +4406,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 164020 ps------End _read--------
 
 
-@ 164040 ps------End _runControlRising--------
+@ 164040 ps------End _runFSMRising--------
 
 
-@ 165 ns------Start _runControlFalling--------
+@ 165 ns------Start _runFSMFalling--------
 
 
-@ 165 ns------End _runControlFalling--------
+@ 165 ns------End _runFSMFalling--------
 
 
-@ 166 ns------Start _runControlRising--------
+@ 166 ns------Start _runFSMRising--------
 
 
 @ 166 ns------Start _runExecution--------
@@ -4456,16 +4456,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 166020 ps------End _runControlRising--------
+@ 166020 ps------End _runFSMRising--------
 
 
-@ 167 ns------Start _runControlFalling--------
+@ 167 ns------Start _runFSMFalling--------
 
 
-@ 167 ns------End _runControlFalling--------
+@ 167 ns------End _runFSMFalling--------
 
 
-@ 168 ns------Start _runControlRising--------
+@ 168 ns------Start _runFSMRising--------
 
 
 @ 168 ns------Start _runMemAccess--------
@@ -4480,10 +4480,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 168 ns------End _runMemAccess--------
 
 
-@ 168 ns------End _runControlRising--------
+@ 168 ns------End _runFSMRising--------
 
 
-@ 169 ns------Start _runControlFalling--------
+@ 169 ns------Start _runFSMFalling--------
 
 
 @ 169 ns------Start _runRFWrite--------
@@ -4510,10 +4510,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 169020 ps------End _runRFWrite--------
 
 
-@ 169020 ps------End _runControlFalling--------
+@ 169020 ps------End _runFSMFalling--------
 
 
-@ 170 ns------Start _runControlRising--------
+@ 170 ns------Start _runFSMRising--------
 
 
 @ 170 ns------Start _runFetch from PM--------
@@ -4531,10 +4531,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 170 ns------End _read--------
 
 
-@ 170020 ps------End _runControlRising--------
+@ 170020 ps------End _runFSMRising--------
 
 
-@ 171 ns------Start _runControlFalling--------
+@ 171 ns------Start _runFSMFalling--------
 
 
 @ 171 ns------Start _runDecode--------
@@ -4546,10 +4546,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 171 ns------End _runControlFalling--------
+@ 171 ns------End _runFSMFalling--------
 
 
-@ 172 ns------Start _runControlRising--------
+@ 172 ns------Start _runFSMRising--------
 
 
 @ 172 ns------Start _runRFRead--------
@@ -4585,16 +4585,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 172020 ps------Start _runFetch from PM--------
 
 
-@ 172020 ps------End _runControlRising--------
+@ 172020 ps------End _runFSMRising--------
 
 
-@ 173 ns------Start _runControlFalling--------
+@ 173 ns------Start _runFSMFalling--------
 
 
-@ 173 ns------End _runControlFalling--------
+@ 173 ns------End _runFSMFalling--------
 
 
-@ 174 ns------Start _runControlRising--------
+@ 174 ns------Start _runFSMRising--------
 
 
 @ 174 ns------Start _runExecution--------
@@ -4635,16 +4635,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 174020 ps------End _runControlRising--------
+@ 174020 ps------End _runFSMRising--------
 
 
-@ 175 ns------Start _runControlFalling--------
+@ 175 ns------Start _runFSMFalling--------
 
 
-@ 175 ns------End _runControlFalling--------
+@ 175 ns------End _runFSMFalling--------
 
 
-@ 176 ns------Start _runControlRising--------
+@ 176 ns------Start _runFSMRising--------
 
 
 @ 176 ns------Start _runMemAccess--------
@@ -4659,10 +4659,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 176 ns------End _runMemAccess--------
 
 
-@ 176 ns------End _runControlRising--------
+@ 176 ns------End _runFSMRising--------
 
 
-@ 177 ns------Start _runControlFalling--------
+@ 177 ns------Start _runFSMFalling--------
 
 
 @ 177 ns------Start _runRFWrite--------
@@ -4677,10 +4677,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 177 ns------End _runRFWrite--------
 
 
-@ 177 ns------End _runControlFalling--------
+@ 177 ns------End _runFSMFalling--------
 
 
-@ 178 ns------Start _runControlRising--------
+@ 178 ns------Start _runFSMRising--------
 
 
 @ 178 ns------Start _runFetch from PM--------
@@ -4698,10 +4698,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 178 ns------End _read--------
 
 
-@ 178020 ps------End _runControlRising--------
+@ 178020 ps------End _runFSMRising--------
 
 
-@ 179 ns------Start _runControlFalling--------
+@ 179 ns------Start _runFSMFalling--------
 
 
 @ 179 ns------Start _runDecode--------
@@ -4713,10 +4713,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 179 ns------End _runControlFalling--------
+@ 179 ns------End _runFSMFalling--------
 
 
-@ 180 ns------Start _runControlRising--------
+@ 180 ns------Start _runFSMRising--------
 
 
 @ 180 ns------Start _runRFRead--------
@@ -4751,16 +4751,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 180020 ps------Start _runFetch from PM--------
 
 
-@ 180020 ps------End _runControlRising--------
+@ 180020 ps------End _runFSMRising--------
 
 
-@ 181 ns------Start _runControlFalling--------
+@ 181 ns------Start _runFSMFalling--------
 
 
-@ 181 ns------End _runControlFalling--------
+@ 181 ns------End _runFSMFalling--------
 
 
-@ 182 ns------Start _runControlRising--------
+@ 182 ns------Start _runFSMRising--------
 
 
 @ 182 ns------Start _runExecution--------
@@ -4808,16 +4808,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 182020 ps------End _runControlRising--------
+@ 182020 ps------End _runFSMRising--------
 
 
-@ 183 ns------Start _runControlFalling--------
+@ 183 ns------Start _runFSMFalling--------
 
 
-@ 183 ns------End _runControlFalling--------
+@ 183 ns------End _runFSMFalling--------
 
 
-@ 184 ns------Start _runControlRising--------
+@ 184 ns------Start _runFSMRising--------
 
 
 @ 184 ns------Start _runMemAccess--------
@@ -4832,10 +4832,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 184 ns------End _runMemAccess--------
 
 
-@ 184 ns------End _runControlRising--------
+@ 184 ns------End _runFSMRising--------
 
 
-@ 185 ns------Start _runControlFalling--------
+@ 185 ns------Start _runFSMFalling--------
 
 
 @ 185 ns------Start _runRFWrite--------
@@ -4850,10 +4850,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 185 ns------End _runRFWrite--------
 
 
-@ 185 ns------End _runControlFalling--------
+@ 185 ns------End _runFSMFalling--------
 
 
-@ 186 ns------Start _runControlRising--------
+@ 186 ns------Start _runFSMRising--------
 
 
 @ 186 ns------Start _runFetch from PM--------
@@ -4881,10 +4881,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 186020 ps------End _runFetch from PM--------
 
 
-@ 186020 ps------End _runControlRising--------
+@ 186020 ps------End _runFSMRising--------
 
 
-@ 187 ns------Start _runControlFalling--------
+@ 187 ns------Start _runFSMFalling--------
 
 
 @ 187 ns------Start _runDecode--------
@@ -4908,10 +4908,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 187 ns------End _runDecode--------
 
 
-@ 187 ns------End _runControlFalling--------
+@ 187 ns------End _runFSMFalling--------
 
 
-@ 188 ns------Start _runControlRising--------
+@ 188 ns------Start _runFSMRising--------
 
 
 @ 188 ns------Start _runRFRead--------
@@ -4968,16 +4968,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 188040 ps------End _runFetch from PM--------
 
 
-@ 188040 ps------End _runControlRising--------
+@ 188040 ps------End _runFSMRising--------
 
 
-@ 189 ns------Start _runControlFalling--------
+@ 189 ns------Start _runFSMFalling--------
 
 
-@ 189 ns------End _runControlFalling--------
+@ 189 ns------End _runFSMFalling--------
 
 
-@ 190 ns------Start _runControlRising--------
+@ 190 ns------Start _runFSMRising--------
 
 
 @ 190 ns------Start _runExecution--------
@@ -5030,16 +5030,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 190020 ps------End _runDecode--------
 
 
-@ 190020 ps------End _runControlRising--------
+@ 190020 ps------End _runFSMRising--------
 
 
-@ 191 ns------Start _runControlFalling--------
+@ 191 ns------Start _runFSMFalling--------
 
 
-@ 191 ns------End _runControlFalling--------
+@ 191 ns------End _runFSMFalling--------
 
 
-@ 192 ns------Start _runControlRising--------
+@ 192 ns------Start _runFSMRising--------
 
 
 @ 192 ns------Start _runMemAccess--------
@@ -5054,10 +5054,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 192 ns------End _runMemAccess--------
 
 
-@ 192 ns------End _runControlRising--------
+@ 192 ns------End _runFSMRising--------
 
 
-@ 193 ns------Start _runControlFalling--------
+@ 193 ns------Start _runFSMFalling--------
 
 
 @ 193 ns------Start _runRFWrite--------
@@ -5084,10 +5084,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 193020 ps------End _runRFWrite--------
 
 
-@ 193020 ps------End _runControlFalling--------
+@ 193020 ps------End _runFSMFalling--------
 
 
-@ 194 ns------Start _runControlRising--------
+@ 194 ns------Start _runFSMRising--------
 
 
 @ 194 ns------Start _runFetch from PM--------
@@ -5115,10 +5115,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 194020 ps------End _runFetch from PM--------
 
 
-@ 194020 ps------End _runControlRising--------
+@ 194020 ps------End _runFSMRising--------
 
 
-@ 195 ns------Start _runControlFalling--------
+@ 195 ns------Start _runFSMFalling--------
 
 
 @ 195 ns------Start _runDecode--------
@@ -5142,10 +5142,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 195 ns------End _runDecode--------
 
 
-@ 195 ns------End _runControlFalling--------
+@ 195 ns------End _runFSMFalling--------
 
 
-@ 196 ns------Start _runControlRising--------
+@ 196 ns------Start _runFSMRising--------
 
 
 @ 196 ns------Start _runRFRead--------
@@ -5203,16 +5203,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 196040 ps------End _runFetch from PM--------
 
 
-@ 196040 ps------End _runControlRising--------
+@ 196040 ps------End _runFSMRising--------
 
 
-@ 197 ns------Start _runControlFalling--------
+@ 197 ns------Start _runFSMFalling--------
 
 
-@ 197 ns------End _runControlFalling--------
+@ 197 ns------End _runFSMFalling--------
 
 
-@ 198 ns------Start _runControlRising--------
+@ 198 ns------Start _runFSMRising--------
 
 
 @ 198 ns------Start _runExecution--------
@@ -5265,16 +5265,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 198020 ps------End _runDecode--------
 
 
-@ 198020 ps------End _runControlRising--------
+@ 198020 ps------End _runFSMRising--------
 
 
-@ 199 ns------Start _runControlFalling--------
+@ 199 ns------Start _runFSMFalling--------
 
 
-@ 199 ns------End _runControlFalling--------
+@ 199 ns------End _runFSMFalling--------
 
 
-@ 200 ns------Start _runControlRising--------
+@ 200 ns------Start _runFSMRising--------
 
 
 @ 200 ns------Start _runMemAccess--------
@@ -5289,10 +5289,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 200 ns------End _runMemAccess--------
 
 
-@ 200 ns------End _runControlRising--------
+@ 200 ns------End _runFSMRising--------
 
 
-@ 201 ns------Start _runControlFalling--------
+@ 201 ns------Start _runFSMFalling--------
 
 
 @ 201 ns------Start _runRFWrite--------
@@ -5319,10 +5319,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 201020 ps------End _runRFWrite--------
 
 
-@ 201020 ps------End _runControlFalling--------
+@ 201020 ps------End _runFSMFalling--------
 
 
-@ 202 ns------Start _runControlRising--------
+@ 202 ns------Start _runFSMRising--------
 
 
 @ 202 ns------Start _runFetch from PM--------
@@ -5350,10 +5350,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 202020 ps------End _runFetch from PM--------
 
 
-@ 202020 ps------End _runControlRising--------
+@ 202020 ps------End _runFSMRising--------
 
 
-@ 203 ns------Start _runControlFalling--------
+@ 203 ns------Start _runFSMFalling--------
 
 
 @ 203 ns------Start _runDecode--------
@@ -5377,10 +5377,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 203 ns------End _runDecode--------
 
 
-@ 203 ns------End _runControlFalling--------
+@ 203 ns------End _runFSMFalling--------
 
 
-@ 204 ns------Start _runControlRising--------
+@ 204 ns------Start _runFSMRising--------
 
 
 @ 204 ns------Start _runRFRead--------
@@ -5428,16 +5428,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 204020 ps------End _read--------
 
 
-@ 204040 ps------End _runControlRising--------
+@ 204040 ps------End _runFSMRising--------
 
 
-@ 205 ns------Start _runControlFalling--------
+@ 205 ns------Start _runFSMFalling--------
 
 
-@ 205 ns------End _runControlFalling--------
+@ 205 ns------End _runFSMFalling--------
 
 
-@ 206 ns------Start _runControlRising--------
+@ 206 ns------Start _runFSMRising--------
 
 
 @ 206 ns------Start _runExecution--------
@@ -5478,16 +5478,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 206020 ps------End _runControlRising--------
+@ 206020 ps------End _runFSMRising--------
 
 
-@ 207 ns------Start _runControlFalling--------
+@ 207 ns------Start _runFSMFalling--------
 
 
-@ 207 ns------End _runControlFalling--------
+@ 207 ns------End _runFSMFalling--------
 
 
-@ 208 ns------Start _runControlRising--------
+@ 208 ns------Start _runFSMRising--------
 
 
 @ 208 ns------Start _runMemAccess--------
@@ -5502,10 +5502,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 208 ns------End _runMemAccess--------
 
 
-@ 208 ns------End _runControlRising--------
+@ 208 ns------End _runFSMRising--------
 
 
-@ 209 ns------Start _runControlFalling--------
+@ 209 ns------Start _runFSMFalling--------
 
 
 @ 209 ns------Start _runRFWrite--------
@@ -5532,10 +5532,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 209020 ps------End _runRFWrite--------
 
 
-@ 209020 ps------End _runControlFalling--------
+@ 209020 ps------End _runFSMFalling--------
 
 
-@ 210 ns------Start _runControlRising--------
+@ 210 ns------Start _runFSMRising--------
 
 
 @ 210 ns------Start _runFetch from PM--------
@@ -5553,10 +5553,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 210 ns------End _read--------
 
 
-@ 210020 ps------End _runControlRising--------
+@ 210020 ps------End _runFSMRising--------
 
 
-@ 211 ns------Start _runControlFalling--------
+@ 211 ns------Start _runFSMFalling--------
 
 
 @ 211 ns------Start _runDecode--------
@@ -5568,10 +5568,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 211 ns------End _runControlFalling--------
+@ 211 ns------End _runFSMFalling--------
 
 
-@ 212 ns------Start _runControlRising--------
+@ 212 ns------Start _runFSMRising--------
 
 
 @ 212 ns------Start _runRFRead--------
@@ -5607,16 +5607,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 212020 ps------Start _runFetch from PM--------
 
 
-@ 212020 ps------End _runControlRising--------
+@ 212020 ps------End _runFSMRising--------
 
 
-@ 213 ns------Start _runControlFalling--------
+@ 213 ns------Start _runFSMFalling--------
 
 
-@ 213 ns------End _runControlFalling--------
+@ 213 ns------End _runFSMFalling--------
 
 
-@ 214 ns------Start _runControlRising--------
+@ 214 ns------Start _runFSMRising--------
 
 
 @ 214 ns------Start _runExecution--------
@@ -5657,16 +5657,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 214020 ps------End _runControlRising--------
+@ 214020 ps------End _runFSMRising--------
 
 
-@ 215 ns------Start _runControlFalling--------
+@ 215 ns------Start _runFSMFalling--------
 
 
-@ 215 ns------End _runControlFalling--------
+@ 215 ns------End _runFSMFalling--------
 
 
-@ 216 ns------Start _runControlRising--------
+@ 216 ns------Start _runFSMRising--------
 
 
 @ 216 ns------Start _runMemAccess--------
@@ -5681,10 +5681,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 216 ns------End _runMemAccess--------
 
 
-@ 216 ns------End _runControlRising--------
+@ 216 ns------End _runFSMRising--------
 
 
-@ 217 ns------Start _runControlFalling--------
+@ 217 ns------Start _runFSMFalling--------
 
 
 @ 217 ns------Start _runRFWrite--------
@@ -5699,10 +5699,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 217 ns------End _runRFWrite--------
 
 
-@ 217 ns------End _runControlFalling--------
+@ 217 ns------End _runFSMFalling--------
 
 
-@ 218 ns------Start _runControlRising--------
+@ 218 ns------Start _runFSMRising--------
 
 
 @ 218 ns------Start _runFetch from PM--------
@@ -5720,10 +5720,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 218 ns------End _read--------
 
 
-@ 218020 ps------End _runControlRising--------
+@ 218020 ps------End _runFSMRising--------
 
 
-@ 219 ns------Start _runControlFalling--------
+@ 219 ns------Start _runFSMFalling--------
 
 
 @ 219 ns------Start _runDecode--------
@@ -5735,10 +5735,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 219 ns------End _runControlFalling--------
+@ 219 ns------End _runFSMFalling--------
 
 
-@ 220 ns------Start _runControlRising--------
+@ 220 ns------Start _runFSMRising--------
 
 
 @ 220 ns------Start _runRFRead--------
@@ -5773,16 +5773,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 220020 ps------Start _runFetch from PM--------
 
 
-@ 220020 ps------End _runControlRising--------
+@ 220020 ps------End _runFSMRising--------
 
 
-@ 221 ns------Start _runControlFalling--------
+@ 221 ns------Start _runFSMFalling--------
 
 
-@ 221 ns------End _runControlFalling--------
+@ 221 ns------End _runFSMFalling--------
 
 
-@ 222 ns------Start _runControlRising--------
+@ 222 ns------Start _runFSMRising--------
 
 
 @ 222 ns------Start _runExecution--------
@@ -5830,16 +5830,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 222020 ps------End _runControlRising--------
+@ 222020 ps------End _runFSMRising--------
 
 
-@ 223 ns------Start _runControlFalling--------
+@ 223 ns------Start _runFSMFalling--------
 
 
-@ 223 ns------End _runControlFalling--------
+@ 223 ns------End _runFSMFalling--------
 
 
-@ 224 ns------Start _runControlRising--------
+@ 224 ns------Start _runFSMRising--------
 
 
 @ 224 ns------Start _runMemAccess--------
@@ -5854,10 +5854,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 224 ns------End _runMemAccess--------
 
 
-@ 224 ns------End _runControlRising--------
+@ 224 ns------End _runFSMRising--------
 
 
-@ 225 ns------Start _runControlFalling--------
+@ 225 ns------Start _runFSMFalling--------
 
 
 @ 225 ns------Start _runRFWrite--------
@@ -5872,10 +5872,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 225 ns------End _runRFWrite--------
 
 
-@ 225 ns------End _runControlFalling--------
+@ 225 ns------End _runFSMFalling--------
 
 
-@ 226 ns------Start _runControlRising--------
+@ 226 ns------Start _runFSMRising--------
 
 
 @ 226 ns------Start _runFetch from PM--------
@@ -5903,10 +5903,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 226020 ps------End _runFetch from PM--------
 
 
-@ 226020 ps------End _runControlRising--------
+@ 226020 ps------End _runFSMRising--------
 
 
-@ 227 ns------Start _runControlFalling--------
+@ 227 ns------Start _runFSMFalling--------
 
 
 @ 227 ns------Start _runDecode--------
@@ -5930,10 +5930,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 227 ns------End _runDecode--------
 
 
-@ 227 ns------End _runControlFalling--------
+@ 227 ns------End _runFSMFalling--------
 
 
-@ 228 ns------Start _runControlRising--------
+@ 228 ns------Start _runFSMRising--------
 
 
 @ 228 ns------Start _runRFRead--------
@@ -5990,16 +5990,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 228040 ps------End _runFetch from PM--------
 
 
-@ 228040 ps------End _runControlRising--------
+@ 228040 ps------End _runFSMRising--------
 
 
-@ 229 ns------Start _runControlFalling--------
+@ 229 ns------Start _runFSMFalling--------
 
 
-@ 229 ns------End _runControlFalling--------
+@ 229 ns------End _runFSMFalling--------
 
 
-@ 230 ns------Start _runControlRising--------
+@ 230 ns------Start _runFSMRising--------
 
 
 @ 230 ns------Start _runExecution--------
@@ -6052,16 +6052,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 230020 ps------End _runDecode--------
 
 
-@ 230020 ps------End _runControlRising--------
+@ 230020 ps------End _runFSMRising--------
 
 
-@ 231 ns------Start _runControlFalling--------
+@ 231 ns------Start _runFSMFalling--------
 
 
-@ 231 ns------End _runControlFalling--------
+@ 231 ns------End _runFSMFalling--------
 
 
-@ 232 ns------Start _runControlRising--------
+@ 232 ns------Start _runFSMRising--------
 
 
 @ 232 ns------Start _runMemAccess--------
@@ -6076,10 +6076,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 232 ns------End _runMemAccess--------
 
 
-@ 232 ns------End _runControlRising--------
+@ 232 ns------End _runFSMRising--------
 
 
-@ 233 ns------Start _runControlFalling--------
+@ 233 ns------Start _runFSMFalling--------
 
 
 @ 233 ns------Start _runRFWrite--------
@@ -6106,10 +6106,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 233020 ps------End _runRFWrite--------
 
 
-@ 233020 ps------End _runControlFalling--------
+@ 233020 ps------End _runFSMFalling--------
 
 
-@ 234 ns------Start _runControlRising--------
+@ 234 ns------Start _runFSMRising--------
 
 
 @ 234 ns------Start _runFetch from PM--------
@@ -6137,10 +6137,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 234020 ps------End _runFetch from PM--------
 
 
-@ 234020 ps------End _runControlRising--------
+@ 234020 ps------End _runFSMRising--------
 
 
-@ 235 ns------Start _runControlFalling--------
+@ 235 ns------Start _runFSMFalling--------
 
 
 @ 235 ns------Start _runDecode--------
@@ -6164,10 +6164,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 235 ns------End _runDecode--------
 
 
-@ 235 ns------End _runControlFalling--------
+@ 235 ns------End _runFSMFalling--------
 
 
-@ 236 ns------Start _runControlRising--------
+@ 236 ns------Start _runFSMRising--------
 
 
 @ 236 ns------Start _runRFRead--------
@@ -6225,16 +6225,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 236040 ps------End _runFetch from PM--------
 
 
-@ 236040 ps------End _runControlRising--------
+@ 236040 ps------End _runFSMRising--------
 
 
-@ 237 ns------Start _runControlFalling--------
+@ 237 ns------Start _runFSMFalling--------
 
 
-@ 237 ns------End _runControlFalling--------
+@ 237 ns------End _runFSMFalling--------
 
 
-@ 238 ns------Start _runControlRising--------
+@ 238 ns------Start _runFSMRising--------
 
 
 @ 238 ns------Start _runExecution--------
@@ -6287,16 +6287,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 238020 ps------End _runDecode--------
 
 
-@ 238020 ps------End _runControlRising--------
+@ 238020 ps------End _runFSMRising--------
 
 
-@ 239 ns------Start _runControlFalling--------
+@ 239 ns------Start _runFSMFalling--------
 
 
-@ 239 ns------End _runControlFalling--------
+@ 239 ns------End _runFSMFalling--------
 
 
-@ 240 ns------Start _runControlRising--------
+@ 240 ns------Start _runFSMRising--------
 
 
 @ 240 ns------Start _runMemAccess--------
@@ -6311,10 +6311,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 240 ns------End _runMemAccess--------
 
 
-@ 240 ns------End _runControlRising--------
+@ 240 ns------End _runFSMRising--------
 
 
-@ 241 ns------Start _runControlFalling--------
+@ 241 ns------Start _runFSMFalling--------
 
 
 @ 241 ns------Start _runRFWrite--------
@@ -6341,10 +6341,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 241020 ps------End _runRFWrite--------
 
 
-@ 241020 ps------End _runControlFalling--------
+@ 241020 ps------End _runFSMFalling--------
 
 
-@ 242 ns------Start _runControlRising--------
+@ 242 ns------Start _runFSMRising--------
 
 
 @ 242 ns------Start _runFetch from PM--------
@@ -6372,10 +6372,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 242020 ps------End _runFetch from PM--------
 
 
-@ 242020 ps------End _runControlRising--------
+@ 242020 ps------End _runFSMRising--------
 
 
-@ 243 ns------Start _runControlFalling--------
+@ 243 ns------Start _runFSMFalling--------
 
 
 @ 243 ns------Start _runDecode--------
@@ -6399,10 +6399,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 243 ns------End _runDecode--------
 
 
-@ 243 ns------End _runControlFalling--------
+@ 243 ns------End _runFSMFalling--------
 
 
-@ 244 ns------Start _runControlRising--------
+@ 244 ns------Start _runFSMRising--------
 
 
 @ 244 ns------Start _runRFRead--------
@@ -6450,16 +6450,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 244020 ps------End _read--------
 
 
-@ 244040 ps------End _runControlRising--------
+@ 244040 ps------End _runFSMRising--------
 
 
-@ 245 ns------Start _runControlFalling--------
+@ 245 ns------Start _runFSMFalling--------
 
 
-@ 245 ns------End _runControlFalling--------
+@ 245 ns------End _runFSMFalling--------
 
 
-@ 246 ns------Start _runControlRising--------
+@ 246 ns------Start _runFSMRising--------
 
 
 @ 246 ns------Start _runExecution--------
@@ -6500,16 +6500,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 246020 ps------End _runControlRising--------
+@ 246020 ps------End _runFSMRising--------
 
 
-@ 247 ns------Start _runControlFalling--------
+@ 247 ns------Start _runFSMFalling--------
 
 
-@ 247 ns------End _runControlFalling--------
+@ 247 ns------End _runFSMFalling--------
 
 
-@ 248 ns------Start _runControlRising--------
+@ 248 ns------Start _runFSMRising--------
 
 
 @ 248 ns------Start _runMemAccess--------
@@ -6524,10 +6524,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 248 ns------End _runMemAccess--------
 
 
-@ 248 ns------End _runControlRising--------
+@ 248 ns------End _runFSMRising--------
 
 
-@ 249 ns------Start _runControlFalling--------
+@ 249 ns------Start _runFSMFalling--------
 
 
 @ 249 ns------Start _runRFWrite--------
@@ -6554,10 +6554,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 249020 ps------End _runRFWrite--------
 
 
-@ 249020 ps------End _runControlFalling--------
+@ 249020 ps------End _runFSMFalling--------
 
 
-@ 250 ns------Start _runControlRising--------
+@ 250 ns------Start _runFSMRising--------
 
 
 @ 250 ns------Start _runFetch from PM--------
@@ -6575,10 +6575,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 250 ns------End _read--------
 
 
-@ 250020 ps------End _runControlRising--------
+@ 250020 ps------End _runFSMRising--------
 
 
-@ 251 ns------Start _runControlFalling--------
+@ 251 ns------Start _runFSMFalling--------
 
 
 @ 251 ns------Start _runDecode--------
@@ -6590,10 +6590,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 251 ns------End _runControlFalling--------
+@ 251 ns------End _runFSMFalling--------
 
 
-@ 252 ns------Start _runControlRising--------
+@ 252 ns------Start _runFSMRising--------
 
 
 @ 252 ns------Start _runRFRead--------
@@ -6629,16 +6629,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 252020 ps------Start _runFetch from PM--------
 
 
-@ 252020 ps------End _runControlRising--------
+@ 252020 ps------End _runFSMRising--------
 
 
-@ 253 ns------Start _runControlFalling--------
+@ 253 ns------Start _runFSMFalling--------
 
 
-@ 253 ns------End _runControlFalling--------
+@ 253 ns------End _runFSMFalling--------
 
 
-@ 254 ns------Start _runControlRising--------
+@ 254 ns------Start _runFSMRising--------
 
 
 @ 254 ns------Start _runExecution--------
@@ -6679,16 +6679,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 254020 ps------End _runControlRising--------
+@ 254020 ps------End _runFSMRising--------
 
 
-@ 255 ns------Start _runControlFalling--------
+@ 255 ns------Start _runFSMFalling--------
 
 
-@ 255 ns------End _runControlFalling--------
+@ 255 ns------End _runFSMFalling--------
 
 
-@ 256 ns------Start _runControlRising--------
+@ 256 ns------Start _runFSMRising--------
 
 
 @ 256 ns------Start _runMemAccess--------
@@ -6703,10 +6703,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 256 ns------End _runMemAccess--------
 
 
-@ 256 ns------End _runControlRising--------
+@ 256 ns------End _runFSMRising--------
 
 
-@ 257 ns------Start _runControlFalling--------
+@ 257 ns------Start _runFSMFalling--------
 
 
 @ 257 ns------Start _runRFWrite--------
@@ -6721,10 +6721,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 257 ns------End _runRFWrite--------
 
 
-@ 257 ns------End _runControlFalling--------
+@ 257 ns------End _runFSMFalling--------
 
 
-@ 258 ns------Start _runControlRising--------
+@ 258 ns------Start _runFSMRising--------
 
 
 @ 258 ns------Start _runFetch from PM--------
@@ -6742,10 +6742,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 258 ns------End _read--------
 
 
-@ 258020 ps------End _runControlRising--------
+@ 258020 ps------End _runFSMRising--------
 
 
-@ 259 ns------Start _runControlFalling--------
+@ 259 ns------Start _runFSMFalling--------
 
 
 @ 259 ns------Start _runDecode--------
@@ -6757,10 +6757,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 259 ns------End _runControlFalling--------
+@ 259 ns------End _runFSMFalling--------
 
 
-@ 260 ns------Start _runControlRising--------
+@ 260 ns------Start _runFSMRising--------
 
 
 @ 260 ns------Start _runRFRead--------
@@ -6795,16 +6795,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 260020 ps------Start _runFetch from PM--------
 
 
-@ 260020 ps------End _runControlRising--------
+@ 260020 ps------End _runFSMRising--------
 
 
-@ 261 ns------Start _runControlFalling--------
+@ 261 ns------Start _runFSMFalling--------
 
 
-@ 261 ns------End _runControlFalling--------
+@ 261 ns------End _runFSMFalling--------
 
 
-@ 262 ns------Start _runControlRising--------
+@ 262 ns------Start _runFSMRising--------
 
 
 @ 262 ns------Start _runExecution--------
@@ -6852,16 +6852,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 262020 ps------End _runControlRising--------
+@ 262020 ps------End _runFSMRising--------
 
 
-@ 263 ns------Start _runControlFalling--------
+@ 263 ns------Start _runFSMFalling--------
 
 
-@ 263 ns------End _runControlFalling--------
+@ 263 ns------End _runFSMFalling--------
 
 
-@ 264 ns------Start _runControlRising--------
+@ 264 ns------Start _runFSMRising--------
 
 
 @ 264 ns------Start _runMemAccess--------
@@ -6876,10 +6876,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 264 ns------End _runMemAccess--------
 
 
-@ 264 ns------End _runControlRising--------
+@ 264 ns------End _runFSMRising--------
 
 
-@ 265 ns------Start _runControlFalling--------
+@ 265 ns------Start _runFSMFalling--------
 
 
 @ 265 ns------Start _runRFWrite--------
@@ -6894,10 +6894,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 265 ns------End _runRFWrite--------
 
 
-@ 265 ns------End _runControlFalling--------
+@ 265 ns------End _runFSMFalling--------
 
 
-@ 266 ns------Start _runControlRising--------
+@ 266 ns------Start _runFSMRising--------
 
 
 @ 266 ns------Start _runFetch from PM--------
@@ -6925,10 +6925,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 266020 ps------End _runFetch from PM--------
 
 
-@ 266020 ps------End _runControlRising--------
+@ 266020 ps------End _runFSMRising--------
 
 
-@ 267 ns------Start _runControlFalling--------
+@ 267 ns------Start _runFSMFalling--------
 
 
 @ 267 ns------Start _runDecode--------
@@ -6952,10 +6952,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 267 ns------End _runDecode--------
 
 
-@ 267 ns------End _runControlFalling--------
+@ 267 ns------End _runFSMFalling--------
 
 
-@ 268 ns------Start _runControlRising--------
+@ 268 ns------Start _runFSMRising--------
 
 
 @ 268 ns------Start _runRFRead--------
@@ -7012,16 +7012,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 268040 ps------End _runFetch from PM--------
 
 
-@ 268040 ps------End _runControlRising--------
+@ 268040 ps------End _runFSMRising--------
 
 
-@ 269 ns------Start _runControlFalling--------
+@ 269 ns------Start _runFSMFalling--------
 
 
-@ 269 ns------End _runControlFalling--------
+@ 269 ns------End _runFSMFalling--------
 
 
-@ 270 ns------Start _runControlRising--------
+@ 270 ns------Start _runFSMRising--------
 
 
 @ 270 ns------Start _runExecution--------
@@ -7074,16 +7074,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 270020 ps------End _runDecode--------
 
 
-@ 270020 ps------End _runControlRising--------
+@ 270020 ps------End _runFSMRising--------
 
 
-@ 271 ns------Start _runControlFalling--------
+@ 271 ns------Start _runFSMFalling--------
 
 
-@ 271 ns------End _runControlFalling--------
+@ 271 ns------End _runFSMFalling--------
 
 
-@ 272 ns------Start _runControlRising--------
+@ 272 ns------Start _runFSMRising--------
 
 
 @ 272 ns------Start _runMemAccess--------
@@ -7098,10 +7098,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 272 ns------End _runMemAccess--------
 
 
-@ 272 ns------End _runControlRising--------
+@ 272 ns------End _runFSMRising--------
 
 
-@ 273 ns------Start _runControlFalling--------
+@ 273 ns------Start _runFSMFalling--------
 
 
 @ 273 ns------Start _runRFWrite--------
@@ -7128,10 +7128,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 273020 ps------End _runRFWrite--------
 
 
-@ 273020 ps------End _runControlFalling--------
+@ 273020 ps------End _runFSMFalling--------
 
 
-@ 274 ns------Start _runControlRising--------
+@ 274 ns------Start _runFSMRising--------
 
 
 @ 274 ns------Start _runFetch from PM--------
@@ -7159,10 +7159,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 274020 ps------End _runFetch from PM--------
 
 
-@ 274020 ps------End _runControlRising--------
+@ 274020 ps------End _runFSMRising--------
 
 
-@ 275 ns------Start _runControlFalling--------
+@ 275 ns------Start _runFSMFalling--------
 
 
 @ 275 ns------Start _runDecode--------
@@ -7186,10 +7186,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 275 ns------End _runDecode--------
 
 
-@ 275 ns------End _runControlFalling--------
+@ 275 ns------End _runFSMFalling--------
 
 
-@ 276 ns------Start _runControlRising--------
+@ 276 ns------Start _runFSMRising--------
 
 
 @ 276 ns------Start _runRFRead--------
@@ -7247,16 +7247,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 276040 ps------End _runFetch from PM--------
 
 
-@ 276040 ps------End _runControlRising--------
+@ 276040 ps------End _runFSMRising--------
 
 
-@ 277 ns------Start _runControlFalling--------
+@ 277 ns------Start _runFSMFalling--------
 
 
-@ 277 ns------End _runControlFalling--------
+@ 277 ns------End _runFSMFalling--------
 
 
-@ 278 ns------Start _runControlRising--------
+@ 278 ns------Start _runFSMRising--------
 
 
 @ 278 ns------Start _runExecution--------
@@ -7309,16 +7309,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 278020 ps------End _runDecode--------
 
 
-@ 278020 ps------End _runControlRising--------
+@ 278020 ps------End _runFSMRising--------
 
 
-@ 279 ns------Start _runControlFalling--------
+@ 279 ns------Start _runFSMFalling--------
 
 
-@ 279 ns------End _runControlFalling--------
+@ 279 ns------End _runFSMFalling--------
 
 
-@ 280 ns------Start _runControlRising--------
+@ 280 ns------Start _runFSMRising--------
 
 
 @ 280 ns------Start _runMemAccess--------
@@ -7333,10 +7333,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 280 ns------End _runMemAccess--------
 
 
-@ 280 ns------End _runControlRising--------
+@ 280 ns------End _runFSMRising--------
 
 
-@ 281 ns------Start _runControlFalling--------
+@ 281 ns------Start _runFSMFalling--------
 
 
 @ 281 ns------Start _runRFWrite--------
@@ -7363,10 +7363,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 281020 ps------End _runRFWrite--------
 
 
-@ 281020 ps------End _runControlFalling--------
+@ 281020 ps------End _runFSMFalling--------
 
 
-@ 282 ns------Start _runControlRising--------
+@ 282 ns------Start _runFSMRising--------
 
 
 @ 282 ns------Start _runFetch from PM--------
@@ -7394,10 +7394,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 282020 ps------End _runFetch from PM--------
 
 
-@ 282020 ps------End _runControlRising--------
+@ 282020 ps------End _runFSMRising--------
 
 
-@ 283 ns------Start _runControlFalling--------
+@ 283 ns------Start _runFSMFalling--------
 
 
 @ 283 ns------Start _runDecode--------
@@ -7421,10 +7421,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 283 ns------End _runDecode--------
 
 
-@ 283 ns------End _runControlFalling--------
+@ 283 ns------End _runFSMFalling--------
 
 
-@ 284 ns------Start _runControlRising--------
+@ 284 ns------Start _runFSMRising--------
 
 
 @ 284 ns------Start _runRFRead--------
@@ -7472,16 +7472,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 284020 ps------End _read--------
 
 
-@ 284040 ps------End _runControlRising--------
+@ 284040 ps------End _runFSMRising--------
 
 
-@ 285 ns------Start _runControlFalling--------
+@ 285 ns------Start _runFSMFalling--------
 
 
-@ 285 ns------End _runControlFalling--------
+@ 285 ns------End _runFSMFalling--------
 
 
-@ 286 ns------Start _runControlRising--------
+@ 286 ns------Start _runFSMRising--------
 
 
 @ 286 ns------Start _runExecution--------
@@ -7522,16 +7522,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 286020 ps------End _runControlRising--------
+@ 286020 ps------End _runFSMRising--------
 
 
-@ 287 ns------Start _runControlFalling--------
+@ 287 ns------Start _runFSMFalling--------
 
 
-@ 287 ns------End _runControlFalling--------
+@ 287 ns------End _runFSMFalling--------
 
 
-@ 288 ns------Start _runControlRising--------
+@ 288 ns------Start _runFSMRising--------
 
 
 @ 288 ns------Start _runMemAccess--------
@@ -7546,10 +7546,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 288 ns------End _runMemAccess--------
 
 
-@ 288 ns------End _runControlRising--------
+@ 288 ns------End _runFSMRising--------
 
 
-@ 289 ns------Start _runControlFalling--------
+@ 289 ns------Start _runFSMFalling--------
 
 
 @ 289 ns------Start _runRFWrite--------
@@ -7576,10 +7576,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 289020 ps------End _runRFWrite--------
 
 
-@ 289020 ps------End _runControlFalling--------
+@ 289020 ps------End _runFSMFalling--------
 
 
-@ 290 ns------Start _runControlRising--------
+@ 290 ns------Start _runFSMRising--------
 
 
 @ 290 ns------Start _runFetch from PM--------
@@ -7597,10 +7597,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 290 ns------End _read--------
 
 
-@ 290020 ps------End _runControlRising--------
+@ 290020 ps------End _runFSMRising--------
 
 
-@ 291 ns------Start _runControlFalling--------
+@ 291 ns------Start _runFSMFalling--------
 
 
 @ 291 ns------Start _runDecode--------
@@ -7612,10 +7612,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 291 ns------End _runControlFalling--------
+@ 291 ns------End _runFSMFalling--------
 
 
-@ 292 ns------Start _runControlRising--------
+@ 292 ns------Start _runFSMRising--------
 
 
 @ 292 ns------Start _runRFRead--------
@@ -7651,16 +7651,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 292020 ps------Start _runFetch from PM--------
 
 
-@ 292020 ps------End _runControlRising--------
+@ 292020 ps------End _runFSMRising--------
 
 
-@ 293 ns------Start _runControlFalling--------
+@ 293 ns------Start _runFSMFalling--------
 
 
-@ 293 ns------End _runControlFalling--------
+@ 293 ns------End _runFSMFalling--------
 
 
-@ 294 ns------Start _runControlRising--------
+@ 294 ns------Start _runFSMRising--------
 
 
 @ 294 ns------Start _runExecution--------
@@ -7701,16 +7701,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 294020 ps------End _runControlRising--------
+@ 294020 ps------End _runFSMRising--------
 
 
-@ 295 ns------Start _runControlFalling--------
+@ 295 ns------Start _runFSMFalling--------
 
 
-@ 295 ns------End _runControlFalling--------
+@ 295 ns------End _runFSMFalling--------
 
 
-@ 296 ns------Start _runControlRising--------
+@ 296 ns------Start _runFSMRising--------
 
 
 @ 296 ns------Start _runMemAccess--------
@@ -7725,10 +7725,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 296 ns------End _runMemAccess--------
 
 
-@ 296 ns------End _runControlRising--------
+@ 296 ns------End _runFSMRising--------
 
 
-@ 297 ns------Start _runControlFalling--------
+@ 297 ns------Start _runFSMFalling--------
 
 
 @ 297 ns------Start _runRFWrite--------
@@ -7743,10 +7743,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 297 ns------End _runRFWrite--------
 
 
-@ 297 ns------End _runControlFalling--------
+@ 297 ns------End _runFSMFalling--------
 
 
-@ 298 ns------Start _runControlRising--------
+@ 298 ns------Start _runFSMRising--------
 
 
 @ 298 ns------Start _runFetch from PM--------
@@ -7764,10 +7764,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 298 ns------End _read--------
 
 
-@ 298020 ps------End _runControlRising--------
+@ 298020 ps------End _runFSMRising--------
 
 
-@ 299 ns------Start _runControlFalling--------
+@ 299 ns------Start _runFSMFalling--------
 
 
 @ 299 ns------Start _runDecode--------
@@ -7779,10 +7779,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 299 ns------End _runControlFalling--------
+@ 299 ns------End _runFSMFalling--------
 
 
-@ 300 ns------Start _runControlRising--------
+@ 300 ns------Start _runFSMRising--------
 
 
 @ 300 ns------Start _runRFRead--------
@@ -7817,16 +7817,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 300020 ps------Start _runFetch from PM--------
 
 
-@ 300020 ps------End _runControlRising--------
+@ 300020 ps------End _runFSMRising--------
 
 
-@ 301 ns------Start _runControlFalling--------
+@ 301 ns------Start _runFSMFalling--------
 
 
-@ 301 ns------End _runControlFalling--------
+@ 301 ns------End _runFSMFalling--------
 
 
-@ 302 ns------Start _runControlRising--------
+@ 302 ns------Start _runFSMRising--------
 
 
 @ 302 ns------Start _runExecution--------
@@ -7874,16 +7874,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 302020 ps------End _runControlRising--------
+@ 302020 ps------End _runFSMRising--------
 
 
-@ 303 ns------Start _runControlFalling--------
+@ 303 ns------Start _runFSMFalling--------
 
 
-@ 303 ns------End _runControlFalling--------
+@ 303 ns------End _runFSMFalling--------
 
 
-@ 304 ns------Start _runControlRising--------
+@ 304 ns------Start _runFSMRising--------
 
 
 @ 304 ns------Start _runMemAccess--------
@@ -7898,10 +7898,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 304 ns------End _runMemAccess--------
 
 
-@ 304 ns------End _runControlRising--------
+@ 304 ns------End _runFSMRising--------
 
 
-@ 305 ns------Start _runControlFalling--------
+@ 305 ns------Start _runFSMFalling--------
 
 
 @ 305 ns------Start _runRFWrite--------
@@ -7916,10 +7916,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 305 ns------End _runRFWrite--------
 
 
-@ 305 ns------End _runControlFalling--------
+@ 305 ns------End _runFSMFalling--------
 
 
-@ 306 ns------Start _runControlRising--------
+@ 306 ns------Start _runFSMRising--------
 
 
 @ 306 ns------Start _runFetch from PM--------
@@ -7947,10 +7947,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 306020 ps------End _runFetch from PM--------
 
 
-@ 306020 ps------End _runControlRising--------
+@ 306020 ps------End _runFSMRising--------
 
 
-@ 307 ns------Start _runControlFalling--------
+@ 307 ns------Start _runFSMFalling--------
 
 
 @ 307 ns------Start _runDecode--------
@@ -7974,10 +7974,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 307 ns------End _runDecode--------
 
 
-@ 307 ns------End _runControlFalling--------
+@ 307 ns------End _runFSMFalling--------
 
 
-@ 308 ns------Start _runControlRising--------
+@ 308 ns------Start _runFSMRising--------
 
 
 @ 308 ns------Start _runRFRead--------
@@ -8034,16 +8034,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 308040 ps------End _runFetch from PM--------
 
 
-@ 308040 ps------End _runControlRising--------
+@ 308040 ps------End _runFSMRising--------
 
 
-@ 309 ns------Start _runControlFalling--------
+@ 309 ns------Start _runFSMFalling--------
 
 
-@ 309 ns------End _runControlFalling--------
+@ 309 ns------End _runFSMFalling--------
 
 
-@ 310 ns------Start _runControlRising--------
+@ 310 ns------Start _runFSMRising--------
 
 
 @ 310 ns------Start _runExecution--------
@@ -8096,16 +8096,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 310020 ps------End _runDecode--------
 
 
-@ 310020 ps------End _runControlRising--------
+@ 310020 ps------End _runFSMRising--------
 
 
-@ 311 ns------Start _runControlFalling--------
+@ 311 ns------Start _runFSMFalling--------
 
 
-@ 311 ns------End _runControlFalling--------
+@ 311 ns------End _runFSMFalling--------
 
 
-@ 312 ns------Start _runControlRising--------
+@ 312 ns------Start _runFSMRising--------
 
 
 @ 312 ns------Start _runMemAccess--------
@@ -8120,10 +8120,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 312 ns------End _runMemAccess--------
 
 
-@ 312 ns------End _runControlRising--------
+@ 312 ns------End _runFSMRising--------
 
 
-@ 313 ns------Start _runControlFalling--------
+@ 313 ns------Start _runFSMFalling--------
 
 
 @ 313 ns------Start _runRFWrite--------
@@ -8150,10 +8150,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 313020 ps------End _runRFWrite--------
 
 
-@ 313020 ps------End _runControlFalling--------
+@ 313020 ps------End _runFSMFalling--------
 
 
-@ 314 ns------Start _runControlRising--------
+@ 314 ns------Start _runFSMRising--------
 
 
 @ 314 ns------Start _runFetch from PM--------
@@ -8181,10 +8181,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 314020 ps------End _runFetch from PM--------
 
 
-@ 314020 ps------End _runControlRising--------
+@ 314020 ps------End _runFSMRising--------
 
 
-@ 315 ns------Start _runControlFalling--------
+@ 315 ns------Start _runFSMFalling--------
 
 
 @ 315 ns------Start _runDecode--------
@@ -8208,10 +8208,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 315 ns------End _runDecode--------
 
 
-@ 315 ns------End _runControlFalling--------
+@ 315 ns------End _runFSMFalling--------
 
 
-@ 316 ns------Start _runControlRising--------
+@ 316 ns------Start _runFSMRising--------
 
 
 @ 316 ns------Start _runRFRead--------
@@ -8269,16 +8269,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 316040 ps------End _runFetch from PM--------
 
 
-@ 316040 ps------End _runControlRising--------
+@ 316040 ps------End _runFSMRising--------
 
 
-@ 317 ns------Start _runControlFalling--------
+@ 317 ns------Start _runFSMFalling--------
 
 
-@ 317 ns------End _runControlFalling--------
+@ 317 ns------End _runFSMFalling--------
 
 
-@ 318 ns------Start _runControlRising--------
+@ 318 ns------Start _runFSMRising--------
 
 
 @ 318 ns------Start _runExecution--------
@@ -8331,16 +8331,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 318020 ps------End _runDecode--------
 
 
-@ 318020 ps------End _runControlRising--------
+@ 318020 ps------End _runFSMRising--------
 
 
-@ 319 ns------Start _runControlFalling--------
+@ 319 ns------Start _runFSMFalling--------
 
 
-@ 319 ns------End _runControlFalling--------
+@ 319 ns------End _runFSMFalling--------
 
 
-@ 320 ns------Start _runControlRising--------
+@ 320 ns------Start _runFSMRising--------
 
 
 @ 320 ns------Start _runMemAccess--------
@@ -8355,10 +8355,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 320 ns------End _runMemAccess--------
 
 
-@ 320 ns------End _runControlRising--------
+@ 320 ns------End _runFSMRising--------
 
 
-@ 321 ns------Start _runControlFalling--------
+@ 321 ns------Start _runFSMFalling--------
 
 
 @ 321 ns------Start _runRFWrite--------
@@ -8385,10 +8385,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 321020 ps------End _runRFWrite--------
 
 
-@ 321020 ps------End _runControlFalling--------
+@ 321020 ps------End _runFSMFalling--------
 
 
-@ 322 ns------Start _runControlRising--------
+@ 322 ns------Start _runFSMRising--------
 
 
 @ 322 ns------Start _runFetch from PM--------
@@ -8416,10 +8416,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 322020 ps------End _runFetch from PM--------
 
 
-@ 322020 ps------End _runControlRising--------
+@ 322020 ps------End _runFSMRising--------
 
 
-@ 323 ns------Start _runControlFalling--------
+@ 323 ns------Start _runFSMFalling--------
 
 
 @ 323 ns------Start _runDecode--------
@@ -8443,10 +8443,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 323 ns------End _runDecode--------
 
 
-@ 323 ns------End _runControlFalling--------
+@ 323 ns------End _runFSMFalling--------
 
 
-@ 324 ns------Start _runControlRising--------
+@ 324 ns------Start _runFSMRising--------
 
 
 @ 324 ns------Start _runRFRead--------
@@ -8494,16 +8494,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 324020 ps------End _read--------
 
 
-@ 324040 ps------End _runControlRising--------
+@ 324040 ps------End _runFSMRising--------
 
 
-@ 325 ns------Start _runControlFalling--------
+@ 325 ns------Start _runFSMFalling--------
 
 
-@ 325 ns------End _runControlFalling--------
+@ 325 ns------End _runFSMFalling--------
 
 
-@ 326 ns------Start _runControlRising--------
+@ 326 ns------Start _runFSMRising--------
 
 
 @ 326 ns------Start _runExecution--------
@@ -8544,16 +8544,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 326020 ps------End _runControlRising--------
+@ 326020 ps------End _runFSMRising--------
 
 
-@ 327 ns------Start _runControlFalling--------
+@ 327 ns------Start _runFSMFalling--------
 
 
-@ 327 ns------End _runControlFalling--------
+@ 327 ns------End _runFSMFalling--------
 
 
-@ 328 ns------Start _runControlRising--------
+@ 328 ns------Start _runFSMRising--------
 
 
 @ 328 ns------Start _runMemAccess--------
@@ -8568,10 +8568,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 328 ns------End _runMemAccess--------
 
 
-@ 328 ns------End _runControlRising--------
+@ 328 ns------End _runFSMRising--------
 
 
-@ 329 ns------Start _runControlFalling--------
+@ 329 ns------Start _runFSMFalling--------
 
 
 @ 329 ns------Start _runRFWrite--------
@@ -8598,10 +8598,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 329020 ps------End _runRFWrite--------
 
 
-@ 329020 ps------End _runControlFalling--------
+@ 329020 ps------End _runFSMFalling--------
 
 
-@ 330 ns------Start _runControlRising--------
+@ 330 ns------Start _runFSMRising--------
 
 
 @ 330 ns------Start _runFetch from PM--------
@@ -8619,10 +8619,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 330 ns------End _read--------
 
 
-@ 330020 ps------End _runControlRising--------
+@ 330020 ps------End _runFSMRising--------
 
 
-@ 331 ns------Start _runControlFalling--------
+@ 331 ns------Start _runFSMFalling--------
 
 
 @ 331 ns------Start _runDecode--------
@@ -8634,10 +8634,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 331 ns------End _runControlFalling--------
+@ 331 ns------End _runFSMFalling--------
 
 
-@ 332 ns------Start _runControlRising--------
+@ 332 ns------Start _runFSMRising--------
 
 
 @ 332 ns------Start _runRFRead--------
@@ -8673,16 +8673,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 332020 ps------Start _runFetch from PM--------
 
 
-@ 332020 ps------End _runControlRising--------
+@ 332020 ps------End _runFSMRising--------
 
 
-@ 333 ns------Start _runControlFalling--------
+@ 333 ns------Start _runFSMFalling--------
 
 
-@ 333 ns------End _runControlFalling--------
+@ 333 ns------End _runFSMFalling--------
 
 
-@ 334 ns------Start _runControlRising--------
+@ 334 ns------Start _runFSMRising--------
 
 
 @ 334 ns------Start _runExecution--------
@@ -8723,16 +8723,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 334020 ps------End _runControlRising--------
+@ 334020 ps------End _runFSMRising--------
 
 
-@ 335 ns------Start _runControlFalling--------
+@ 335 ns------Start _runFSMFalling--------
 
 
-@ 335 ns------End _runControlFalling--------
+@ 335 ns------End _runFSMFalling--------
 
 
-@ 336 ns------Start _runControlRising--------
+@ 336 ns------Start _runFSMRising--------
 
 
 @ 336 ns------Start _runMemAccess--------
@@ -8747,10 +8747,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 336 ns------End _runMemAccess--------
 
 
-@ 336 ns------End _runControlRising--------
+@ 336 ns------End _runFSMRising--------
 
 
-@ 337 ns------Start _runControlFalling--------
+@ 337 ns------Start _runFSMFalling--------
 
 
 @ 337 ns------Start _runRFWrite--------
@@ -8765,10 +8765,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 337 ns------End _runRFWrite--------
 
 
-@ 337 ns------End _runControlFalling--------
+@ 337 ns------End _runFSMFalling--------
 
 
-@ 338 ns------Start _runControlRising--------
+@ 338 ns------Start _runFSMRising--------
 
 
 @ 338 ns------Start _runFetch from PM--------
@@ -8786,10 +8786,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 338 ns------End _read--------
 
 
-@ 338020 ps------End _runControlRising--------
+@ 338020 ps------End _runFSMRising--------
 
 
-@ 339 ns------Start _runControlFalling--------
+@ 339 ns------Start _runFSMFalling--------
 
 
 @ 339 ns------Start _runDecode--------
@@ -8801,10 +8801,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 339 ns------End _runControlFalling--------
+@ 339 ns------End _runFSMFalling--------
 
 
-@ 340 ns------Start _runControlRising--------
+@ 340 ns------Start _runFSMRising--------
 
 
 @ 340 ns------Start _runRFRead--------
@@ -8839,16 +8839,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 340020 ps------Start _runFetch from PM--------
 
 
-@ 340020 ps------End _runControlRising--------
+@ 340020 ps------End _runFSMRising--------
 
 
-@ 341 ns------Start _runControlFalling--------
+@ 341 ns------Start _runFSMFalling--------
 
 
-@ 341 ns------End _runControlFalling--------
+@ 341 ns------End _runFSMFalling--------
 
 
-@ 342 ns------Start _runControlRising--------
+@ 342 ns------Start _runFSMRising--------
 
 
 @ 342 ns------Start _runExecution--------
@@ -8896,16 +8896,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 342020 ps------End _runControlRising--------
+@ 342020 ps------End _runFSMRising--------
 
 
-@ 343 ns------Start _runControlFalling--------
+@ 343 ns------Start _runFSMFalling--------
 
 
-@ 343 ns------End _runControlFalling--------
+@ 343 ns------End _runFSMFalling--------
 
 
-@ 344 ns------Start _runControlRising--------
+@ 344 ns------Start _runFSMRising--------
 
 
 @ 344 ns------Start _runMemAccess--------
@@ -8920,10 +8920,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 344 ns------End _runMemAccess--------
 
 
-@ 344 ns------End _runControlRising--------
+@ 344 ns------End _runFSMRising--------
 
 
-@ 345 ns------Start _runControlFalling--------
+@ 345 ns------Start _runFSMFalling--------
 
 
 @ 345 ns------Start _runRFWrite--------
@@ -8938,10 +8938,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 345 ns------End _runRFWrite--------
 
 
-@ 345 ns------End _runControlFalling--------
+@ 345 ns------End _runFSMFalling--------
 
 
-@ 346 ns------Start _runControlRising--------
+@ 346 ns------Start _runFSMRising--------
 
 
 @ 346 ns------Start _runFetch from PM--------
@@ -8969,10 +8969,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 346020 ps------End _runFetch from PM--------
 
 
-@ 346020 ps------End _runControlRising--------
+@ 346020 ps------End _runFSMRising--------
 
 
-@ 347 ns------Start _runControlFalling--------
+@ 347 ns------Start _runFSMFalling--------
 
 
 @ 347 ns------Start _runDecode--------
@@ -8996,10 +8996,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 347 ns------End _runDecode--------
 
 
-@ 347 ns------End _runControlFalling--------
+@ 347 ns------End _runFSMFalling--------
 
 
-@ 348 ns------Start _runControlRising--------
+@ 348 ns------Start _runFSMRising--------
 
 
 @ 348 ns------Start _runRFRead--------
@@ -9056,16 +9056,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 348040 ps------End _runFetch from PM--------
 
 
-@ 348040 ps------End _runControlRising--------
+@ 348040 ps------End _runFSMRising--------
 
 
-@ 349 ns------Start _runControlFalling--------
+@ 349 ns------Start _runFSMFalling--------
 
 
-@ 349 ns------End _runControlFalling--------
+@ 349 ns------End _runFSMFalling--------
 
 
-@ 350 ns------Start _runControlRising--------
+@ 350 ns------Start _runFSMRising--------
 
 
 @ 350 ns------Start _runExecution--------
@@ -9118,16 +9118,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 350020 ps------End _runDecode--------
 
 
-@ 350020 ps------End _runControlRising--------
+@ 350020 ps------End _runFSMRising--------
 
 
-@ 351 ns------Start _runControlFalling--------
+@ 351 ns------Start _runFSMFalling--------
 
 
-@ 351 ns------End _runControlFalling--------
+@ 351 ns------End _runFSMFalling--------
 
 
-@ 352 ns------Start _runControlRising--------
+@ 352 ns------Start _runFSMRising--------
 
 
 @ 352 ns------Start _runMemAccess--------
@@ -9142,10 +9142,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 352 ns------End _runMemAccess--------
 
 
-@ 352 ns------End _runControlRising--------
+@ 352 ns------End _runFSMRising--------
 
 
-@ 353 ns------Start _runControlFalling--------
+@ 353 ns------Start _runFSMFalling--------
 
 
 @ 353 ns------Start _runRFWrite--------
@@ -9172,10 +9172,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 353020 ps------End _runRFWrite--------
 
 
-@ 353020 ps------End _runControlFalling--------
+@ 353020 ps------End _runFSMFalling--------
 
 
-@ 354 ns------Start _runControlRising--------
+@ 354 ns------Start _runFSMRising--------
 
 
 @ 354 ns------Start _runFetch from PM--------
@@ -9203,10 +9203,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 354020 ps------End _runFetch from PM--------
 
 
-@ 354020 ps------End _runControlRising--------
+@ 354020 ps------End _runFSMRising--------
 
 
-@ 355 ns------Start _runControlFalling--------
+@ 355 ns------Start _runFSMFalling--------
 
 
 @ 355 ns------Start _runDecode--------
@@ -9230,10 +9230,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 355 ns------End _runDecode--------
 
 
-@ 355 ns------End _runControlFalling--------
+@ 355 ns------End _runFSMFalling--------
 
 
-@ 356 ns------Start _runControlRising--------
+@ 356 ns------Start _runFSMRising--------
 
 
 @ 356 ns------Start _runRFRead--------
@@ -9291,16 +9291,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 356040 ps------End _runFetch from PM--------
 
 
-@ 356040 ps------End _runControlRising--------
+@ 356040 ps------End _runFSMRising--------
 
 
-@ 357 ns------Start _runControlFalling--------
+@ 357 ns------Start _runFSMFalling--------
 
 
-@ 357 ns------End _runControlFalling--------
+@ 357 ns------End _runFSMFalling--------
 
 
-@ 358 ns------Start _runControlRising--------
+@ 358 ns------Start _runFSMRising--------
 
 
 @ 358 ns------Start _runExecution--------
@@ -9353,16 +9353,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 358020 ps------End _runDecode--------
 
 
-@ 358020 ps------End _runControlRising--------
+@ 358020 ps------End _runFSMRising--------
 
 
-@ 359 ns------Start _runControlFalling--------
+@ 359 ns------Start _runFSMFalling--------
 
 
-@ 359 ns------End _runControlFalling--------
+@ 359 ns------End _runFSMFalling--------
 
 
-@ 360 ns------Start _runControlRising--------
+@ 360 ns------Start _runFSMRising--------
 
 
 @ 360 ns------Start _runMemAccess--------
@@ -9377,10 +9377,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 360 ns------End _runMemAccess--------
 
 
-@ 360 ns------End _runControlRising--------
+@ 360 ns------End _runFSMRising--------
 
 
-@ 361 ns------Start _runControlFalling--------
+@ 361 ns------Start _runFSMFalling--------
 
 
 @ 361 ns------Start _runRFWrite--------
@@ -9407,10 +9407,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 361020 ps------End _runRFWrite--------
 
 
-@ 361020 ps------End _runControlFalling--------
+@ 361020 ps------End _runFSMFalling--------
 
 
-@ 362 ns------Start _runControlRising--------
+@ 362 ns------Start _runFSMRising--------
 
 
 @ 362 ns------Start _runFetch from PM--------
@@ -9438,10 +9438,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 362020 ps------End _runFetch from PM--------
 
 
-@ 362020 ps------End _runControlRising--------
+@ 362020 ps------End _runFSMRising--------
 
 
-@ 363 ns------Start _runControlFalling--------
+@ 363 ns------Start _runFSMFalling--------
 
 
 @ 363 ns------Start _runDecode--------
@@ -9465,10 +9465,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 363 ns------End _runDecode--------
 
 
-@ 363 ns------End _runControlFalling--------
+@ 363 ns------End _runFSMFalling--------
 
 
-@ 364 ns------Start _runControlRising--------
+@ 364 ns------Start _runFSMRising--------
 
 
 @ 364 ns------Start _runRFRead--------
@@ -9516,16 +9516,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 364020 ps------End _read--------
 
 
-@ 364040 ps------End _runControlRising--------
+@ 364040 ps------End _runFSMRising--------
 
 
-@ 365 ns------Start _runControlFalling--------
+@ 365 ns------Start _runFSMFalling--------
 
 
-@ 365 ns------End _runControlFalling--------
+@ 365 ns------End _runFSMFalling--------
 
 
-@ 366 ns------Start _runControlRising--------
+@ 366 ns------Start _runFSMRising--------
 
 
 @ 366 ns------Start _runExecution--------
@@ -9566,16 +9566,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 366020 ps------End _runControlRising--------
+@ 366020 ps------End _runFSMRising--------
 
 
-@ 367 ns------Start _runControlFalling--------
+@ 367 ns------Start _runFSMFalling--------
 
 
-@ 367 ns------End _runControlFalling--------
+@ 367 ns------End _runFSMFalling--------
 
 
-@ 368 ns------Start _runControlRising--------
+@ 368 ns------Start _runFSMRising--------
 
 
 @ 368 ns------Start _runMemAccess--------
@@ -9590,10 +9590,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 368 ns------End _runMemAccess--------
 
 
-@ 368 ns------End _runControlRising--------
+@ 368 ns------End _runFSMRising--------
 
 
-@ 369 ns------Start _runControlFalling--------
+@ 369 ns------Start _runFSMFalling--------
 
 
 @ 369 ns------Start _runRFWrite--------
@@ -9620,10 +9620,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 369020 ps------End _runRFWrite--------
 
 
-@ 369020 ps------End _runControlFalling--------
+@ 369020 ps------End _runFSMFalling--------
 
 
-@ 370 ns------Start _runControlRising--------
+@ 370 ns------Start _runFSMRising--------
 
 
 @ 370 ns------Start _runFetch from PM--------
@@ -9641,10 +9641,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 370 ns------End _read--------
 
 
-@ 370020 ps------End _runControlRising--------
+@ 370020 ps------End _runFSMRising--------
 
 
-@ 371 ns------Start _runControlFalling--------
+@ 371 ns------Start _runFSMFalling--------
 
 
 @ 371 ns------Start _runDecode--------
@@ -9656,10 +9656,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 371 ns------End _runControlFalling--------
+@ 371 ns------End _runFSMFalling--------
 
 
-@ 372 ns------Start _runControlRising--------
+@ 372 ns------Start _runFSMRising--------
 
 
 @ 372 ns------Start _runRFRead--------
@@ -9695,16 +9695,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 372020 ps------Start _runFetch from PM--------
 
 
-@ 372020 ps------End _runControlRising--------
+@ 372020 ps------End _runFSMRising--------
 
 
-@ 373 ns------Start _runControlFalling--------
+@ 373 ns------Start _runFSMFalling--------
 
 
-@ 373 ns------End _runControlFalling--------
+@ 373 ns------End _runFSMFalling--------
 
 
-@ 374 ns------Start _runControlRising--------
+@ 374 ns------Start _runFSMRising--------
 
 
 @ 374 ns------Start _runExecution--------
@@ -9745,16 +9745,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 374020 ps------End _runControlRising--------
+@ 374020 ps------End _runFSMRising--------
 
 
-@ 375 ns------Start _runControlFalling--------
+@ 375 ns------Start _runFSMFalling--------
 
 
-@ 375 ns------End _runControlFalling--------
+@ 375 ns------End _runFSMFalling--------
 
 
-@ 376 ns------Start _runControlRising--------
+@ 376 ns------Start _runFSMRising--------
 
 
 @ 376 ns------Start _runMemAccess--------
@@ -9769,10 +9769,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 376 ns------End _runMemAccess--------
 
 
-@ 376 ns------End _runControlRising--------
+@ 376 ns------End _runFSMRising--------
 
 
-@ 377 ns------Start _runControlFalling--------
+@ 377 ns------Start _runFSMFalling--------
 
 
 @ 377 ns------Start _runRFWrite--------
@@ -9787,10 +9787,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 377 ns------End _runRFWrite--------
 
 
-@ 377 ns------End _runControlFalling--------
+@ 377 ns------End _runFSMFalling--------
 
 
-@ 378 ns------Start _runControlRising--------
+@ 378 ns------Start _runFSMRising--------
 
 
 @ 378 ns------Start _runFetch from PM--------
@@ -9808,10 +9808,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 378 ns------End _read--------
 
 
-@ 378020 ps------End _runControlRising--------
+@ 378020 ps------End _runFSMRising--------
 
 
-@ 379 ns------Start _runControlFalling--------
+@ 379 ns------Start _runFSMFalling--------
 
 
 @ 379 ns------Start _runDecode--------
@@ -9823,10 +9823,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 379 ns------End _runControlFalling--------
+@ 379 ns------End _runFSMFalling--------
 
 
-@ 380 ns------Start _runControlRising--------
+@ 380 ns------Start _runFSMRising--------
 
 
 @ 380 ns------Start _runRFRead--------
@@ -9861,16 +9861,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 380020 ps------Start _runFetch from PM--------
 
 
-@ 380020 ps------End _runControlRising--------
+@ 380020 ps------End _runFSMRising--------
 
 
-@ 381 ns------Start _runControlFalling--------
+@ 381 ns------Start _runFSMFalling--------
 
 
-@ 381 ns------End _runControlFalling--------
+@ 381 ns------End _runFSMFalling--------
 
 
-@ 382 ns------Start _runControlRising--------
+@ 382 ns------Start _runFSMRising--------
 
 
 @ 382 ns------Start _runExecution--------
@@ -9918,16 +9918,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 382020 ps------End _runControlRising--------
+@ 382020 ps------End _runFSMRising--------
 
 
-@ 383 ns------Start _runControlFalling--------
+@ 383 ns------Start _runFSMFalling--------
 
 
-@ 383 ns------End _runControlFalling--------
+@ 383 ns------End _runFSMFalling--------
 
 
-@ 384 ns------Start _runControlRising--------
+@ 384 ns------Start _runFSMRising--------
 
 
 @ 384 ns------Start _runMemAccess--------
@@ -9942,10 +9942,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 384 ns------End _runMemAccess--------
 
 
-@ 384 ns------End _runControlRising--------
+@ 384 ns------End _runFSMRising--------
 
 
-@ 385 ns------Start _runControlFalling--------
+@ 385 ns------Start _runFSMFalling--------
 
 
 @ 385 ns------Start _runRFWrite--------
@@ -9960,10 +9960,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 385 ns------End _runRFWrite--------
 
 
-@ 385 ns------End _runControlFalling--------
+@ 385 ns------End _runFSMFalling--------
 
 
-@ 386 ns------Start _runControlRising--------
+@ 386 ns------Start _runFSMRising--------
 
 
 @ 386 ns------Start _runFetch from PM--------
@@ -9991,10 +9991,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 386020 ps------End _runFetch from PM--------
 
 
-@ 386020 ps------End _runControlRising--------
+@ 386020 ps------End _runFSMRising--------
 
 
-@ 387 ns------Start _runControlFalling--------
+@ 387 ns------Start _runFSMFalling--------
 
 
 @ 387 ns------Start _runDecode--------
@@ -10018,10 +10018,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 387 ns------End _runDecode--------
 
 
-@ 387 ns------End _runControlFalling--------
+@ 387 ns------End _runFSMFalling--------
 
 
-@ 388 ns------Start _runControlRising--------
+@ 388 ns------Start _runFSMRising--------
 
 
 @ 388 ns------Start _runRFRead--------
@@ -10078,16 +10078,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 388040 ps------End _runFetch from PM--------
 
 
-@ 388040 ps------End _runControlRising--------
+@ 388040 ps------End _runFSMRising--------
 
 
-@ 389 ns------Start _runControlFalling--------
+@ 389 ns------Start _runFSMFalling--------
 
 
-@ 389 ns------End _runControlFalling--------
+@ 389 ns------End _runFSMFalling--------
 
 
-@ 390 ns------Start _runControlRising--------
+@ 390 ns------Start _runFSMRising--------
 
 
 @ 390 ns------Start _runExecution--------
@@ -10140,16 +10140,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 390020 ps------End _runDecode--------
 
 
-@ 390020 ps------End _runControlRising--------
+@ 390020 ps------End _runFSMRising--------
 
 
-@ 391 ns------Start _runControlFalling--------
+@ 391 ns------Start _runFSMFalling--------
 
 
-@ 391 ns------End _runControlFalling--------
+@ 391 ns------End _runFSMFalling--------
 
 
-@ 392 ns------Start _runControlRising--------
+@ 392 ns------Start _runFSMRising--------
 
 
 @ 392 ns------Start _runMemAccess--------
@@ -10164,10 +10164,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 392 ns------End _runMemAccess--------
 
 
-@ 392 ns------End _runControlRising--------
+@ 392 ns------End _runFSMRising--------
 
 
-@ 393 ns------Start _runControlFalling--------
+@ 393 ns------Start _runFSMFalling--------
 
 
 @ 393 ns------Start _runRFWrite--------
@@ -10194,10 +10194,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 393020 ps------End _runRFWrite--------
 
 
-@ 393020 ps------End _runControlFalling--------
+@ 393020 ps------End _runFSMFalling--------
 
 
-@ 394 ns------Start _runControlRising--------
+@ 394 ns------Start _runFSMRising--------
 
 
 @ 394 ns------Start _runFetch from PM--------
@@ -10225,10 +10225,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 394020 ps------End _runFetch from PM--------
 
 
-@ 394020 ps------End _runControlRising--------
+@ 394020 ps------End _runFSMRising--------
 
 
-@ 395 ns------Start _runControlFalling--------
+@ 395 ns------Start _runFSMFalling--------
 
 
 @ 395 ns------Start _runDecode--------
@@ -10252,10 +10252,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 395 ns------End _runDecode--------
 
 
-@ 395 ns------End _runControlFalling--------
+@ 395 ns------End _runFSMFalling--------
 
 
-@ 396 ns------Start _runControlRising--------
+@ 396 ns------Start _runFSMRising--------
 
 
 @ 396 ns------Start _runRFRead--------
@@ -10313,16 +10313,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 396040 ps------End _runFetch from PM--------
 
 
-@ 396040 ps------End _runControlRising--------
+@ 396040 ps------End _runFSMRising--------
 
 
-@ 397 ns------Start _runControlFalling--------
+@ 397 ns------Start _runFSMFalling--------
 
 
-@ 397 ns------End _runControlFalling--------
+@ 397 ns------End _runFSMFalling--------
 
 
-@ 398 ns------Start _runControlRising--------
+@ 398 ns------Start _runFSMRising--------
 
 
 @ 398 ns------Start _runExecution--------
@@ -10375,16 +10375,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 398020 ps------End _runDecode--------
 
 
-@ 398020 ps------End _runControlRising--------
+@ 398020 ps------End _runFSMRising--------
 
 
-@ 399 ns------Start _runControlFalling--------
+@ 399 ns------Start _runFSMFalling--------
 
 
-@ 399 ns------End _runControlFalling--------
+@ 399 ns------End _runFSMFalling--------
 
 
-@ 400 ns------Start _runControlRising--------
+@ 400 ns------Start _runFSMRising--------
 
 
 @ 400 ns------Start _runMemAccess--------
@@ -10399,10 +10399,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 400 ns------End _runMemAccess--------
 
 
-@ 400 ns------End _runControlRising--------
+@ 400 ns------End _runFSMRising--------
 
 
-@ 401 ns------Start _runControlFalling--------
+@ 401 ns------Start _runFSMFalling--------
 
 
 @ 401 ns------Start _runRFWrite--------
@@ -10429,10 +10429,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 401020 ps------End _runRFWrite--------
 
 
-@ 401020 ps------End _runControlFalling--------
+@ 401020 ps------End _runFSMFalling--------
 
 
-@ 402 ns------Start _runControlRising--------
+@ 402 ns------Start _runFSMRising--------
 
 
 @ 402 ns------Start _runFetch from PM--------
@@ -10460,10 +10460,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 402020 ps------End _runFetch from PM--------
 
 
-@ 402020 ps------End _runControlRising--------
+@ 402020 ps------End _runFSMRising--------
 
 
-@ 403 ns------Start _runControlFalling--------
+@ 403 ns------Start _runFSMFalling--------
 
 
 @ 403 ns------Start _runDecode--------
@@ -10487,10 +10487,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 403 ns------End _runDecode--------
 
 
-@ 403 ns------End _runControlFalling--------
+@ 403 ns------End _runFSMFalling--------
 
 
-@ 404 ns------Start _runControlRising--------
+@ 404 ns------Start _runFSMRising--------
 
 
 @ 404 ns------Start _runRFRead--------
@@ -10538,16 +10538,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 404020 ps------End _read--------
 
 
-@ 404040 ps------End _runControlRising--------
+@ 404040 ps------End _runFSMRising--------
 
 
-@ 405 ns------Start _runControlFalling--------
+@ 405 ns------Start _runFSMFalling--------
 
 
-@ 405 ns------End _runControlFalling--------
+@ 405 ns------End _runFSMFalling--------
 
 
-@ 406 ns------Start _runControlRising--------
+@ 406 ns------Start _runFSMRising--------
 
 
 @ 406 ns------Start _runExecution--------
@@ -10588,16 +10588,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 406020 ps------End _runControlRising--------
+@ 406020 ps------End _runFSMRising--------
 
 
-@ 407 ns------Start _runControlFalling--------
+@ 407 ns------Start _runFSMFalling--------
 
 
-@ 407 ns------End _runControlFalling--------
+@ 407 ns------End _runFSMFalling--------
 
 
-@ 408 ns------Start _runControlRising--------
+@ 408 ns------Start _runFSMRising--------
 
 
 @ 408 ns------Start _runMemAccess--------
@@ -10612,10 +10612,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 408 ns------End _runMemAccess--------
 
 
-@ 408 ns------End _runControlRising--------
+@ 408 ns------End _runFSMRising--------
 
 
-@ 409 ns------Start _runControlFalling--------
+@ 409 ns------Start _runFSMFalling--------
 
 
 @ 409 ns------Start _runRFWrite--------
@@ -10642,10 +10642,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 409020 ps------End _runRFWrite--------
 
 
-@ 409020 ps------End _runControlFalling--------
+@ 409020 ps------End _runFSMFalling--------
 
 
-@ 410 ns------Start _runControlRising--------
+@ 410 ns------Start _runFSMRising--------
 
 
 @ 410 ns------Start _runFetch from PM--------
@@ -10663,10 +10663,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 410 ns------End _read--------
 
 
-@ 410020 ps------End _runControlRising--------
+@ 410020 ps------End _runFSMRising--------
 
 
-@ 411 ns------Start _runControlFalling--------
+@ 411 ns------Start _runFSMFalling--------
 
 
 @ 411 ns------Start _runDecode--------
@@ -10678,10 +10678,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 411 ns------End _runControlFalling--------
+@ 411 ns------End _runFSMFalling--------
 
 
-@ 412 ns------Start _runControlRising--------
+@ 412 ns------Start _runFSMRising--------
 
 
 @ 412 ns------Start _runRFRead--------
@@ -10717,16 +10717,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 412020 ps------Start _runFetch from PM--------
 
 
-@ 412020 ps------End _runControlRising--------
+@ 412020 ps------End _runFSMRising--------
 
 
-@ 413 ns------Start _runControlFalling--------
+@ 413 ns------Start _runFSMFalling--------
 
 
-@ 413 ns------End _runControlFalling--------
+@ 413 ns------End _runFSMFalling--------
 
 
-@ 414 ns------Start _runControlRising--------
+@ 414 ns------Start _runFSMRising--------
 
 
 @ 414 ns------Start _runExecution--------
@@ -10767,16 +10767,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 414020 ps------End _runControlRising--------
+@ 414020 ps------End _runFSMRising--------
 
 
-@ 415 ns------Start _runControlFalling--------
+@ 415 ns------Start _runFSMFalling--------
 
 
-@ 415 ns------End _runControlFalling--------
+@ 415 ns------End _runFSMFalling--------
 
 
-@ 416 ns------Start _runControlRising--------
+@ 416 ns------Start _runFSMRising--------
 
 
 @ 416 ns------Start _runMemAccess--------
@@ -10791,10 +10791,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 416 ns------End _runMemAccess--------
 
 
-@ 416 ns------End _runControlRising--------
+@ 416 ns------End _runFSMRising--------
 
 
-@ 417 ns------Start _runControlFalling--------
+@ 417 ns------Start _runFSMFalling--------
 
 
 @ 417 ns------Start _runRFWrite--------
@@ -10809,10 +10809,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 417 ns------End _runRFWrite--------
 
 
-@ 417 ns------End _runControlFalling--------
+@ 417 ns------End _runFSMFalling--------
 
 
-@ 418 ns------Start _runControlRising--------
+@ 418 ns------Start _runFSMRising--------
 
 
 @ 418 ns------Start _runFetch from PM--------
@@ -10830,10 +10830,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 418 ns------End _read--------
 
 
-@ 418020 ps------End _runControlRising--------
+@ 418020 ps------End _runFSMRising--------
 
 
-@ 419 ns------Start _runControlFalling--------
+@ 419 ns------Start _runFSMFalling--------
 
 
 @ 419 ns------Start _runDecode--------
@@ -10845,10 +10845,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 419 ns------End _runControlFalling--------
+@ 419 ns------End _runFSMFalling--------
 
 
-@ 420 ns------Start _runControlRising--------
+@ 420 ns------Start _runFSMRising--------
 
 
 @ 420 ns------Start _runRFRead--------
@@ -10883,16 +10883,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 420020 ps------Start _runFetch from PM--------
 
 
-@ 420020 ps------End _runControlRising--------
+@ 420020 ps------End _runFSMRising--------
 
 
-@ 421 ns------Start _runControlFalling--------
+@ 421 ns------Start _runFSMFalling--------
 
 
-@ 421 ns------End _runControlFalling--------
+@ 421 ns------End _runFSMFalling--------
 
 
-@ 422 ns------Start _runControlRising--------
+@ 422 ns------Start _runFSMRising--------
 
 
 @ 422 ns------Start _runExecution--------
@@ -10940,16 +10940,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 422020 ps------End _runControlRising--------
+@ 422020 ps------End _runFSMRising--------
 
 
-@ 423 ns------Start _runControlFalling--------
+@ 423 ns------Start _runFSMFalling--------
 
 
-@ 423 ns------End _runControlFalling--------
+@ 423 ns------End _runFSMFalling--------
 
 
-@ 424 ns------Start _runControlRising--------
+@ 424 ns------Start _runFSMRising--------
 
 
 @ 424 ns------Start _runMemAccess--------
@@ -10964,10 +10964,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 424 ns------End _runMemAccess--------
 
 
-@ 424 ns------End _runControlRising--------
+@ 424 ns------End _runFSMRising--------
 
 
-@ 425 ns------Start _runControlFalling--------
+@ 425 ns------Start _runFSMFalling--------
 
 
 @ 425 ns------Start _runRFWrite--------
@@ -10982,10 +10982,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 425 ns------End _runRFWrite--------
 
 
-@ 425 ns------End _runControlFalling--------
+@ 425 ns------End _runFSMFalling--------
 
 
-@ 426 ns------Start _runControlRising--------
+@ 426 ns------Start _runFSMRising--------
 
 
 @ 426 ns------Start _runFetch from PM--------
@@ -11003,10 +11003,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 426 ns------End _read--------
 
 
-@ 426020 ps------End _runControlRising--------
+@ 426020 ps------End _runFSMRising--------
 
 
-@ 427 ns------Start _runControlFalling--------
+@ 427 ns------Start _runFSMFalling--------
 
 
 @ 427 ns------Start _runDecode--------
@@ -11018,10 +11018,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 427 ns------End _runControlFalling--------
+@ 427 ns------End _runFSMFalling--------
 
 
-@ 428 ns------Start _runControlRising--------
+@ 428 ns------Start _runFSMRising--------
 
 
 @ 428 ns------Start _runRFRead--------
@@ -11030,16 +11030,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 428 ns------Start _runFetch from PM--------
 
 
-@ 428 ns------End _runControlRising--------
+@ 428 ns------End _runFSMRising--------
 
 
-@ 429 ns------Start _runControlFalling--------
+@ 429 ns------Start _runFSMFalling--------
 
 
-@ 429 ns------End _runControlFalling--------
+@ 429 ns------End _runFSMFalling--------
 
 
-@ 430 ns------Start _runControlRising--------
+@ 430 ns------Start _runFSMRising--------
 
 
 @ 430 ns------Start _runExecution--------
@@ -11054,34 +11054,34 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 430 ns------End _runControlRising--------
+@ 430 ns------End _runFSMRising--------
 
 
-@ 431 ns------Start _runControlFalling--------
+@ 431 ns------Start _runFSMFalling--------
 
 
-@ 431 ns------End _runControlFalling--------
+@ 431 ns------End _runFSMFalling--------
 
 
-@ 432 ns------Start _runControlRising--------
+@ 432 ns------Start _runFSMRising--------
 
 
 @ 432 ns------Start _runMemAccess--------
 
 
-@ 432 ns------End _runControlRising--------
+@ 432 ns------End _runFSMRising--------
 
 
-@ 433 ns------Start _runControlFalling--------
+@ 433 ns------Start _runFSMFalling--------
 
 
 @ 433 ns------Start _runRFWrite--------
 
 
-@ 433 ns------End _runControlFalling--------
+@ 433 ns------End _runFSMFalling--------
 
 
-@ 434 ns------Start _runControlRising--------
+@ 434 ns------Start _runFSMRising--------
 
 
 @ 434 ns------Start _runFetch from PM--------
@@ -11099,10 +11099,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 434 ns------End _read--------
 
 
-@ 434020 ps------End _runControlRising--------
+@ 434020 ps------End _runFSMRising--------
 
 
-@ 435 ns------Start _runControlFalling--------
+@ 435 ns------Start _runFSMFalling--------
 
 
 @ 435 ns------Start _runDecode--------
@@ -11114,10 +11114,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 435 ns------End _runControlFalling--------
+@ 435 ns------End _runFSMFalling--------
 
 
-@ 436 ns------Start _runControlRising--------
+@ 436 ns------Start _runFSMRising--------
 
 
 @ 436 ns------Start _runRFRead--------
@@ -11126,16 +11126,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 436 ns------Start _runFetch from PM--------
 
 
-@ 436 ns------End _runControlRising--------
+@ 436 ns------End _runFSMRising--------
 
 
-@ 437 ns------Start _runControlFalling--------
+@ 437 ns------Start _runFSMFalling--------
 
 
-@ 437 ns------End _runControlFalling--------
+@ 437 ns------End _runFSMFalling--------
 
 
-@ 438 ns------Start _runControlRising--------
+@ 438 ns------Start _runFSMRising--------
 
 
 @ 438 ns------Start _runExecution--------
@@ -11150,34 +11150,34 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 438 ns------End _runControlRising--------
+@ 438 ns------End _runFSMRising--------
 
 
-@ 439 ns------Start _runControlFalling--------
+@ 439 ns------Start _runFSMFalling--------
 
 
-@ 439 ns------End _runControlFalling--------
+@ 439 ns------End _runFSMFalling--------
 
 
-@ 440 ns------Start _runControlRising--------
+@ 440 ns------Start _runFSMRising--------
 
 
 @ 440 ns------Start _runMemAccess--------
 
 
-@ 440 ns------End _runControlRising--------
+@ 440 ns------End _runFSMRising--------
 
 
-@ 441 ns------Start _runControlFalling--------
+@ 441 ns------Start _runFSMFalling--------
 
 
 @ 441 ns------Start _runRFWrite--------
 
 
-@ 441 ns------End _runControlFalling--------
+@ 441 ns------End _runFSMFalling--------
 
 
-@ 442 ns------Start _runControlRising--------
+@ 442 ns------Start _runFSMRising--------
 
 
 @ 442 ns------Start _runFetch from PM--------
@@ -11195,10 +11195,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 442 ns------End _read--------
 
 
-@ 442020 ps------End _runControlRising--------
+@ 442020 ps------End _runFSMRising--------
 
 
-@ 443 ns------Start _runControlFalling--------
+@ 443 ns------Start _runFSMFalling--------
 
 
 @ 443 ns------Start _runDecode--------
@@ -11210,10 +11210,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 443 ns------End _runControlFalling--------
+@ 443 ns------End _runFSMFalling--------
 
 
-@ 444 ns------Start _runControlRising--------
+@ 444 ns------Start _runFSMRising--------
 
 
 @ 444 ns------Start _runRFRead--------
@@ -11222,16 +11222,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 444 ns------Start _runFetch from PM--------
 
 
-@ 444 ns------End _runControlRising--------
+@ 444 ns------End _runFSMRising--------
 
 
-@ 445 ns------Start _runControlFalling--------
+@ 445 ns------Start _runFSMFalling--------
 
 
-@ 445 ns------End _runControlFalling--------
+@ 445 ns------End _runFSMFalling--------
 
 
-@ 446 ns------Start _runControlRising--------
+@ 446 ns------Start _runFSMRising--------
 
 
 @ 446 ns------Start _runExecution--------
@@ -11246,34 +11246,34 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 446 ns------End _runControlRising--------
+@ 446 ns------End _runFSMRising--------
 
 
-@ 447 ns------Start _runControlFalling--------
+@ 447 ns------Start _runFSMFalling--------
 
 
-@ 447 ns------End _runControlFalling--------
+@ 447 ns------End _runFSMFalling--------
 
 
-@ 448 ns------Start _runControlRising--------
+@ 448 ns------Start _runFSMRising--------
 
 
 @ 448 ns------Start _runMemAccess--------
 
 
-@ 448 ns------End _runControlRising--------
+@ 448 ns------End _runFSMRising--------
 
 
-@ 449 ns------Start _runControlFalling--------
+@ 449 ns------Start _runFSMFalling--------
 
 
 @ 449 ns------Start _runRFWrite--------
 
 
-@ 449 ns------End _runControlFalling--------
+@ 449 ns------End _runFSMFalling--------
 
 
-@ 450 ns------Start _runControlRising--------
+@ 450 ns------Start _runFSMRising--------
 
 
 @ 450 ns------Start _runFetch from PM--------
@@ -11291,10 +11291,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 450 ns------End _read--------
 
 
-@ 450020 ps------End _runControlRising--------
+@ 450020 ps------End _runFSMRising--------
 
 
-@ 451 ns------Start _runControlFalling--------
+@ 451 ns------Start _runFSMFalling--------
 
 
 @ 451 ns------Start _runDecode--------
@@ -11306,10 +11306,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 451 ns------End _runControlFalling--------
+@ 451 ns------End _runFSMFalling--------
 
 
-@ 452 ns------Start _runControlRising--------
+@ 452 ns------Start _runFSMRising--------
 
 
 @ 452 ns------Start _runRFRead--------
@@ -11318,16 +11318,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 452 ns------Start _runFetch from PM--------
 
 
-@ 452 ns------End _runControlRising--------
+@ 452 ns------End _runFSMRising--------
 
 
-@ 453 ns------Start _runControlFalling--------
+@ 453 ns------Start _runFSMFalling--------
 
 
-@ 453 ns------End _runControlFalling--------
+@ 453 ns------End _runFSMFalling--------
 
 
-@ 454 ns------Start _runControlRising--------
+@ 454 ns------Start _runFSMRising--------
 
 
 @ 454 ns------Start _runExecution--------
@@ -11342,34 +11342,34 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 454 ns------End _runControlRising--------
+@ 454 ns------End _runFSMRising--------
 
 
-@ 455 ns------Start _runControlFalling--------
+@ 455 ns------Start _runFSMFalling--------
 
 
-@ 455 ns------End _runControlFalling--------
+@ 455 ns------End _runFSMFalling--------
 
 
-@ 456 ns------Start _runControlRising--------
+@ 456 ns------Start _runFSMRising--------
 
 
 @ 456 ns------Start _runMemAccess--------
 
 
-@ 456 ns------End _runControlRising--------
+@ 456 ns------End _runFSMRising--------
 
 
-@ 457 ns------Start _runControlFalling--------
+@ 457 ns------Start _runFSMFalling--------
 
 
 @ 457 ns------Start _runRFWrite--------
 
 
-@ 457 ns------End _runControlFalling--------
+@ 457 ns------End _runFSMFalling--------
 
 
-@ 458 ns------Start _runControlRising--------
+@ 458 ns------Start _runFSMRising--------
 
 
 @ 458 ns------Start _runFetch from PM--------
@@ -11387,10 +11387,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 458 ns------End _read--------
 
 
-@ 458020 ps------End _runControlRising--------
+@ 458020 ps------End _runFSMRising--------
 
 
-@ 459 ns------Start _runControlFalling--------
+@ 459 ns------Start _runFSMFalling--------
 
 
 @ 459 ns------Start _runDecode--------
@@ -11402,10 +11402,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 459 ns------End _runControlFalling--------
+@ 459 ns------End _runFSMFalling--------
 
 
-@ 460 ns------Start _runControlRising--------
+@ 460 ns------Start _runFSMRising--------
 
 
 @ 460 ns------Start _runRFRead--------
@@ -11414,16 +11414,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 460 ns------Start _runFetch from PM--------
 
 
-@ 460 ns------End _runControlRising--------
+@ 460 ns------End _runFSMRising--------
 
 
-@ 461 ns------Start _runControlFalling--------
+@ 461 ns------Start _runFSMFalling--------
 
 
-@ 461 ns------End _runControlFalling--------
+@ 461 ns------End _runFSMFalling--------
 
 
-@ 462 ns------Start _runControlRising--------
+@ 462 ns------Start _runFSMRising--------
 
 
 @ 462 ns------Start _runExecution--------
@@ -11438,34 +11438,34 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 462 ns------End _runControlRising--------
+@ 462 ns------End _runFSMRising--------
 
 
-@ 463 ns------Start _runControlFalling--------
+@ 463 ns------Start _runFSMFalling--------
 
 
-@ 463 ns------End _runControlFalling--------
+@ 463 ns------End _runFSMFalling--------
 
 
-@ 464 ns------Start _runControlRising--------
+@ 464 ns------Start _runFSMRising--------
 
 
 @ 464 ns------Start _runMemAccess--------
 
 
-@ 464 ns------End _runControlRising--------
+@ 464 ns------End _runFSMRising--------
 
 
-@ 465 ns------Start _runControlFalling--------
+@ 465 ns------Start _runFSMFalling--------
 
 
 @ 465 ns------Start _runRFWrite--------
 
 
-@ 465 ns------End _runControlFalling--------
+@ 465 ns------End _runFSMFalling--------
 
 
-@ 466 ns------Start _runControlRising--------
+@ 466 ns------Start _runFSMRising--------
 
 
 @ 466 ns------Start _runFetch from PM--------
@@ -11483,10 +11483,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 466 ns------End _read--------
 
 
-@ 466020 ps------End _runControlRising--------
+@ 466020 ps------End _runFSMRising--------
 
 
-@ 467 ns------Start _runControlFalling--------
+@ 467 ns------Start _runFSMFalling--------
 
 
 @ 467 ns------Start _runDecode--------
@@ -11498,10 +11498,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 467 ns------End _runControlFalling--------
+@ 467 ns------End _runFSMFalling--------
 
 
-@ 468 ns------Start _runControlRising--------
+@ 468 ns------Start _runFSMRising--------
 
 
 @ 468 ns------Start _runRFRead--------
@@ -11510,16 +11510,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 468 ns------Start _runFetch from PM--------
 
 
-@ 468 ns------End _runControlRising--------
+@ 468 ns------End _runFSMRising--------
 
 
-@ 469 ns------Start _runControlFalling--------
+@ 469 ns------Start _runFSMFalling--------
 
 
-@ 469 ns------End _runControlFalling--------
+@ 469 ns------End _runFSMFalling--------
 
 
-@ 470 ns------Start _runControlRising--------
+@ 470 ns------Start _runFSMRising--------
 
 
 @ 470 ns------Start _runExecution--------
@@ -11534,34 +11534,34 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 470 ns------End _runControlRising--------
+@ 470 ns------End _runFSMRising--------
 
 
-@ 471 ns------Start _runControlFalling--------
+@ 471 ns------Start _runFSMFalling--------
 
 
-@ 471 ns------End _runControlFalling--------
+@ 471 ns------End _runFSMFalling--------
 
 
-@ 472 ns------Start _runControlRising--------
+@ 472 ns------Start _runFSMRising--------
 
 
 @ 472 ns------Start _runMemAccess--------
 
 
-@ 472 ns------End _runControlRising--------
+@ 472 ns------End _runFSMRising--------
 
 
-@ 473 ns------Start _runControlFalling--------
+@ 473 ns------Start _runFSMFalling--------
 
 
 @ 473 ns------Start _runRFWrite--------
 
 
-@ 473 ns------End _runControlFalling--------
+@ 473 ns------End _runFSMFalling--------
 
 
-@ 474 ns------Start _runControlRising--------
+@ 474 ns------Start _runFSMRising--------
 
 
 @ 474 ns------Start _runFetch from PM--------
@@ -11579,10 +11579,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 474 ns------End _read--------
 
 
-@ 474020 ps------End _runControlRising--------
+@ 474020 ps------End _runFSMRising--------
 
 
-@ 475 ns------Start _runControlFalling--------
+@ 475 ns------Start _runFSMFalling--------
 
 
 @ 475 ns------Start _runDecode--------
@@ -11594,10 +11594,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 475 ns------End _runControlFalling--------
+@ 475 ns------End _runFSMFalling--------
 
 
-@ 476 ns------Start _runControlRising--------
+@ 476 ns------Start _runFSMRising--------
 
 
 @ 476 ns------Start _runRFRead--------
@@ -11606,16 +11606,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 476 ns------Start _runFetch from PM--------
 
 
-@ 476 ns------End _runControlRising--------
+@ 476 ns------End _runFSMRising--------
 
 
-@ 477 ns------Start _runControlFalling--------
+@ 477 ns------Start _runFSMFalling--------
 
 
-@ 477 ns------End _runControlFalling--------
+@ 477 ns------End _runFSMFalling--------
 
 
-@ 478 ns------Start _runControlRising--------
+@ 478 ns------Start _runFSMRising--------
 
 
 @ 478 ns------Start _runExecution--------
@@ -11630,34 +11630,34 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 478 ns------End _runControlRising--------
+@ 478 ns------End _runFSMRising--------
 
 
-@ 479 ns------Start _runControlFalling--------
+@ 479 ns------Start _runFSMFalling--------
 
 
-@ 479 ns------End _runControlFalling--------
+@ 479 ns------End _runFSMFalling--------
 
 
-@ 480 ns------Start _runControlRising--------
+@ 480 ns------Start _runFSMRising--------
 
 
 @ 480 ns------Start _runMemAccess--------
 
 
-@ 480 ns------End _runControlRising--------
+@ 480 ns------End _runFSMRising--------
 
 
-@ 481 ns------Start _runControlFalling--------
+@ 481 ns------Start _runFSMFalling--------
 
 
 @ 481 ns------Start _runRFWrite--------
 
 
-@ 481 ns------End _runControlFalling--------
+@ 481 ns------End _runFSMFalling--------
 
 
-@ 482 ns------Start _runControlRising--------
+@ 482 ns------Start _runFSMRising--------
 
 
 @ 482 ns------Start _runFetch from PM--------
@@ -11675,10 +11675,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 482 ns------End _read--------
 
 
-@ 482020 ps------End _runControlRising--------
+@ 482020 ps------End _runFSMRising--------
 
 
-@ 483 ns------Start _runControlFalling--------
+@ 483 ns------Start _runFSMFalling--------
 
 
 @ 483 ns------Start _runDecode--------
@@ -11690,10 +11690,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 483 ns------End _runControlFalling--------
+@ 483 ns------End _runFSMFalling--------
 
 
-@ 484 ns------Start _runControlRising--------
+@ 484 ns------Start _runFSMRising--------
 
 
 @ 484 ns------Start _runRFRead--------
@@ -11702,16 +11702,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 484 ns------Start _runFetch from PM--------
 
 
-@ 484 ns------End _runControlRising--------
+@ 484 ns------End _runFSMRising--------
 
 
-@ 485 ns------Start _runControlFalling--------
+@ 485 ns------Start _runFSMFalling--------
 
 
-@ 485 ns------End _runControlFalling--------
+@ 485 ns------End _runFSMFalling--------
 
 
-@ 486 ns------Start _runControlRising--------
+@ 486 ns------Start _runFSMRising--------
 
 
 @ 486 ns------Start _runExecution--------
@@ -11726,34 +11726,34 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 486 ns------End _runControlRising--------
+@ 486 ns------End _runFSMRising--------
 
 
-@ 487 ns------Start _runControlFalling--------
+@ 487 ns------Start _runFSMFalling--------
 
 
-@ 487 ns------End _runControlFalling--------
+@ 487 ns------End _runFSMFalling--------
 
 
-@ 488 ns------Start _runControlRising--------
+@ 488 ns------Start _runFSMRising--------
 
 
 @ 488 ns------Start _runMemAccess--------
 
 
-@ 488 ns------End _runControlRising--------
+@ 488 ns------End _runFSMRising--------
 
 
-@ 489 ns------Start _runControlFalling--------
+@ 489 ns------Start _runFSMFalling--------
 
 
 @ 489 ns------Start _runRFWrite--------
 
 
-@ 489 ns------End _runControlFalling--------
+@ 489 ns------End _runFSMFalling--------
 
 
-@ 490 ns------Start _runControlRising--------
+@ 490 ns------Start _runFSMRising--------
 
 
 @ 490 ns------Start _runFetch from PM--------
@@ -11771,10 +11771,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 490 ns------End _read--------
 
 
-@ 490020 ps------End _runControlRising--------
+@ 490020 ps------End _runFSMRising--------
 
 
-@ 491 ns------Start _runControlFalling--------
+@ 491 ns------Start _runFSMFalling--------
 
 
 @ 491 ns------Start _runDecode--------
@@ -11786,10 +11786,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 491 ns------End _runControlFalling--------
+@ 491 ns------End _runFSMFalling--------
 
 
-@ 492 ns------Start _runControlRising--------
+@ 492 ns------Start _runFSMRising--------
 
 
 @ 492 ns------Start _runRFRead--------
@@ -11798,16 +11798,16 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 492 ns------Start _runFetch from PM--------
 
 
-@ 492 ns------End _runControlRising--------
+@ 492 ns------End _runFSMRising--------
 
 
-@ 493 ns------Start _runControlFalling--------
+@ 493 ns------Start _runFSMFalling--------
 
 
-@ 493 ns------End _runControlFalling--------
+@ 493 ns------End _runFSMFalling--------
 
 
-@ 494 ns------Start _runControlRising--------
+@ 494 ns------Start _runFSMRising--------
 
 
 @ 494 ns------Start _runExecution--------
@@ -11822,34 +11822,34 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 494 ns------End _runControlRising--------
+@ 494 ns------End _runFSMRising--------
 
 
-@ 495 ns------Start _runControlFalling--------
+@ 495 ns------Start _runFSMFalling--------
 
 
-@ 495 ns------End _runControlFalling--------
+@ 495 ns------End _runFSMFalling--------
 
 
-@ 496 ns------Start _runControlRising--------
+@ 496 ns------Start _runFSMRising--------
 
 
 @ 496 ns------Start _runMemAccess--------
 
 
-@ 496 ns------End _runControlRising--------
+@ 496 ns------End _runFSMRising--------
 
 
-@ 497 ns------Start _runControlFalling--------
+@ 497 ns------Start _runFSMFalling--------
 
 
 @ 497 ns------Start _runRFWrite--------
 
 
-@ 497 ns------End _runControlFalling--------
+@ 497 ns------End _runFSMFalling--------
 
 
-@ 498 ns------Start _runControlRising--------
+@ 498 ns------Start _runFSMRising--------
 
 
 @ 498 ns------Start _runFetch from PM--------
@@ -11867,10 +11867,10 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 @ 498 ns------End _read--------
 
 
-@ 498020 ps------End _runControlRising--------
+@ 498020 ps------End _runFSMRising--------
 
 
-@ 499 ns------Start _runControlFalling--------
+@ 499 ns------Start _runFSMFalling--------
 
 
 @ 499 ns------Start _runDecode--------
@@ -11882,7 +11882,7 @@ In file: /systemc-2.3.2/./src/sysc/kernel/sc_object.cpp:247
 /**===================================CONTROLLER LOG===================================**/
 
 
-@ 499 ns------End _runControlFalling--------
+@ 499 ns------End _runFSMFalling--------
 
 
 @ 500 ns----------End Simulation---------

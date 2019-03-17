@@ -52,7 +52,7 @@ class _controllerBlock : public sc_module {
 			PC = 0x0000;
 			_currentState.write(S0);
 
-			SC_THREAD(_runControl);
+			SC_THREAD(_runFSM);
 			sensitive<<_clock;
 		};
 
@@ -61,11 +61,11 @@ class _controllerBlock : public sc_module {
 		sc_uint<16> _IR;
 		sc_uint<16> PC;
 
-		void _runControl () {
+		void _runFSM () {
 			while(true) {
 				wait();
 				if(_clock.read() == 1) {
-					cout<<"@ "<<sc_time_stamp()<<"------Start _runControlRising--------"<<endl<<endl<<endl;
+					cout<<"@ "<<sc_time_stamp()<<"------Start _runFSMRising--------"<<endl<<endl<<endl;
 
 					switch(_currentState.read()) {
 						case S0 :
@@ -90,9 +90,9 @@ class _controllerBlock : public sc_module {
 							break;
 					}
 					
-					cout<<"@ "<<sc_time_stamp()<<"------End _runControlRising--------"<<endl<<endl<<endl;
+					cout<<"@ "<<sc_time_stamp()<<"------End _runFSMRising--------"<<endl<<endl<<endl;
 				} else {
-					cout<<"@ "<<sc_time_stamp()<<"------Start _runControlFalling--------"<<endl<<endl<<endl;
+					cout<<"@ "<<sc_time_stamp()<<"------Start _runFSMFalling--------"<<endl<<endl<<endl;
 
 					switch(_currentState.read()) {
 						case S1 :
@@ -108,7 +108,7 @@ class _controllerBlock : public sc_module {
 							break;
 					}
 
-					cout<<"@ "<<sc_time_stamp()<<"------End _runControlFalling--------"<<endl<<endl<<endl;
+					cout<<"@ "<<sc_time_stamp()<<"------End _runFSMFalling--------"<<endl<<endl<<endl;
 				}
 			}
 		}
