@@ -186,14 +186,14 @@ int sc_main(int argc , char* argv[]) {
 	std::vector<sc_uint<16> >  _program;
 
 	// Program to Load
-	_program.push_back(0b1101000000000000); // MVI 0 , A
-	_program.push_back(0b1101000100000001); // MVI 1 , B
-	_program.push_back(0b1101001000001010); // MVI 9 , C
+	_program.push_back(0b1101000000000000); // MOVI 0 , A
+	_program.push_back(0b1101000100000001); // MOVI 1 , B
+	_program.push_back(0b1101001000001010); // MOVI 9 , C
 	_program.push_back(0b0000000001010001); // ADD B , A
-	_program.push_back(0b0101000100000001); // ADI 1 , B
+	_program.push_back(0b0101000100000001); // ADDI 1 , B
 	_program.push_back(0b1001001000000001); // SUBI 1 , C
 	_program.push_back(0b1011001000000000); // CMPI 0 , C
-	_program.push_back(0b0100000111000011); // JNZ 3
+	_program.push_back(0b0100000111000011); // JNE 3
 	_program.push_back(0b0000000000000000); // NOP
 
 	// Write Loaded Program to Program Memory
