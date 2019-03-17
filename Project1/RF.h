@@ -29,11 +29,9 @@ class _registerFile : public sc_module {
 
 		_registerFile(sc_module_name name) : sc_module(name) { 
 			SC_METHOD(_read);
-			// dont_initialize();
 			sensitive<<_rfRead.pos();
 
 			SC_METHOD(_write);
-			// dont_initialize();
 			sensitive<<_rfWrite.pos();
 		};
 
@@ -45,34 +43,40 @@ class _registerFile : public sc_module {
 		void _read () { 
 			cout<<"@ "<<sc_time_stamp()<<"------Start _read--------"<<endl<<endl<<endl;
 			sc_uint<1> _isImm = _isImmData.read();
-			sc_uint<4> _adr1 = _addr1.read();
-			sc_uint<4> _adr2 = _addr2.read();
+			_addrSize _adr1 = _addr1.read();
+			_addrSize _adr2 = _addr2.read();
+			_dataSize _value = _data.read();
 			if(_isImm) {
-				_immRegisters[_adr2] = _data.read();
+				_immRegisters[_adr2] = _value;
 			}
-			_dataOut1.write(_isImm == 1 ? _dataZero : _registers[_adr1]);
-			_dataOut2.write(_isImm == 1 ? _immRegisters[_adr2] : _registers[_adr2]) ;
+			sc_uint<16> _out1 = _registers[_adr1];
+			sc_uint<16> _out2 = _isImm == 1 ? _immRegisters[_adr2] : _registers[_adr2];
+
+			_dataOut1.write(_out1);
+			_dataOut2.write(_out2) ;
 
 			cout<<"/**===================================REGISTER FILE LOG===================================**/"<<endl;
 			cout<<"       Address1 Input : "<<_adr1<<endl;
 			cout<<"       Address2 Input : "<<_adr2<<endl;
 			cout<<"       Is Immediate Value : "<<_isImm<<endl;
 			if(_isImm) {
-				cout<<"       Immediate Value : "<<_data.read()<<endl;
+				cout<<"       Immediate Value : "<<_value<<endl;
 			}
-			cout<<"       Data1 Output : "<<_dataOut1.read()<<endl;
-			cout<<"       Data2 Output : "<<_dataOut2.read()<<endl;
+			cout<<"       Data1 Output : "<<_out1<<endl;
+			cout<<"       Data2 Output : "<<_out2<<endl;
 			cout<<"/**===================================REGISTER FILE LOG===================================**/"<<endl<<endl<<endl;
 			cout<<"@ "<<sc_time_stamp()<<"------End _read--------"<<endl<<endl<<endl;
 		};
 
 		void _write () { 
 			cout<<"@ "<<sc_time_stamp()<<"------Start _write--------"<<endl<<endl<<endl;
-			_immRegisters[_addr1.read()] = _data.read();
+			_addrSize _addr = _addr1.read();
+			_dataSize _value = _data.read();
+			_registers[_addr] = _value;
 
 			cout<<"/**===================================REGISTER FILE LOG===================================**/"<<endl;
-			cout<<"       Address Input : "<<_addr1.read()<<endl;
-			cout<<"       Value Input : "<<_data.read()<<endl;
+			cout<<"       Address Input : "<<_addr<<endl;
+			cout<<"       Value Input : "<<_value<<endl;
 			cout<<"/**===================================REGISTER FILE LOG===================================**/"<<endl<<endl<<endl;
 			cout<<"@ "<<sc_time_stamp()<<"------End _write--------"<<endl<<endl<<endl;
 		};

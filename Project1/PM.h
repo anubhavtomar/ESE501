@@ -44,12 +44,19 @@ class _programMemory : public sc_module {
 
 		void _read () { 
 			cout<<"@ "<<sc_time_stamp()<<"------Start _read--------"<<endl<<endl<<endl;
-			_instructionOut.write(_programStore[_addrPC.read()]);
-
-			cout<<"/**===================================PROGRAM MEMORY LOG===================================**/"<<endl;
-			cout<<"       Address Input : "<<_addrPC.read()<<endl;
-			cout<<"       Instruction Output : "<<_programStore[_addrPC.read()]<<endl;
-			cout<<"/**===================================PROGRAM MEMORY LOG===================================**/"<<endl<<endl<<endl;
+			_addrSize _addr = _addrPC.read();
+			if(_addr < _programStore.size()) {
+				_instructionOut.write(_programStore[_addr]);
+				cout<<"/**===================================PROGRAM MEMORY LOG===================================**/"<<endl;
+				cout<<"       Address Input : "<<_addr<<endl;
+				cout<<"       Instruction Output : "<<_programStore[_addr]<<endl;
+				cout<<"/**===================================PROGRAM MEMORY LOG===================================**/"<<endl<<endl<<endl;
+			} else {
+				cout<<"/**===================================PROGRAM MEMORY LOG===================================**/"<<endl;
+				cout<<"       Address Input : "<<_addr<<endl;
+				cout<<"       Instruction Output : NOP Found"<<endl;
+				cout<<"/**===================================PROGRAM MEMORY LOG===================================**/"<<endl<<endl<<endl;
+			}
 			cout<<"@ "<<sc_time_stamp()<<"------End _read--------"<<endl<<endl<<endl;
 		};
 };

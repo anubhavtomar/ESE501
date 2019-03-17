@@ -115,16 +115,22 @@ class _controllerBlock : public sc_module {
 
 		void _runFetch () {
 			cout<<"@ "<<sc_time_stamp()<<"------Start _runFetch from PM--------"<<endl<<endl<<endl;
-
+			if(_currentState.read() != S0 && _IR == 0) { // NOP
+				return;
+			}
 			_PCOut.write(PC);
 			_pmRead.write(1);
 			wait(10 , SC_PS);
 			_IR = _instructionIn.read();
 			wait(10 , SC_PS);
 			_pmRead.write(0);
+			if(_IR == 0) { // NOP
+				return;
+			}
 			PC += 1;
 
 			cout<<"/**===================================CONTROLLER LOG===================================**/"<<endl;
+			cout<<"       Stage : Instruction Fetch"<<endl;
 			cout<<"       Instruction : "<<_IR<<endl;
 			cout<<"       Current PC Value : "<<PC<<endl;
 			cout<<"/**===================================CONTROLLER LOG===================================**/"<<endl<<endl<<endl;
@@ -151,7 +157,13 @@ class _controllerBlock : public sc_module {
 
 		void _runDecode () {
 			cout<<"@ "<<sc_time_stamp()<<"------Start _runDecode--------"<<endl<<endl<<endl;
-
+			if(_IR == 0) { // NOP
+				cout<<"/**===================================CONTROLLER LOG===================================**/"<<endl;
+					cout<<"       Stage : Instruction Decode"<<endl;
+					cout<<"       Instruction Opcode : NOP"<<endl;
+				cout<<"/**===================================CONTROLLER LOG===================================**/"<<endl<<endl<<endl;
+				return;
+			}
 			sc_uint<4> _opcode = _IR.range(15 , 12);
 			sc_uint<4> _rDestCond = _IR.range(11 , 8);
 			sc_uint<4> _opCodeExtImmH = _IR.range(7 , 4);
@@ -159,6 +171,7 @@ class _controllerBlock : public sc_module {
 			sc_uint<49> _instructionControlSig;
 
 			cout<<"/**===================================CONTROLLER LOG===================================**/"<<endl;
+			cout<<"       Stage : Instruction Decode"<<endl;
 			cout<<"       Instruction Opcode : "<<_IR<<endl;
 			switch(_opcode) {
 				case 0b0000 : // ADD , SUB , CMP , AND , OR , XOR , MOV
@@ -280,14 +293,19 @@ class _controllerBlock : public sc_module {
 
 		void _runRFRead () {
 			cout<<"@ "<<sc_time_stamp()<<"------Start _runRFRead--------"<<endl<<endl<<endl;
-
+			if(!_instructionControlSigQ.size()) {
+				return;
+			}
 			sc_uint<48> _currentInstruction = _instructionControlSigQ.front();
 			sc_uint<4> _aluSig = _currentInstruction.range(16 , 13);
 			_dataSize _op1 , _op2;
 			if(_currentInstruction.range(12 , 12)) { // _isImmData = 1
-				_rfAddr1Out.write(_currentInstruction.range(11 , 8)); // ImmHi
-				_rfDataOut.write(_currentInstruction.range(7 , 4)<<4 + _currentInstruction.range(3 , 0)); // ImmHi<<4 + ImmLo
-
+				_rfAddr1Out.write(_currentInstruction.range(11 , 8)); // Rdst
+				sc_uint<16> parseData = _currentInstruction.range(7 , 4); // ImmHi<<4 + ImmLo
+				parseData = parseData<<4;
+				parseData += _currentInstruction.range(3 , 0);
+				_rfDataOut.write(parseData);
+				_isImmData.write(1);
 				_rfRead.write(true);
 				wait(10 , SC_PS);
 				_op1 = _operand1In.read();
@@ -295,9 +313,9 @@ class _controllerBlock : public sc_module {
 				wait(10 , SC_PS);
 				_rfRead.write(false);
 			} else {
-				_rfAddr1Out.write(_currentInstruction.range(7 , 4)); // Rdst
+				_rfAddr1Out.write(_currentInstruction.range(11 , 8)); // Rdst
 				_rfAddr2Out.write(_currentInstruction.range(3 , 0)); // Rsrc
-
+				_isImmData.write(0);
 				_rfRead.write(true);
 				wait(10 , SC_PS);
 				_op1 = _operand1In.read();
@@ -309,10 +327,12 @@ class _controllerBlock : public sc_module {
 			_instructionControlSigQ[0].range(32 , 17) = _op1;
 			_instructionControlSigQ[0].range(48 , 33) = _op2;
 			if(_aluSig == 0b1100 || _aluSig == 0b1011) { // Jcond , Bcond
+				_instructionControlSigQ[0].range(32 , 17) = _currentInstruction.range(3 , 0);
 				_instructionControlSigQ[0].range(48 , 33) = PC; // Store PC as _operand2Out
 			}
 
 			cout<<"/**===================================CONTROLLER LOG===================================**/"<<endl;
+			cout<<"       Stage : RF Access"<<endl;
 			cout<<"       _instructionControlSig : "<<_instructionControlSigQ[0]<<endl;
 			cout<<"       Operand1 : "<<_op1<<endl;
 			cout<<"       Operand2 : "<<_op2<<endl;
@@ -323,7 +343,9 @@ class _controllerBlock : public sc_module {
 
 		void _runExecution () {
 			cout<<"@ "<<sc_time_stamp()<<"------Start _runExecution--------"<<endl<<endl<<endl;
-
+			if(!_instructionControlSigQ.size()) {
+				return;
+			}
 			sc_uint<49> _currentInstruction = _instructionControlSigQ.front();
 			_aluControlSig.write(_currentInstruction.range(16 , 13));
 			_condControlSig.write(_currentInstruction.range(11 , 8));
@@ -339,6 +361,7 @@ class _controllerBlock : public sc_module {
 			_instructionControlSigQ[0].range(48 , 33) = _res; // Overwrite operand2. Only operand1 is required in _memAccess & _runRFWriteBack
 
 			cout<<"/**===================================CONTROLLER LOG===================================**/"<<endl;
+			cout<<"       Stage : Execution"<<endl;
 			cout<<"       _instructionControlSig : "<<_instructionControlSigQ[0]<<endl;
 			cout<<"       Result : "<<_res<<endl;
 			cout<<"/**===================================CONTROLLER LOG===================================**/"<<endl<<endl<<endl;
@@ -348,7 +371,9 @@ class _controllerBlock : public sc_module {
 
 		void _runMemAccess () {
 			cout<<"@ "<<sc_time_stamp()<<"------Start _runMemAccess--------"<<endl<<endl<<endl;
-
+			if(!_instructionControlSigQ.size()) {
+				return;
+			}
 			sc_uint<49> _currentInstruction = _instructionControlSigQ.front();
 			sc_uint<4> _aluSig = _currentInstruction.range(16 , 13);
 			if(_aluSig == 0b1001) { // LOAD
@@ -371,6 +396,7 @@ class _controllerBlock : public sc_module {
 			}
 
 			cout<<"/**===================================CONTROLLER LOG===================================**/"<<endl;
+			cout<<"       Stage : Memory Access"<<endl;
 			cout<<"       _instructionControlSig : "<<_instructionControlSigQ[0]<<endl;
 			cout<<"/**===================================CONTROLLER LOG===================================**/"<<endl<<endl<<endl;
 
@@ -379,12 +405,14 @@ class _controllerBlock : public sc_module {
 
 		void _runRFWriteBack() {
 			cout<<"@ "<<sc_time_stamp()<<"------Start _runRFWrite--------"<<endl<<endl<<endl;
-
+			if(!_instructionControlSigQ.size()) {
+				return;
+			}
 			sc_uint<49> _currentInstruction = _instructionControlSigQ.front();
 			sc_uint<4> _aluSig = _currentInstruction.range(16 , 13);
 			if(_aluSig != 0b0010 && _aluSig != 0b1010 && _aluSig != 0b1011 && _aluSig != 0b1100) { // All except CMP , CMPI , STOR , Jcond , Bcond
 				_rfAddr1Out.write(_currentInstruction.range(11 , 8)); // Rdst
-				_rfAddr2Out.write(_currentInstruction.range(48 , 33)); // Result
+				_rfDataOut.write(_currentInstruction.range(48 , 33)); // Result
 				_rfWrite.write(1);
 				wait(10 , SC_PS);
 				wait(10 , SC_PS);
@@ -392,6 +420,10 @@ class _controllerBlock : public sc_module {
 			}
 
 			_instructionControlSigQ.erase(_instructionControlSigQ.begin());
+			cout<<"/**===================================CONTROLLER LOG===================================**/"<<endl;
+			cout<<"       Stage : RF Write Back"<<endl;
+			cout<<"       _instructionControlSigQ Length : "<<_instructionControlSigQ.size()<<endl;
+			cout<<"/**===================================CONTROLLER LOG===================================**/"<<endl<<endl<<endl;
 
 			cout<<"@ "<<sc_time_stamp()<<"------End _runRFWrite--------"<<endl<<endl<<endl;
 		}

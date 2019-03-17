@@ -138,12 +138,14 @@ class _aluBlock : public sc_module {
 			cout<<"@ "<<sc_time_stamp()<<"------Start _executions--------"<<endl<<endl<<endl;
 			sc_uint<16> _op1 = _operand1.read();
 			sc_uint<16> _op2 = _operand2.read();
+			_dataSize _out;
 			switch(_aluControlSig.read()) {
 				case 0b0000 : // ADD & ADDI
 					if(_op1 >= _dataMAX || _op2 >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
-					_resultOut.write(_op1 + _op2);
+					_out = _op1 + _op2;
+					_resultOut.write(_out);
 					if(_resultOut >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
@@ -153,7 +155,7 @@ class _aluBlock : public sc_module {
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
  					break;
@@ -164,7 +166,8 @@ class _aluBlock : public sc_module {
 					if(_op1 < _op2) {
 						_PSR.range(_carryBit , _carryBit) = 1;
 					} 
-					_resultOut.write(abs(_op1 - _op2));
+					_out = abs(_op1 - _op2);
+					_resultOut.write(_out);
 					if(_resultOut >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
@@ -173,7 +176,7 @@ class _aluBlock : public sc_module {
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break;
@@ -184,7 +187,8 @@ class _aluBlock : public sc_module {
 					if(_op1 < _op2) {
 						_PSR.range(_carryBit , _carryBit) = 1;
 					} 
-					_resultOut.write(abs(_op1 - _op2));
+					_out = abs(_op1 - _op2);
+					_resultOut.write(_out);
 					if(_resultOut >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
@@ -196,7 +200,7 @@ class _aluBlock : public sc_module {
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break; 
@@ -204,7 +208,8 @@ class _aluBlock : public sc_module {
 					if(_op1 >= _dataMAX || _op2 >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
-					_resultOut.write(_op1 & _op2);
+					_out = _op1 & _op2;
+					_resultOut.write(_out);
 					if(_resultOut >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
@@ -213,7 +218,7 @@ class _aluBlock : public sc_module {
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break; 
@@ -221,7 +226,9 @@ class _aluBlock : public sc_module {
 					if(_op1 >= _dataMAX || _op2 >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
-					_resultOut.write(_op1 | _op2);
+					_out = _op1 | _op2;
+					_resultOut.write(_out);
+					_resultOut.write(_out);
 					if(_resultOut >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
@@ -230,7 +237,7 @@ class _aluBlock : public sc_module {
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break; 
@@ -238,7 +245,8 @@ class _aluBlock : public sc_module {
 					if(_op1 >= _dataMAX || _op2 >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
-					_resultOut.write(_op1 ^ _op2);
+					_out = _op1 ^ _op2;
+					_resultOut.write(_out);
 					if(_resultOut >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
@@ -247,7 +255,7 @@ class _aluBlock : public sc_module {
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break; 
@@ -255,13 +263,14 @@ class _aluBlock : public sc_module {
 					if(_op1 >= _dataMAX || _op2 >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
-					_resultOut.write(_op1);
+					_out = _op2;
+					_resultOut.write(_out);
 					cout<<"/**===================================ALU LOG===================================**/"<<endl;
 					cout<<"       Instruction : MOV/MOVI"<<endl;
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break; 
@@ -269,7 +278,8 @@ class _aluBlock : public sc_module {
 					if(_op1 >= _dataMAX || _op2 >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
-					_resultOut.write(_op1 << _op2);
+					_out = _op1 << _op2;
+					_resultOut.write(_out);
 					if(_resultOut >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
@@ -278,7 +288,7 @@ class _aluBlock : public sc_module {
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break; 
@@ -286,7 +296,8 @@ class _aluBlock : public sc_module {
 					if(_op1 >= _dataMAX || _op2 >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
-					_resultOut.write(_op1 >> _op2);
+					_out = _op1 >> _op2;
+					_resultOut.write(_out);
 					if(_resultOut >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
@@ -295,7 +306,7 @@ class _aluBlock : public sc_module {
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break; 
@@ -303,13 +314,14 @@ class _aluBlock : public sc_module {
 					if(_op1 >= _dataMAX || _op2 >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
-					_resultOut.write(_op2);
+					_out = _op2;
+					_resultOut.write(_out);
 					cout<<"/**===================================ALU LOG===================================**/"<<endl;
 					cout<<"       Instruction : LUI/LOAD"<<endl;
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break; 
@@ -317,13 +329,14 @@ class _aluBlock : public sc_module {
 					if(_op1 >= _dataMAX || _op2 >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
-					_resultOut.write(_op1);
+					_out = _op1;
+					_resultOut.write(_out);
 					cout<<"/**===================================ALU LOG===================================**/"<<endl;
 					cout<<"       Instruction : STOR"<<endl;
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break; 
@@ -331,13 +344,14 @@ class _aluBlock : public sc_module {
 					if(_op1 >= _dataMAX || _op2 >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
+					_out = _op1 + _op2;
 					if(_checkCondition("       Instruction : Bcond")) {
-						_resultOut.write(_op1 + _op2);
+						_resultOut.write(_out);
 					}
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break;
@@ -346,12 +360,15 @@ class _aluBlock : public sc_module {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
 					if(_checkCondition("       Instruction : Jcond")) {
-						_resultOut.write(_op1);
+						_out = _op1;
+					} else {
+						_out = _op2;
 					}
+					_resultOut.write(_out);
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break; 
@@ -359,12 +376,13 @@ class _aluBlock : public sc_module {
 					if(_op1 >= _dataMAX || _op2 >= _dataMAX) {
 						_PSR.range(_overflowBit , _overflowBit) = 1;
 					}
+					_out = _op1;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl;
 					cout<<"       Instruction : JAL"<<endl;
 					cout<<"       _Immediate : "<<_isImmControlSig.read()<<endl;
 					cout<<"       _operand1 :  "<<_op1<<endl;
 					cout<<"       _operand2 :  "<<_op2<<endl;
-					cout<<"       _result :  "<<_resultOut<<endl;
+					cout<<"       _result :  "<<_out<<endl;
 					cout<<"       _PSR :  "<<_PSR<<endl;
 					cout<<"/**===================================ALU LOG===================================**/"<<endl<<endl<<endl;
 					break; 
