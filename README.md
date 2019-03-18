@@ -5,7 +5,7 @@ Digital System Specification and Modeling Using SystemC
 ### Date: 3/13/19
 Author: Anubhav Tomar
 
-Description: 16-bit MINI RISC Processor Architecture with 5-Stage Pipeline Execution
+Description: RTL Level Modeling of a 16-bit MINI RISC Processor Architecture with 5-Stage Pipeline Execution
 
 Language: SystemC
 
