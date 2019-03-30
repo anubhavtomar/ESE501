@@ -38,9 +38,9 @@ output : control signals for every stage of the pipeline
 - In early stages of a design proces, patitioning of functionality into hw/sw is not determined.
 - At this point, avoid
 	* timing
-	* find-frain structure
+	* find-train structure
 	* low-level communication
-- Goal is to create an executable speciincatino as efficient as possible
+- Goal is to create an executable specification as efficient as possible
 
 /*Untimed functional models*/
 - the most general deterministic, untimed model of computation -> KPN (Kahn process n/w)
@@ -54,7 +54,7 @@ Producer -------------> Consumer
 template<class T> 
 SC_MODULE(DR_ADDER) {
 	sc_fifo_in<I> input1 , input2;
-	sc_dido_out<T> output
+	sc_fifo_out<T> output
 	;
 	void process() {
 		while(1) {
