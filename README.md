@@ -69,9 +69,9 @@ Language: SystemC
 
 * [SERVER.h](https://github.com/anubhavtomar/ESE501/blob/master/Project2/SERVER.h) - Server Module
 
-* [testbench.cpp](https://github.com/anubhavtomar/ESE501/blob/master/Project2/testbench.cpp) - Initializes all modules, interconnect port of different modules using signals. Generate clock signals. Load the program memory and start the simulation.
+* [testbench.cpp](https://github.com/anubhavtomar/ESE501/blob/master/Project2/testbench.cpp) - Initializes all modules, interconnect port of different modules using signals. Generate clock signals and start the simulation.
 
-* [log.txt](https://github.com/anubhavtomar/ESE501/blob/master/Project2/log.txt) - Log File logged at different stages in the pipeline while execution.
+* [log.txt](https://github.com/anubhavtomar/ESE501/blob/master/Project2/log.txt) - Log File logged in different modules while execution.
 
 #### Phase 1
 ```
