@@ -9,11 +9,11 @@
 
 #include<systemc.h>
 
-template < > 
+// template < > 
 class _robotBlock : public sc_module {
 	public:
 		// Inputs
-		sc_in<bool> _robotEnable;
+		sc_in<bool> _robotEnableFromServer;
 		sc_in<bool> _startFromServer;
 		sc_in<bool> _stopFromServer;
 		sc_in<bool> _isDeltaCrossingFromEnv;
@@ -30,39 +30,49 @@ class _robotBlock : public sc_module {
 
 		SC_HAS_PROCESS(_robotBlock);
 		_robotBlock(sc_module_name name) : sc_module(name) {
-			SC_METHOD(_relayCrossingToServer);
-			sensitive>>_isDeltaCrossingFromEnv.pos();
+			SC_THREAD(_relayToServer);
+			sensitive<<_isDeltaCrossingFromEnv.pos();
+			sensitive<<_isBoundaryFromEnv.pos();
+			sensitive<<_isObstacleFromEnv;
 
-			SC_METHOD(_relayBoundaryToServer);
-			sensitive>>_isBoundaryFromEnv.pos();
-
-			SC_METHOD(_relayObstacleToServer);
-			sensitive>>_isObstacleFromEnv.pos();
-
-			SC_METHOD(_relayStartToEnv);
-			sensitive>>_startFromServer.pos();
-
-			SC_METHOD(_relayStopToEnv);
-			sensitive>>_stopFromServer.pos();
+			SC_METHOD(_relayToEnv);
+			sensitive<<_robotEnableFromServer.pos();
 		};
 
 	private:
-		void _relayCrossingToServer () {
-			_isDeltaCrossingToServer.write(true);
+		void _relayToServer () {
+			while(true) {
+				wait();
+
+				cout<<"@ "<<sc_time_stamp()<<"------Start _relayToServer--------"<<endl;
+				_isObstacleToServer.write(_isObstacleFromEnv.read());
+				_isBoundaryToServer.write(_isBoundaryFromEnv.read());
+				_isDeltaCrossingToServer.write(_isDeltaCrossingFromEnv.read());
+				_enableToServer.write(true);
+				wait(10 , SC_NS);
+				_enableToServer.write(false);
+
+				cout<<"/**===================================ROBOT LOG===================================**/"<<endl;
+				cout<<"       Obstacle Signal To Server : "<<_isObstacleToServer<<endl;
+				cout<<"       Boundary Signal To Server : "<<_isBoundaryToServer<<endl;
+				cout<<"       Delta Crossing Signal To Server : "<<_isDeltaCrossingToServer<<endl;
+				cout<<"/**===================================ROBOT LOG===================================**/"<<endl<<endl<<endl;
+
+				cout<<"@ "<<sc_time_stamp()<<"------End _relayToServer--------"<<endl<<endl<<endl;
+			}
 		}
-		void _relayBoundaryToServer () {
-			_isBoundaryToServer.write(true);
+		void _relayToEnv () {
+			cout<<"@ "<<sc_time_stamp()<<"------Start _relayEnv--------"<<endl;
+			_startToEnv.write(_startFromServer.read());
+			_stopToEnv.write(_stopFromServer.read());
+
+			cout<<"/**===================================ROBOT LOG===================================**/"<<endl;
+			cout<<"       Start Signal To Environment : "<<_startFromServer.read()<<endl;
+			cout<<"       Stop Signal To Environment : "<<_stopFromServer.read()<<endl;
+			cout<<"/**===================================ROBOT LOG===================================**/"<<endl<<endl<<endl;
+
+			cout<<"@ "<<sc_time_stamp()<<"------End _relayEnv--------"<<endl<<endl<<endl;
 		}
-		void _relayObstacleToServer () {
-			_isObstacleToServer.write(true);
-		}
-		void _relayStartToEnv () {
-			_startToEnv.write(true);
-		}
-		void _relayStopToEnv () {
-			_stopToEnv.write(true);
-		}
-		
 };
 
 #endif

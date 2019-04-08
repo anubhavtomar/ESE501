@@ -9,19 +9,19 @@
 #include<ROBOT.h>
 #include<ENVIRONMENT.h>
 
-template < >
+// template < >
 class _robotNavigation : public sc_module {
 	public:
 		/*Signals for Module Interconnections*/
 
 		// Server
-		sc_signal<bool> _serverEnable , _isDeltaCrossingFromRobot , _isBoundaryFromRobot , _isObstacleFromRobot , _startToRobot , _stopToRobot , _enableToRobot;
+		sc_signal<bool> _serverEnableFromRobot , _isDeltaCrossingFromRobot , _isBoundaryFromRobot , _isObstacleFromRobot , _startToRobot , _stopToRobot , _enableToRobot;
 
 		// Robot
-		sc_signal<bool> _robotEnable , _startFromServer , _stopFromServer , _isDeltaCrossingFromEnv , _isBoundaryFromEnv , _isObstacleFromEnv , _startToEnv , _stopToEnv , _enableToServer , _isDeltaCrossingToServer , _isBoundaryToServer , _isObstacleToServer;
+		sc_signal<bool> _robotEnableFromServer , _startFromServer , _stopFromServer , _isDeltaCrossingFromEnv , _isBoundaryFromEnv , _isObstacleFromEnv , _startToEnv , _stopToEnv , _enableToServer , _isDeltaCrossingToServer , _isBoundaryToServer , _isObstacleToServer;
 
 		// Environment
-		sc_signal<bool> _clock , _startFromRobot , _stopFromRobot , _isDeltaCrossingToRobot; , _isBoundaryToRobot, _isObstacleToRobot;
+		sc_signal<bool> _clock , _startFromRobot , _stopFromRobot , _isDeltaCrossingToRobot , _isBoundaryToRobot, _isObstacleToRobot;
 
 		/*Module Instantiation*/
 		_serverBlock* _server;
@@ -30,11 +30,19 @@ class _robotNavigation : public sc_module {
 
 		SC_HAS_PROCESS(_robotNavigation);
 		_robotNavigation(sc_module_name name) : sc_module(name) {
+
+			/**
+			 * Module Instances Created
+			 **/
+			_server = new _serverBlock ("Server");
+			_robot = new _robotBlock ("Robot");
+			_env = new _environmentBlock ("Environment");
+
 			/**
 			 * Server -> Robot
 			 **/
 			_server->_enableToRobot(_enableToRobot);
-			_robot->_robotEnable(_enableToRobot);
+			_robot->_robotEnableFromServer(_enableToRobot);
 			_server->_startToRobot(_startToRobot);
 			_robot->_startFromServer(_startToRobot);
 			_server->_stopToRobot(_stopToRobot);
@@ -44,10 +52,10 @@ class _robotNavigation : public sc_module {
 			 * Robot -> Server
 			 **/
 			_robot->_enableToServer(_enableToServer);
-			_server->_serverEnable(_enableToServer);
-			_robot->_isObstacleToServer(_isObstacleToServer);
+			_server->_serverEnableFromRobot(_enableToServer);
+			_robot->_isDeltaCrossingToServer(_isDeltaCrossingToServer);
 			_server->_isDeltaCrossingFromRobot(_isDeltaCrossingToServer);
-			_robot->_isBoundaryToServer(_isObstacleToServer);
+			_robot->_isBoundaryToServer(_isBoundaryToServer);
 			_server->_isBoundaryFromRobot(_isBoundaryToServer);
 			_robot->_isObstacleToServer(_isObstacleToServer);
 			_server->_isObstacleFromRobot(_isObstacleToServer);
@@ -73,16 +81,16 @@ class _robotNavigation : public sc_module {
 			/**
 			 * Clock -> Environment
 			 **/
-			_env->clock(_clock);
+			_env->_clock(_clock);
 			
 			SC_THREAD(clockSignal);
 		};
 
 		void clockSignal() {
 			while (true){
-		        wait(1 , SC_MS);
+		        wait(0.5 , SC_MS);
 		    	_clock = false;
-		        wait(1 , SC_MS);
+		        wait(0.5 , SC_MS);
 		    	_clock = true;
 			}
 		};
@@ -94,7 +102,7 @@ int sc_main(int argc , char* argv[]) {
 	_robotNavigation _robotNav("Robot Navigation");
 
 	cout<<"@ "<<sc_time_stamp()<<"----------Start Simulation---------"<<endl<<endl<<endl;
-	sc_start(500, SC_NS);
+	sc_start(5000 , SC_MS);
 	cout<<"@ "<<sc_time_stamp()<<"----------End Simulation---------"<<endl<<endl<<endl;
 	return 0;
 }
