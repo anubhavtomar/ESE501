@@ -75,12 +75,13 @@ Language: SystemC
 
 #### Phase 1
 ```
-1-D Grid [0 to 6]
-Robot movement [0 to 6]
-Obstacle movement [6 to 0]
-Robot Speed >> 2 m/sec
-Obstacle Speed >> 5 m/sec
-Clock cycle >> 1 milisec
+1-D Grid : [0 to 6]
+Size of each block in the Grid : 1 meter
+Robot movement : [0 to 6]
+Obstacle movement : [6 to 0]
+Robot Speed : 2 meter/sec
+Obstacle Speed : 5 meter/sec
+Clock cycle : 1 milisec
 ```
 
 The program is compiled and executed using ```sh compile.sh```.
