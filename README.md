@@ -63,11 +63,13 @@ Description: Robot Navigation in Confined Areas
 Language: SystemC
 
 #### Files:
-* [ENVIRONMENT.h](https://github.com/anubhavtomar/ESE501/blob/master/Project2/ENVIRONMENT.h) - Environment Module
+* [ENVIRONMENT.h](https://github.com/anubhavtomar/ESE501/blob/master/Project2/ENVIRONMENT.h) - Environment Module. Read the path from the robot input FIFO and move all the robots in the specified direction. Move all the obstacles in the desired path. Stop the robot if any obstacle is <= 3 meter away in front of robot and resumes after it passes the robot. Send grid crossing signal or stop signal to robot.
 
-* [ROBOT.h](https://github.com/anubhavtomar/ESE501/blob/master/Project2/ROBOT.hh) - Robot Module
+* [ROBOT.h](https://github.com/anubhavtomar/ESE501/blob/master/Project2/ROBOT.hh) - Robot Module. Read input FIFO on enable from environment and relay the data to output FIFO to server. Read input FIFO on enable from server and relay the data to output FIFO to environment.
 
-* [SERVER.h](https://github.com/anubhavtomar/ESE501/blob/master/Project2/SERVER.h) - Server Module
+* [SERVER.h](https://github.com/anubhavtomar/ESE501/blob/master/Project2/SERVER.h) - Server Module. Read the input from the robot input FIFO. If crossing signal is received, it checks for any collision with other robots and send new grid if there is no collision otherwise send stop signal to output FIFO to robot. Save the stop status is stop signal is received.
+
+* [LIB.h](https://github.com/anubhavtomar/ESE501/blob/master/Project2/LIB.h) - A library file containing 2D Grid maps, Robot paths map, obstacles path map, robot status map, robots location map, obstacles location map
 
 * [testbench.cpp](https://github.com/anubhavtomar/ESE501/blob/master/Project2/testbench.cpp) - Initializes all modules, interconnect port of different modules using signals. Generate clock signals and start the simulation.
 
@@ -81,6 +83,37 @@ Robot movement : [0 to 6]
 Obstacle movement : [6 to 0]
 Robot Speed : 2 meter/sec
 Obstacle Speed : 5 meter/sec
+Clock cycle : 1 milisec
+```
+
+#### Phase 2
+```
+2-D Grid : [1 to 60]
+X : wall
+
+1   2   3   4   5   6   7   8   9   10
+11  X   X   X   X   X   X   X   X   12
+13  14  15  16  17  18  19  20  21  22
+23  X   X   X   X   24  X   X   X   25
+26  27  28  29  30  31  32  33  34  35
+36  X   X   X   X   X   37  X   X   38
+39  40  41  42  43  44  45  46  47  48
+49  X   X   X   X   X   X   X   X   50
+51  52  53  54  55  56  57  58  59  60
+
+Size of each block in the Grid : 5 meter
+Number of Robots : 4
+Number of Obstacles : 4
+Robot1 path : [1 , 11 , 13 , 14 , 15 , 16 , 17 , 18 , 24 , 31 , 30 , 29 , 28 , 27 , 26 , 36 , 39]
+Robot2 path : [10 , 12 , 22 , 21 , 20 , 19 , 18 , 24 , 31 , 32 , 33 , 34 , 35 , 25]
+Robot3 path : [49 , 39 , 36 , 26 , 27 , 28 , 29 , 30 , 31 , 32 , 37 , 45 , 46 , 47 , 48 , 38]
+Robot4 path : [60 , 50 , 48 , 47 , 46 , 45 , 44 , 43 , 42 , 41 , 40 , 39 , 49 , 51 , 52 , 53 , 54 , 55]
+Obstacle1 path : [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 12 , 13 , 22 , 21 , 20 , 19 , 18 , 17 , 16 , 15 , 14 , 13 , 11 , 1 , ...]
+Obstacle2 path : [13 , 14 , 15 , 16 , 17 , 18 , 24 , 31 , 32 , 33 , 34 , 35 , 25 , 22 , 21 , 20 , 19 , 18 , 24 , 31 , 30 , 29 , 28 , 27 , 26 , 26 , 23 , 13 , ...]
+Obstacle3 path : [26 , 27 , 28 , 29 , 30 , 31 , 32 , 37 , 45 , 46 , 47 , 48 , 38 , 35 , 34 , 33 , 32 , 37 , 45 , 44 , 43 , 42 , 41 , 40 , 39 , 36 , 26 , ...]
+Obstacle4 path : [39 , 40 , 41 , 42 , 43 , 44 , 45 , 46 , 47 , 48 , 50 , 60 , 59 , 58 , 57 , 56 , 55 , 54 , 53 , 52 , 51 , 49 , 39 , ...]
+Robots Speed : 2 meter/sec
+Obstacles Speed : 5 meter/sec
 Clock cycle : 1 milisec
 ```
 
