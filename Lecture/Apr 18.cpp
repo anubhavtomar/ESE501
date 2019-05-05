@@ -31,9 +31,11 @@ Mobile
 [4]	packetizatizing -> Tx Process
 	counter : numTxPacket
 	counter: numTuple
+
 	once numTuple == 20
 
-	TxPacket = 20 tuples
+	1TxPacket = 20 tuples
+
 
 ----------------
 Network Protocol
